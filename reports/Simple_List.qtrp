@@ -7,7 +7,8 @@
   <description type="QString">An example of simple report list</description>
   <script type="QString"></script>
   <version type="int">0</version>
-  <filePath type="QString">file:///home/alex/work/projects/CuteReport/examples/reports/test.qtrp</filePath>
+  <filePath type="QString">git:reports/Simple_List.qtrp</filePath>
+  <defaultStorageName type="QString"></defaultStorageName>
  </properties>
  <children>
   <Page>
@@ -15,14 +16,13 @@
     <objectName type="QString">page</objectName>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
-    <format type="QString">Custom</format>
+    <format type="QString">A4</format>
     <formatSize type="QSizeF">210,297</formatSize>
     <meassure type="int">0</meassure>
     <dpi type="int">112</dpi>
     <margins type="Margins"/>
     <units type="Units"/>
     <currentUnit type="double">0.5</currentUnit>
-    <bandsIndention type="double">4.83712401419514e-317</bandsIndention>
     <magnetValue type="int">12</magnetValue>
     <magnetRate type="int">6</magnetRate>
    </properties>
@@ -31,10 +31,11 @@
      <properties>
       <objectName type="QString">detail</objectName>
       <objectName type="QString">detail</objectName>
+      <meassure type="int">0</meassure>
       <geometry type="QRectF">10,41.3393,190,8</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
-      <rotation type="int">0</rotation>
+      <rotation type="double">0</rotation>
       <borderPen type="QPen">
        <brush type="QBrush">
         <color type="QColor">0,0,0,255</color>
@@ -56,8 +57,6 @@
       </backgroundBrush>
       <enabled type="bool">true</enabled>
       <order type="int">0</order>
-      <margins type="Margins"/>
-      <group type="QString"></group>
       <dataset type="QString">data</dataset>
       <zebra type="bool">false</zebra>
       <evenBrush type="QBrush">
@@ -72,10 +71,11 @@
        <properties>
         <objectName type="QString">memoitem_1</objectName>
         <objectName type="QString">memoitem_1</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">0,0,130,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -110,10 +110,11 @@
        <properties>
         <objectName type="QString">memoitem_2</objectName>
         <objectName type="QString">memoitem_2</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">130,0,30,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -148,10 +149,11 @@
        <properties>
         <objectName type="QString">memoitem_3</objectName>
         <objectName type="QString">memoitem_3</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">160,0,30,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -188,10 +190,11 @@
      <properties>
       <objectName type="QString">pageheader</objectName>
       <objectName type="QString">pageheader</objectName>
+      <meassure type="int">0</meassure>
       <geometry type="QRectF">10,10,190,20</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
-      <rotation type="int">0</rotation>
+      <rotation type="double">0</rotation>
       <borderPen type="QPen">
        <brush type="QBrush">
         <color type="QColor">0,0,0,255</color>
@@ -213,7 +216,6 @@
       </backgroundBrush>
       <enabled type="bool">true</enabled>
       <order type="int">0</order>
-      <margins type="Margins"/>
       <firstPage type="bool">true</firstPage>
       <once type="bool">false</once>
      </properties>
@@ -222,10 +224,11 @@
        <properties>
         <objectName type="QString">memoitem</objectName>
         <objectName type="QString">memoitem</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">5.24565,3.03696,178.904,13.2522</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -262,10 +265,11 @@
      <properties>
       <objectName type="QString">title</objectName>
       <objectName type="QString">title</objectName>
+      <meassure type="int">0</meassure>
       <geometry type="QRectF">10,30,190,11.3393</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
-      <rotation type="int">0</rotation>
+      <rotation type="double">0</rotation>
       <borderPen type="QPen">
        <brush type="QBrush">
         <color type="QColor">0,0,0,255</color>
@@ -287,17 +291,17 @@
       </backgroundBrush>
       <enabled type="bool">true</enabled>
       <order type="int">0</order>
-      <margins type="Margins"/>
      </properties>
      <children>
       <MemoItem>
        <properties>
         <objectName type="QString">memoitem_4</objectName>
         <objectName type="QString">memoitem_4</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">3,1.5,127,8</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -332,10 +336,11 @@
        <properties>
         <objectName type="QString">memoitem_5</objectName>
         <objectName type="QString">memoitem_5</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">130.629,1.36071,29.2554,8</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -372,10 +377,11 @@
      <properties>
       <objectName type="QString">summary</objectName>
       <objectName type="QString">summary</objectName>
+      <meassure type="int">0</meassure>
       <geometry type="QRectF">10,49.3393,190,13.5</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
-      <rotation type="int">0</rotation>
+      <rotation type="double">0</rotation>
       <borderPen type="QPen">
        <brush type="QBrush">
         <color type="QColor">0,0,0,255</color>
@@ -397,18 +403,17 @@
       </backgroundBrush>
       <enabled type="bool">true</enabled>
       <order type="int">0</order>
-      <margins type="Margins"/>
-      <group type="QString"></group>
      </properties>
      <children>
       <MemoItem>
        <properties>
         <objectName type="QString">memoitem_6</objectName>
         <objectName type="QString">memoitem_6</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">2,3.5,86,7</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -434,7 +439,7 @@
         <sizePolicy type="int">3145781</sizePolicy>
         <text type="QString">Summary</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <font type="QFont">Ubuntu,20,-1,5,50,0,0,0,0,0</font>
+        <font type="QFont">Ubuntu,17.8583,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">true</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
@@ -445,10 +450,11 @@
      <properties>
       <objectName type="QString">pagefooter</objectName>
       <objectName type="QString">pagefooter</objectName>
+      <meassure type="int">0</meassure>
       <geometry type="QRectF">10,281,190,6</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
-      <rotation type="int">0</rotation>
+      <rotation type="double">0</rotation>
       <borderPen type="QPen">
        <brush type="QBrush">
         <color type="QColor">0,0,0,255</color>
@@ -470,7 +476,6 @@
       </backgroundBrush>
       <enabled type="bool">true</enabled>
       <order type="int">0</order>
-      <margins type="Margins"/>
       <firstPage type="bool">true</firstPage>
       <once type="bool">false</once>
      </properties>
@@ -479,10 +484,11 @@
        <properties>
         <objectName type="QString">memoitem_7</objectName>
         <objectName type="QString">memoitem_7</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">172.5,1,17.5,4.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -517,10 +523,11 @@
        <properties>
         <objectName type="QString">memoitem_8</objectName>
         <objectName type="QString">memoitem_8</objectName>
+        <meassure type="int">0</meassure>
         <geometry type="QRectF">26,1,69.5,4.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
-        <rotation type="int">0</rotation>
+        <rotation type="double">0</rotation>
         <borderPen type="QPen">
          <brush type="QBrush">
           <color type="QColor">0,0,0,255</color>
@@ -604,7 +611,7 @@
     <parentDataset type="QString"></parentDataset>
     <filterCondition type="QString"></filterCondition>
     <filterColumn type="int">-1</filterColumn>
-    <query type="QString">select artist.name as artistname, title,  artist.photo as artistphoto, album.name as albumname, year, lenght as length, genre, album.photo as albumphoto &lt;newline>from song&lt;newline>left join album on song.album = album.id&lt;newline>left join artist on song.artist = artist.id&lt;newline>order by artistname, albumname </query>
+    <query type="QString">select artist.name as artistname, title,  artist.photo as artistphoto, album.name as albumname, year, length as length, genre, album.photo as albumphoto &lt;newline>from song&lt;newline>left join album on song.album = album.id&lt;newline>left join artist on song.artist = artist.id&lt;newline>order by artistname, albumname </query>
     <dbhost type="QString"></dbhost>
     <dbname type="QString">file:datasets/music.db</dbname>
     <dbuser type="QString"></dbuser>
@@ -632,22 +639,5 @@
     </QSortFilterProxyModel>
    </children>
   </SqlDataset>
-  <RendererOptions>
-   <properties>
-    <objectName type="QString"></objectName>
-    <antialiasing type="bool">false</antialiasing>
-    <textAntialiasing type="bool">false</textAntialiasing>
-    <smoothPixmapTransform type="bool">false</smoothPixmapTransform>
-    <dpi type="int">0</dpi>
-    <iterationDelay type="int">0</iterationDelay>
-   </properties>
-  </RendererOptions>
-  <PrinterOptions>
-   <properties>
-    <objectName type="QString"></objectName>
-    <showDialog type="bool">true</showDialog>
-    <printerName type="QString"></printerName>
-   </properties>
-  </PrinterOptions>
  </children>
 </CuteReport::ReportInterface>
