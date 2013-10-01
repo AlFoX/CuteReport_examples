@@ -18,7 +18,7 @@
     <orientation type="int">0</orientation>
     <format type="QString">A4</format>
     <formatSize type="QSizeF">210,297</formatSize>
-    <meassure type="int">0</meassure>
+    <unit type="int">0</unit>
     <dpi type="int">112</dpi>
     <margins type="Margins"/>
     <units type="Units"/>
@@ -31,7 +31,7 @@
      <properties>
       <objectName type="QString">detail</objectName>
       <objectName type="QString">detail</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,52.3393,190,8</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -71,7 +71,7 @@
        <properties>
         <objectName type="QString">memoitem_1</objectName>
         <objectName type="QString">memoitem_1</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">17,0,113,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
@@ -110,7 +110,7 @@
        <properties>
         <objectName type="QString">memoitem_2</objectName>
         <objectName type="QString">memoitem_2</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">130,0,30,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
@@ -149,7 +149,7 @@
        <properties>
         <objectName type="QString">memoitem_3</objectName>
         <objectName type="QString">memoitem_3</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">160,0,30,8</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
@@ -188,7 +188,7 @@
        <properties>
         <objectName type="QString">memoitem_10</objectName>
         <objectName type="QString">memoitem_10</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">0,0,17,8</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -229,7 +229,7 @@
      <properties>
       <objectName type="QString">pageheader</objectName>
       <objectName type="QString">pageheader</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,10,190,20</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -263,7 +263,7 @@
        <properties>
         <objectName type="QString">memoitem</objectName>
         <objectName type="QString">memoitem</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">5.24565,3.03696,178.904,13.2522</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -304,7 +304,7 @@
      <properties>
       <objectName type="QString">title</objectName>
       <objectName type="QString">title</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,30,190,11.3393</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -336,7 +336,7 @@
        <properties>
         <objectName type="QString">memoitem_4</objectName>
         <objectName type="QString">memoitem_4</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">3,1.5,127,8</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -375,7 +375,7 @@
        <properties>
         <objectName type="QString">memoitem_5</objectName>
         <objectName type="QString">memoitem_5</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">130.629,1.36071,29.2554,8</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -416,7 +416,7 @@
      <properties>
       <objectName type="QString">summary</objectName>
       <objectName type="QString">summary</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,65.8393,190,155.5</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -448,7 +448,7 @@
        <properties>
         <objectName type="QString">memoitem_6</objectName>
         <objectName type="QString">memoitem_6</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">1.5,3,86,7</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -487,7 +487,7 @@
        <properties>
         <objectName type="QString">chartitem</objectName>
         <objectName type="QString">chartitem</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">7.5,13.5,146,105</geometry>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
@@ -562,7 +562,7 @@
      <properties>
       <objectName type="QString">pagefooter</objectName>
       <objectName type="QString">pagefooter</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,281,190,6</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -596,7 +596,7 @@
        <properties>
         <objectName type="QString">memoitem_7</objectName>
         <objectName type="QString">memoitem_7</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">172.5,1,17.5,4.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -635,7 +635,7 @@
        <properties>
         <objectName type="QString">memoitem_8</objectName>
         <objectName type="QString">memoitem_8</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">26,1,69.5,4.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -676,7 +676,7 @@
      <properties>
       <objectName type="QString">detailheader</objectName>
       <objectName type="QString">detailheader</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,41.3393,190,11</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -713,7 +713,7 @@
        <properties>
         <objectName type="QString">memoitem_9</objectName>
         <objectName type="QString">memoitem_9</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">7.5,2.5,104.5,6.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -754,7 +754,7 @@
      <properties>
       <objectName type="QString">detailfooter</objectName>
       <objectName type="QString">detailfooter</objectName>
-      <meassure type="int">0</meassure>
+      <unit type="int">0</unit>
       <geometry type="QRectF">10,60.3393,190,5.5</geometry>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
@@ -788,7 +788,7 @@
        <properties>
         <objectName type="QString">memoitem_11</objectName>
         <objectName type="QString">memoitem_11</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">0,0,57,5.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -827,7 +827,7 @@
        <properties>
         <objectName type="QString">memoitem_12</objectName>
         <objectName type="QString">memoitem_12</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">158.5,0,31.5,5.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -866,7 +866,7 @@
        <properties>
         <objectName type="QString">memoitem_13</objectName>
         <objectName type="QString">memoitem_13</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">57,0,21.5,5.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -905,7 +905,7 @@
        <properties>
         <objectName type="QString">memoitem_14</objectName>
         <objectName type="QString">memoitem_14</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">82.5,0,20.5,5.5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -944,7 +944,7 @@
        <properties>
         <objectName type="QString">memoitem_15</objectName>
         <objectName type="QString">memoitem_15</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">108,0.5,18,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
@@ -983,7 +983,7 @@
        <properties>
         <objectName type="QString">memoitem_16</objectName>
         <objectName type="QString">memoitem_16</objectName>
-        <meassure type="int">0</meassure>
+        <unit type="int">0</unit>
         <geometry type="QRectF">130.5,0.5,19.5,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
