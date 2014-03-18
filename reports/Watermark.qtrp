@@ -12,7 +12,7 @@
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Page className="Page" moduleName="Standard Page" moduleVersion="1">
+  <Page className="Page" moduleVersion="1" moduleName="Standard Page">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
@@ -20,16 +20,16 @@
     <paperSize type="QSizeF">210,297</paperSize>
     <unit type="QString">Millimeter</unit>
     <dpi type="int">112</dpi>
-    <margins type="CuteReport::Margins">0,1.061e-314,1.18576e-322,3.95253e-323</margins>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
     <background type="QColor">255,255,255,255</background>
     <useGrid type="bool">true</useGrid>
     <gridStep type="double">0.200000002980232</gridStep>
     <magnetValue type="int">15</magnetValue>
     <magnetRate type="int">6</magnetRate>
-    <gridSteps type="QString">0=0.2|7=1</gridSteps>
+    <gridSteps type="QString">7=1|0=0.2</gridSteps>
    </properties>
    <children>
-    <Band layoutPriority="50" className="Detail" moduleName="Detail" layoutType="1" moduleVersion="1">
+    <Band className="Detail" moduleVersion="1" moduleName="Detail" layoutPriority="50" layoutType="1">
      <properties>
       <objectName type="QString">detail</objectName>
       <enabled type="bool">true</enabled>
@@ -70,7 +70,7 @@
       <forceNewPage type="bool">false</forceNewPage>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_1</objectName>
         <enabled type="bool">true</enabled>
@@ -98,9 +98,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">3969</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">    [data."title"]</text>
@@ -111,7 +111,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_2</objectName>
         <enabled type="bool">true</enabled>
@@ -139,9 +139,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">    [data."length"]</text>
@@ -152,7 +152,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_3</objectName>
         <enabled type="bool">true</enabled>
@@ -180,9 +180,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">0</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString"></text>
@@ -193,7 +193,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_10</objectName>
         <enabled type="bool">true</enabled>
@@ -221,9 +221,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">133</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">[_line]</text>
@@ -236,7 +236,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="100" className="PageHeader" moduleName="Page Header" layoutType="1" moduleVersion="1">
+    <Band className="PageHeader" moduleVersion="1" moduleName="Page Header" layoutPriority="100" layoutType="1">
      <properties>
       <objectName type="QString">pageheader</objectName>
       <enabled type="bool">true</enabled>
@@ -271,7 +271,7 @@
       <once type="bool">false</once>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem</objectName>
         <enabled type="bool">true</enabled>
@@ -299,9 +299,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">132</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">My Music Collection</text>
@@ -314,7 +314,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="75" className="Title" moduleName="Title" layoutType="1" moduleVersion="1">
+    <Band className="Title" moduleVersion="1" moduleName="Title" layoutPriority="75" layoutType="1">
      <properties>
       <objectName type="QString">title</objectName>
       <enabled type="bool">true</enabled>
@@ -347,7 +347,7 @@
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_4</objectName>
         <enabled type="bool">true</enabled>
@@ -375,9 +375,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">132</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Title</text>
@@ -388,7 +388,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_5</objectName>
         <enabled type="bool">true</enabled>
@@ -416,9 +416,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">132</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">lenght</text>
@@ -431,7 +431,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="20" className="Summary" moduleName="Summary" layoutType="1" moduleVersion="1">
+    <Band className="Summary" moduleVersion="1" moduleName="Summary" layoutPriority="20" layoutType="1">
      <properties>
       <objectName type="QString">summary</objectName>
       <enabled type="bool">true</enabled>
@@ -464,7 +464,7 @@
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_6</objectName>
         <enabled type="bool">true</enabled>
@@ -492,9 +492,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">132</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Summary</text>
@@ -507,7 +507,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="100" className="PageFooter" moduleName="Page Footer" layoutType="2" moduleVersion="1">
+    <Band className="PageFooter" moduleVersion="1" moduleName="Page Footer" layoutPriority="100" layoutType="2">
      <properties>
       <objectName type="QString">pagefooter</objectName>
       <enabled type="bool">true</enabled>
@@ -543,7 +543,7 @@
       <once type="bool">false</once>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_7</objectName>
         <enabled type="bool">true</enabled>
@@ -571,9 +571,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">page [_page]</text>
@@ -584,7 +584,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_8</objectName>
         <enabled type="bool">true</enabled>
@@ -612,9 +612,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">my music collection</text>
@@ -627,7 +627,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="50" className="DetailHeader" moduleName="Detail Header" layoutType="1" moduleVersion="1">
+    <Band className="DetailHeader" moduleVersion="1" moduleName="Detail Header" layoutPriority="50" layoutType="1">
      <properties>
       <objectName type="QString">detailheader</objectName>
       <enabled type="bool">true</enabled>
@@ -665,7 +665,7 @@
       <resetDetailNumber type="bool">true</resetDetailNumber>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_9</objectName>
         <enabled type="bool">true</enabled>
@@ -693,9 +693,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">[data."artistname"]</text>
@@ -708,7 +708,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="50" className="DetailFooter" moduleName="Detail Footer" layoutType="1" moduleVersion="1">
+    <Band className="DetailFooter" moduleVersion="1" moduleName="Detail Footer" layoutPriority="50" layoutType="1">
      <properties>
       <objectName type="QString">detailfooter</objectName>
       <enabled type="bool">true</enabled>
@@ -743,7 +743,7 @@
       <condition type="QString">data."artistname"</condition>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_11</objectName>
         <enabled type="bool">true</enabled>
@@ -771,9 +771,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">134</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">[data."artistname"]</text>
@@ -784,7 +784,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_12</objectName>
         <enabled type="bool">true</enabled>
@@ -812,9 +812,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Total length: [sum(data."length")]</text>
@@ -825,7 +825,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_13</objectName>
         <enabled type="bool">true</enabled>
@@ -853,9 +853,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">   tracks: [count()]</text>
@@ -866,7 +866,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_14</objectName>
         <enabled type="bool">true</enabled>
@@ -894,9 +894,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">min: [min(data."length")]</text>
@@ -907,7 +907,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_15</objectName>
         <enabled type="bool">true</enabled>
@@ -935,9 +935,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">max: [max(data."length")]</text>
@@ -948,7 +948,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_16</objectName>
         <enabled type="bool">true</enabled>
@@ -976,9 +976,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">avg: [avg(data."length")]</text>
@@ -991,7 +991,7 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="100" className="Overlay" moduleName="Overlay" layoutType="3" moduleVersion="1">
+    <Band className="Overlay" moduleVersion="1" moduleName="Overlay" layoutPriority="100" layoutType="3">
      <properties>
       <objectName type="QString">overlay</objectName>
       <enabled type="bool">true</enabled>
@@ -1024,7 +1024,7 @@
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
      </properties>
      <children>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item className="MemoItem" moduleVersion="1" moduleName="Memo">
        <properties>
         <objectName type="QString">memoitem_17</objectName>
         <enabled type="bool">true</enabled>
@@ -1052,9 +1052,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">1</order>
-        <shiftMode type="int">0</shiftMode>
+        <shiftMode type="CuteReport::ItemInterface::ShiftMode"/>
         <textFlags type="int">4</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">CuteReport</text>
@@ -1111,7 +1111,7 @@
     </PageGUI>
    </children>
   </Page>
-  <Dataset className="SqlDataset" moduleName="SQL dataset" moduleVersion="1">
+  <Dataset className="SqlDataset" moduleVersion="1" moduleName="SQL dataset">
    <properties>
     <objectName type="QString">data</objectName>
     <parentDataset type="QString"></parentDataset>
@@ -1137,8 +1137,8 @@
       <filterRegExp type="QRegExp"/>
       <filterKeyColumn type="int">0</filterKeyColumn>
       <dynamicSortFilter type="bool">true</dynamicSortFilter>
-      <filterCaseSensitivity type="int">1</filterCaseSensitivity>
-      <sortCaseSensitivity type="int">1</sortCaseSensitivity>
+      <filterCaseSensitivity type="Qt::CaseSensitivity"/>
+      <sortCaseSensitivity type="Qt::CaseSensitivity"/>
       <isSortLocaleAware type="bool">false</isSortLocaleAware>
       <sortRole type="int">0</sortRole>
       <filterRole type="int">0</filterRole>
