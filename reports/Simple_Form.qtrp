@@ -12,7 +12,7 @@
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Page moduleVersion="1" moduleName="Standard Page" className="Page">
+  <Page moduleVersion="1" moduleName="Standard" className="Page">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
