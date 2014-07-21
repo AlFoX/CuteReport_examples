@@ -1,7 +1,6 @@
 <!DOCTYPE CuteReport>
 <Report className="CuteReport::ReportInterface">
  <properties>
-  <objectName type="QString">Invoice_1</objectName>
   <name type="QString">Invoice 1</name>
   <author type="QString">Author</author>
   <description type="QString"></description>
@@ -12,14 +11,14 @@
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Page className="Page" moduleName="Standard" moduleVersion="1">
+  <Page moduleName="Page" moduleVersion="1" className="Page">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
     <format type="QString">A4</format>
     <paperSize type="QSizeF">210,297</paperSize>
     <unit type="QString">Millimeter</unit>
-    <dpi type="int">112</dpi>
+    <dpi type="int">152</dpi>
     <margins type="CuteReport::Margins">10,10,10,10</margins>
     <background type="QColor">255,255,255,255</background>
     <useGrid type="bool">false</useGrid>
@@ -29,7 +28,7 @@
     <gridSteps type="QString">0=0.5</gridSteps>
    </properties>
    <children>
-    <Band layoutPriority="75" className="Title" moduleName="Title" layoutType="1" moduleVersion="1">
+    <Band layoutType="1" moduleName="Title" moduleVersion="1" layoutPriority="75" className="Title">
      <properties>
       <objectName type="QString">title</objectName>
       <enabled type="bool">true</enabled>
@@ -62,7 +61,7 @@
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
      </properties>
      <children>
-      <Item className="ImageItem" moduleName="Image" moduleVersion="1">
+      <Item moduleName="Image" moduleVersion="1" className="ImageItem">
        <properties>
         <objectName type="QString">image</objectName>
         <enabled type="bool">true</enabled>
@@ -90,18 +89,18 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
-        <sourceType type="QString" alternateValue="0">Script</sourceType>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <sourceType alternateValue="0" type="QString">Script</sourceType>
         <source type="QString">res:image/logo.png</source>
         <image type="QPixmap"></image>
-        <paintType type="QString" alternateValue="3">ResizeImageToItem_keepAspectRatio</paintType>
-        <textPosition type="QString" alternateValue="0">NoText</textPosition>
+        <paintType alternateValue="3" type="QString">ResizeImageToItem_keepAspectRatio</paintType>
+        <textPosition alternateValue="0" type="QString">NoText</textPosition>
         <text type="QString"></text>
         <font type="QFont">Droid Sans [unknown],11,-1,5,50,0,0,0,0,0</font>
         <textColor type="QColor">0,0,0,255</textColor>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo</objectName>
         <enabled type="bool">true</enabled>
@@ -129,9 +128,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">1</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">132</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Invoice</text>
@@ -142,11 +141,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_1</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">0,26,50,5</geometry>
+        <geometry type="QRectF">0,26,56.5,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -170,9 +169,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">2</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Demo Company</text>
@@ -183,11 +182,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_3</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">0,36,50,5</geometry>
+        <geometry type="QRectF">0,36,56.5,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -211,9 +210,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">3</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Ashland, KY 41102</text>
@@ -224,11 +223,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_4</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">68,26,54,5</geometry>
+        <geometry type="QRectF">62,26,63,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -252,9 +251,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">4</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Phone:  555-555-5555</text>
@@ -265,11 +264,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_5</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">68,31,54,5</geometry>
+        <geometry type="QRectF">62,31,63,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -293,9 +292,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">5</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">E-Mail: company@democompany.com</text>
@@ -306,11 +305,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_6</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">68,36,54,5</geometry>
+        <geometry type="QRectF">62,36,63,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -334,9 +333,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">6</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Web: http://www.ksoftware.net</text>
@@ -347,7 +346,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_7</objectName>
         <enabled type="bool">true</enabled>
@@ -375,9 +374,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">7</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Invoice No.</text>
@@ -388,7 +387,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_8</objectName>
         <enabled type="bool">true</enabled>
@@ -416,9 +415,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">8</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Account #</text>
@@ -429,7 +428,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_9</objectName>
         <enabled type="bool">true</enabled>
@@ -457,9 +456,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">9</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Date</text>
@@ -470,7 +469,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_10</objectName>
         <enabled type="bool">true</enabled>
@@ -498,9 +497,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">10</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Due By</text>
@@ -511,7 +510,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_11</objectName>
         <enabled type="bool">true</enabled>
@@ -539,9 +538,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">11</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Terms</text>
@@ -552,7 +551,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_12</objectName>
         <enabled type="bool">true</enabled>
@@ -580,9 +579,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">12</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">PO No.</text>
@@ -593,7 +592,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_13</objectName>
         <enabled type="bool">true</enabled>
@@ -621,9 +620,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">13</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Sales Rep</text>
@@ -634,11 +633,11 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_2</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">0,31,50,5</geometry>
+        <geometry type="QRectF">0,31,56.5,5</geometry>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -662,9 +661,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">16</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">1234 Main Street</text>
@@ -675,7 +674,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_14</objectName>
         <enabled type="bool">true</enabled>
@@ -703,9 +702,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">17</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -716,7 +715,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_15</objectName>
         <enabled type="bool">true</enabled>
@@ -744,9 +743,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">18</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -757,7 +756,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_16</objectName>
         <enabled type="bool">true</enabled>
@@ -785,9 +784,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">19</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -798,7 +797,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_17</objectName>
         <enabled type="bool">true</enabled>
@@ -826,9 +825,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">20</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -839,7 +838,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_18</objectName>
         <enabled type="bool">true</enabled>
@@ -867,9 +866,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">21</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -880,7 +879,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_19</objectName>
         <enabled type="bool">true</enabled>
@@ -908,9 +907,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">22</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -921,7 +920,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_20</objectName>
         <enabled type="bool">true</enabled>
@@ -949,9 +948,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">23</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Memo</text>
@@ -962,7 +961,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_21</objectName>
         <enabled type="bool">true</enabled>
@@ -990,9 +989,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">24</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Bill To</text>
@@ -1003,7 +1002,7 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item className="MemoItem" moduleName="Memo" moduleVersion="1">
+      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
        <properties>
         <objectName type="QString">memo_22</objectName>
         <enabled type="bool">true</enabled>
@@ -1031,9 +1030,9 @@
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">25</order>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode type="QString" alternateValue="1">DontStretch</stretchMode>
+        <stretchMode alternateValue="1" type="QString">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <text type="QString">Ship To</text>
@@ -1046,14 +1045,13 @@
       </Item>
       <ItemSelection>
        <properties>
-        <objectName type="QString"></objectName>
-        <parent type="QGraphicsObject*"/>
+        <parent type=""/>
         <opacity type="double">1</opacity>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
-        <pos type="QPointF">45,45</pos>
-        <x type="double">45</x>
-        <y type="double">45</y>
+        <pos type="QPointF">60,60</pos>
+        <x type="double">60</x>
+        <y type="double">60</y>
         <z type="double">100</z>
         <rotation type="double">0</rotation>
         <scale type="double">1</scale>
@@ -1067,13 +1065,10 @@
      </children>
     </Band>
     <PageGUI>
-     <properties>
-      <objectName type="QString"></objectName>
-     </properties>
+     <properties/>
      <children>
       <QGraphicsScene>
        <properties>
-        <objectName type="QString"></objectName>
         <backgroundBrush type="QBrush">
          <color type="QColor">160,160,164,255</color>
          <style type="int">1</style>
@@ -1084,32 +1079,29 @@
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </foregroundBrush>
-        <sceneRect type="QRectF">0,0,1016,1400</sceneRect>
+        <sceneRect type="QRectF">0,0,1377,1898</sceneRect>
         <bspTreeDepth type="int">5</bspTreeDepth>
         <palette type="QPalette"/>
-        <font type="QFont">Droid Sans [unknown],11,-1,5,50,0,0,0,0,0</font>
+        <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <sortCacheEnabled type="bool">false</sortCacheEnabled>
         <stickyFocus type="bool">false</stickyFocus>
        </properties>
        <children>
         <QGraphicsSceneBspTreeIndex>
          <properties>
-          <objectName type="QString"></objectName>
           <bspTreeDepth type="int">5</bspTreeDepth>
          </properties>
         </QGraphicsSceneBspTreeIndex>
        </children>
       </QGraphicsScene>
       <Magnets>
-       <properties>
-        <objectName type="QString"></objectName>
-       </properties>
+       <properties/>
       </Magnets>
      </children>
     </PageGUI>
    </children>
   </Page>
-  <Storage className="StorageResource" moduleName="Resource" moduleVersion="1">
+  <Storage moduleName="Resource" moduleVersion="1" className="StorageResource">
    <properties>
     <objectName type="QString">storage</objectName>
     <localPath type="QString"></localPath>
@@ -1122,9 +1114,7 @@
    </properties>
   </Storage>
   <CuteReport::RenderedReport>
-   <properties>
-    <objectName type="QString"></objectName>
-   </properties>
+   <properties/>
   </CuteReport::RenderedReport>
  </children>
 </Report>
