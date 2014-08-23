@@ -1,5 +1,5 @@
 <!DOCTYPE CuteReport>
-<Report className="CuteReport::ReportInterface">
+<Report>
  <properties>
   <name type="QString">Invoice 1</name>
   <author type="QString">Author</author>
@@ -11,7 +11,7 @@
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Page moduleName="Page" moduleVersion="1" className="Page">
+  <Page moduleName="Standard::Page" moduleVersion="1" extends="">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
@@ -28,11 +28,12 @@
     <gridSteps type="QString">0=0.5</gridSteps>
    </properties>
    <children>
-    <Band layoutType="1" moduleName="Title" moduleVersion="1" layoutPriority="75" className="Title">
+    <Band layoutType="1" moduleName="Standard::Title" moduleVersion="1" extends="" layoutPriority="75">
      <properties>
       <objectName type="QString">title</objectName>
       <enabled type="bool">true</enabled>
       <geometry type="QRectF">10,10,190,62</geometry>
+      <boundingRect type="QRectF">10,10,190,62</boundingRect>
       <frame type="int">0</frame>
       <opacity type="double">1</opacity>
       <rotation type="double">0</rotation>
@@ -61,11 +62,12 @@
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
      </properties>
      <children>
-      <Item moduleName="Image" moduleVersion="1" className="ImageItem">
+      <Item moduleName="Standard::Image" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">image</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">0,0,62,22.5</geometry>
+        <boundingRect type="QRectF">0,0,62,22.5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -90,21 +92,41 @@
         </backgroundBrush>
         <order type="int">0</order>
         <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
-        <sourceType alternateValue="0" type="QString">Script</sourceType>
+        <sourceType alternateValue="1" type="QString">Storage</sourceType>
         <source type="QString">res:image/logo.png</source>
         <image type="QPixmap"></image>
-        <paintType alternateValue="3" type="QString">ResizeImageToItem_keepAspectRatio</paintType>
-        <textPosition alternateValue="0" type="QString">NoText</textPosition>
-        <text type="QString"></text>
-        <font type="QFont">Droid Sans [unknown],11,-1,5,50,0,0,0,0,0</font>
-        <textColor type="QColor">0,0,0,255</textColor>
+        <keepAspectRatio type="bool">true</keepAspectRatio>
+        <scaleType alternateValue="1" type="QString">ScaleImage</scaleType>
+        <center type="bool">true</center>
        </properties>
+       <children>
+        <ItemSelection>
+         <properties>
+          <parent type=""/>
+          <opacity type="double">1</opacity>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <pos type="QPointF">60,60</pos>
+          <x type="double">60</x>
+          <y type="double">60</y>
+          <z type="double">100</z>
+          <rotation type="double">0</rotation>
+          <scale type="double">1</scale>
+          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
+          <effect type=""/>
+          <children type=""/>
+          <width type="double">0</width>
+          <height type="double">0</height>
+         </properties>
+        </ItemSelection>
+       </children>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,0,54,10.5</geometry>
+        <boundingRect type="QRectF">136,0,54,10.5</boundingRect>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -141,11 +163,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_1</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">0,26,56.5,5</geometry>
+        <boundingRect type="QRectF">0,26,56.5,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -182,11 +205,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_3</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">0,36,56.5,5</geometry>
+        <boundingRect type="QRectF">0,36,56.5,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -223,11 +247,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_4</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">62,26,63,5</geometry>
+        <boundingRect type="QRectF">62,26,63,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -264,11 +289,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_5</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">62,31,63,5</geometry>
+        <boundingRect type="QRectF">62,31,63,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -305,11 +331,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_6</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">62,36,63,5</geometry>
+        <boundingRect type="QRectF">62,36,63,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -346,11 +373,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_7</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,13,17,4</geometry>
+        <boundingRect type="QRectF">136,13,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -387,11 +415,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_8</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,17,17,4</geometry>
+        <boundingRect type="QRectF">136,17,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -428,11 +457,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_9</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,21,17,4</geometry>
+        <boundingRect type="QRectF">136,21,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -469,11 +499,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_10</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,25,17,4</geometry>
+        <boundingRect type="QRectF">136,25,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -510,11 +541,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_11</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,29,17,4</geometry>
+        <boundingRect type="QRectF">136,29,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -551,11 +583,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_12</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,33,17,4</geometry>
+        <boundingRect type="QRectF">136,33,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -592,11 +625,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_13</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">136,37,17,4</geometry>
+        <boundingRect type="QRectF">136,37,17,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -633,11 +667,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_2</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">0,31,56.5,5</geometry>
+        <boundingRect type="QRectF">0,31,56.5,5</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -674,11 +709,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_14</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,13,32.5,4</geometry>
+        <boundingRect type="QRectF">153,13,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -715,11 +751,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_15</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,17,32.5,4</geometry>
+        <boundingRect type="QRectF">153,17,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -756,11 +793,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_16</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,21,32.5,4</geometry>
+        <boundingRect type="QRectF">153,21,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -797,11 +835,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_17</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,25,32.5,4</geometry>
+        <boundingRect type="QRectF">153,25,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -838,11 +877,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_18</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,29,32.5,4</geometry>
+        <boundingRect type="QRectF">153,29,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -879,11 +919,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_19</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,33,32.5,4</geometry>
+        <boundingRect type="QRectF">153,33,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -920,11 +961,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_20</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">153,37,32.5,4</geometry>
+        <boundingRect type="QRectF">153,37,32.5,4</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -961,11 +1003,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_21</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">0,44.5,73.5,3.5</geometry>
+        <boundingRect type="QRectF">0,44.5,73.5,3.5</boundingRect>
         <frame type="int">8</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -1002,11 +1045,12 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <Item moduleName="Memo" moduleVersion="1" className="MemoItem">
+      <Item moduleName="Standard::Memo" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">memo_22</objectName>
         <enabled type="bool">true</enabled>
         <geometry type="QRectF">79.5,44.5,73.5,3.5</geometry>
+        <boundingRect type="QRectF">79.5,44.5,73.5,3.5</boundingRect>
         <frame type="int">8</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -1043,25 +1087,6 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
       </Item>
-      <ItemSelection>
-       <properties>
-        <parent type=""/>
-        <opacity type="double">1</opacity>
-        <enabled type="bool">true</enabled>
-        <visible type="bool">true</visible>
-        <pos type="QPointF">60,60</pos>
-        <x type="double">60</x>
-        <y type="double">60</y>
-        <z type="double">100</z>
-        <rotation type="double">0</rotation>
-        <scale type="double">1</scale>
-        <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-        <effect type=""/>
-        <children type=""/>
-        <width type="double">0</width>
-        <height type="double">0</height>
-       </properties>
-      </ItemSelection>
      </children>
     </Band>
     <PageGUI>
@@ -1101,7 +1126,7 @@
     </PageGUI>
    </children>
   </Page>
-  <Storage moduleName="Resource" moduleVersion="1" className="StorageResource">
+  <Storage moduleName="Standard::Resource" moduleVersion="1" extends="">
    <properties>
     <objectName type="QString">storage</objectName>
     <localPath type="QString"></localPath>
