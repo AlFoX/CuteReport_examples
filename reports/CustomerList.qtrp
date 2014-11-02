@@ -33,8 +33,8 @@
       <filterRegExp type="QRegExp"/>
       <filterKeyColumn type="int">0</filterKeyColumn>
       <dynamicSortFilter type="bool">false</dynamicSortFilter>
-      <filterCaseSensitivity type="int">1</filterCaseSensitivity>
-      <sortCaseSensitivity type="int">1</sortCaseSensitivity>
+      <filterCaseSensitivity type="Qt::CaseSensitivity"/>
+      <sortCaseSensitivity type="Qt::CaseSensitivity"/>
       <isSortLocaleAware type="bool">false</isSortLocaleAware>
       <sortRole type="int">0</sortRole>
       <filterRole type="int">0</filterRole>
@@ -50,8 +50,15 @@
     <paperSize type="QSizeF">210,297</paperSize>
     <unit type="QString">Millimeter</unit>
     <dpi type="int">116</dpi>
-    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <columns type="int">1</columns>
+    <fillDirection type="int">1</fillDirection>
+    <marginLeft type="double">10</marginLeft>
+    <marginTop type="double">10</marginTop>
+    <marginRight type="double">10</marginRight>
+    <marginBottom type="double">10</marginBottom>
     <background type="QColor">255,255,255,255</background>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
     <useGrid type="bool">false</useGrid>
     <gridStep type="double">0.5</gridStep>
     <magnetValue type="int">15</magnetValue>
@@ -63,8 +70,8 @@
      <properties>
       <objectName type="QString">title</objectName>
       <enabled type="bool">true</enabled>
-      <geometry type="QRectF">10,10,190,10</geometry>
-      <boundingRect type="QRectF">10,10,190,10</boundingRect>
+      <geometry type="QRectF">10,10,190,9.56207</geometry>
+      <boundingRect type="QRectF">10,10,190,9.56207</boundingRect>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
       <rotation type="double">0</rotation>
@@ -88,9 +95,10 @@
        <texture type="QPixmap"></texture>
       </backgroundBrush>
       <order type="int">0</order>
-      <stretchable type="bool">false</stretchable>
+      <stretchable type="bool">true</stretchable>
       <showStretchability type="bool">false</showStretchability>
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
      </properties>
      <children>
       <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
@@ -143,8 +151,8 @@
      <properties>
       <objectName type="QString">detail</objectName>
       <enabled type="bool">true</enabled>
-      <geometry type="QRectF">10,20,190,8</geometry>
-      <boundingRect type="QRectF">10,20,190,8</boundingRect>
+      <geometry type="QRectF">10,19.5621,190,8</geometry>
+      <boundingRect type="QRectF">10,19.5621,190,8</boundingRect>
       <frame type="int">15</frame>
       <opacity type="double">1</opacity>
       <rotation type="double">0</rotation>
@@ -171,6 +179,7 @@
       <stretchable type="bool">false</stretchable>
       <showStretchability type="bool">false</showStretchability>
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
       <dataset type="QString">data</dataset>
       <zebra type="bool">false</zebra>
       <alternateBrush type="QBrush">
@@ -216,7 +225,7 @@
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
-        <text type="QString">[_line]</text>
+        <text type="QString">[LINE]</text>
         <textColor type="QColor">0,0,0,255</textColor>
         <textMargin type="double">1</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
@@ -467,7 +476,7 @@
         <palette type="QPalette"/>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <sortCacheEnabled type="bool">false</sortCacheEnabled>
-        <stickyFocus type="bool">false</stickyFocus>
+        <stickyFocus type="bool">true</stickyFocus>
        </properties>
        <children>
         <QGraphicsSceneBspTreeIndex>

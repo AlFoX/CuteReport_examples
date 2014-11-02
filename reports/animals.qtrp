@@ -1,9 +1,9 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString"></name>
-  <author type="QString">Author</author>
-  <description type="QString"></description>
+  <name type="QString">Animals</name>
+  <author type="QString">Mikhalov Alexander &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">This report shows how to make text flowing of image</description>
   <script type="QString"></script>
   <version type="int">0</version>
   <filePath type="QString">git:reports/animals.qtrp</filePath>
@@ -50,8 +50,15 @@
     <paperSize type="QSizeF">210,297</paperSize>
     <unit type="QString">Millimeter</unit>
     <dpi type="int">121</dpi>
-    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <columns type="int">1</columns>
+    <fillDirection type="int">1</fillDirection>
+    <marginLeft type="double">10</marginLeft>
+    <marginTop type="double">10</marginTop>
+    <marginRight type="double">10</marginRight>
+    <marginBottom type="double">10</marginBottom>
     <background type="QColor">255,255,255,255</background>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
     <useGrid type="bool">true</useGrid>
     <gridStep type="double">0.5</gridStep>
     <magnetValue type="int">15</magnetValue>
@@ -91,6 +98,7 @@
       <stretchable type="bool">true</stretchable>
       <showStretchability type="bool">false</showStretchability>
       <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
       <dataset type="QString">data</dataset>
       <zebra type="bool">false</zebra>
       <alternateBrush type="QBrush">
@@ -226,27 +234,6 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
-       <children>
-        <ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">48,81</pos>
-          <x type="double">48</x>
-          <y type="double">81</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </ItemSelection>
-       </children>
       </Item>
       <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
@@ -291,6 +278,27 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString">memo_1</flowTo>
        </properties>
+       <children>
+        <ItemSelection>
+         <properties>
+          <parent type=""/>
+          <opacity type="double">1</opacity>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <pos type="QPointF">48,251</pos>
+          <x type="double">48</x>
+          <y type="double">251</y>
+          <z type="double">100</z>
+          <rotation type="double">0</rotation>
+          <scale type="double">1</scale>
+          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
+          <effect type=""/>
+          <children type=""/>
+          <width type="double">0</width>
+          <height type="double">0</height>
+         </properties>
+        </ItemSelection>
+       </children>
       </Item>
      </children>
     </Band>
@@ -314,7 +322,7 @@
         <palette type="QPalette"/>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <sortCacheEnabled type="bool">false</sortCacheEnabled>
-        <stickyFocus type="bool">false</stickyFocus>
+        <stickyFocus type="bool">true</stickyFocus>
        </properties>
        <children>
         <QGraphicsSceneBspTreeIndex>
@@ -331,8 +339,5 @@
     </PageGUI>
    </children>
   </Page>
-  <CuteReport::RenderedReport>
-   <properties/>
-  </CuteReport::RenderedReport>
  </children>
 </Report>
