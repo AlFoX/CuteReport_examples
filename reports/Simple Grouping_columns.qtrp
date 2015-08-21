@@ -6,8 +6,10 @@
   <description type="QString">An example of simple grouping with columns&lt;newline>&lt;newline>Note:&lt;newline>Columns are supported only in commercial CuteReport version</description>
   <script type="QString">print('engine name: %1', engine.name());&lt;newline>&lt;newline>if (engine.name() == 'Standard::Renderer') {&lt;newline>     memoitem_pageNumber.text = 'page [PAGE]';&lt;newline>     memoitem_16.text = 'avg: [avg(data."length") ]';&lt;newline>}&lt;newline></script>
   <version type="int">0</version>
-  <filePath type="QString">git:reports/Simple Grouping_columns.qtrp</filePath>
-  <defaultStorageName type="QString"></defaultStorageName>
+  <fileUrl type="QString">file:/home/alex/temp/cutereport/reports/Simple Grouping_columns.qtrp</fileUrl>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
   <variables type="QVariantHash"/>
  </properties>
  <children>
@@ -21,13 +23,18 @@
     <dpi type="int">112</dpi>
     <columns type="int">2</columns>
     <fillDirection type="int">1</fillDirection>
+    <background type="QColor">255,255,255,255</background>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
     <marginLeft type="double">10</marginLeft>
     <marginTop type="double">10</marginTop>
     <marginRight type="double">10</marginRight>
     <marginBottom type="double">10</marginBottom>
-    <background type="QColor">255,255,255,255</background>
-    <order type="int">0</order>
-    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+    <margins type="QMargins">10,10,10,10</margins>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <allowMirrorMargins type="bool">true</allowMirrorMargins>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
     <useGrid type="bool">true</useGrid>
     <gridStep type="double">0.200000002980232</gridStep>
     <magnetValue type="int">15</magnetValue>
@@ -58,6 +65,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">0,0,0,255</color>
        <style type="int">0</style>
@@ -101,6 +109,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -115,7 +124,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."title"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,12,-1,5,50,1,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -145,6 +154,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -159,7 +169,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."length"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,12,-1,5,50,1,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -189,6 +199,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -203,7 +214,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[LINE]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,12,-1,5,50,1,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -235,6 +246,7 @@
        <style type="int">1</style>
        <width type="int">3</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">195,195,195,255</color>
        <style type="int">1</style>
@@ -272,6 +284,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -286,7 +299,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">My Music Collection</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,28,-1,5,75,1,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -318,6 +331,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">97,173,201,255</color>
        <style type="int">1</style>
@@ -353,6 +367,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -367,7 +382,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">Title</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,14,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -397,6 +412,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -411,7 +427,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">lenght</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,14,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -443,6 +459,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">163,163,216,255</color>
        <style type="int">1</style>
@@ -478,6 +495,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -492,7 +510,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">Summary</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,17.8583,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -524,6 +542,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">220,220,220,255</color>
        <style type="int">1</style>
@@ -562,6 +581,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -576,33 +596,12 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">page [PAGE] of [PAGES]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
-       <children>
-        <ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">698,1240</pos>
-          <x type="double">698</x>
-          <y type="double">1240</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </ItemSelection>
-       </children>
       </Item>
       <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
@@ -627,6 +626,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -641,7 +641,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">my music collection</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -673,6 +673,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">255,168,88,255</color>
        <style type="int">1</style>
@@ -713,6 +714,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -727,7 +729,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."artistname"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,16.5827,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -759,6 +761,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">195,195,195,255</color>
        <style type="int">1</style>
@@ -796,6 +799,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -810,7 +814,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."artistname"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -840,6 +844,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -854,7 +859,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">Total length: [sum(data."length")]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -884,6 +889,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -898,7 +904,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">   tracks: [count(data)]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -928,6 +934,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -942,7 +949,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">min: [min(data."length")]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -972,6 +979,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -986,7 +994,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">max: [max(data."length")]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
@@ -1016,6 +1024,7 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
@@ -1030,7 +1039,7 @@
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">avg: [avg(data."length") #n%2?2f]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,10,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
