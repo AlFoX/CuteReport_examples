@@ -1,17 +1,20 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
+  <objectName type="QString">Customer_List_columns_</objectName>
   <name type="QString">Customer List (columns)</name>
   <author type="QString">Mikhalov Alexander &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Note:&lt;newline>Script is used to hide object "memo_warning" if engine does support columns.&lt;newline>Only commercial CuteReport version support this feature at the time.&lt;newline></description>
   <script type="QString">if (engine.name() == "Extended::Renderer") {&lt;newline>		memo_warning.enabled = false;&lt;newline>}</script>
   <version type="int">0</version>
-  <filePath type="QString">git:reports/CustomerList_columns.qtrp</filePath>
-  <defaultStorageName type="QString"></defaultStorageName>
+  <fileUrl type="QString">git:reports/CustomerList_columns.qtrp</fileUrl>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Dataset moduleName="Standard::SQL" moduleVersion="1" extends="">
+  <Dataset moduleVersion="1" extends="" moduleName="Standard::SQL">
    <properties>
     <objectName type="QString">data</objectName>
     <parentDataset type="QString"></parentDataset>
@@ -19,22 +22,26 @@
     <filterColumn type="int">-1</filterColumn>
     <query type="QString">select * from customer</query>
     <dbhost type="QString"></dbhost>
-    <dbname type="QString">file:datasets/business.db</dbname>
+    <dbname type="QString">res:/business.db</dbname>
     <dbuser type="QString"></dbuser>
     <dbpasswd type="QString"></dbpasswd>
     <driver type="QString">QSQLITE</driver>
    </properties>
    <children>
     <QSqlQueryModel>
-     <properties/>
+     <properties>
+      <objectName type="QString"></objectName>
+     </properties>
     </QSqlQueryModel>
     <QSortFilterProxyModel>
      <properties>
+      <objectName type="QString"></objectName>
+      <sourceModel type="QAbstractItemModel*"/>
       <filterRegExp type="QRegExp"/>
       <filterKeyColumn type="int">0</filterKeyColumn>
-      <dynamicSortFilter type="bool">false</dynamicSortFilter>
-      <filterCaseSensitivity type="int">1</filterCaseSensitivity>
-      <sortCaseSensitivity type="int">1</sortCaseSensitivity>
+      <dynamicSortFilter type="bool">true</dynamicSortFilter>
+      <filterCaseSensitivity type="Qt::CaseSensitivity"/>
+      <sortCaseSensitivity type="Qt::CaseSensitivity"/>
       <isSortLocaleAware type="bool">false</isSortLocaleAware>
       <sortRole type="int">0</sortRole>
       <filterRole type="int">0</filterRole>
@@ -42,7 +49,7 @@
     </QSortFilterProxyModel>
    </children>
   </Dataset>
-  <Page moduleName="Extended::Page" moduleVersion="1" extends="Standard::Page">
+  <Page moduleVersion="1" extends="Standard::Page" moduleName="Extended::Page">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
@@ -66,7 +73,7 @@
     <gridSteps type="QString">0=0.5</gridSteps>
    </properties>
    <children>
-    <Band layoutType="1" moduleName="Standard::Title" moduleVersion="1" extends="" layoutPriority="75">
+    <Band layoutPriority="75" moduleVersion="1" extends="" moduleName="Standard::Title" layoutType="1">
      <properties>
       <objectName type="QString">title</objectName>
       <enabled type="bool">true</enabled>
@@ -89,6 +96,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">0,0,0,255</color>
        <style type="int">0</style>
@@ -101,7 +109,7 @@
       <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
      </properties>
      <children>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo</objectName>
         <enabled type="bool">true</enabled>
@@ -124,28 +132,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">1</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">133</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">Customer list</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_warning</objectName>
         <enabled type="bool">true</enabled>
@@ -168,51 +177,31 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">255,133,131,255</color>
          <style type="int">1</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">2</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">4228</textFlags>
-        <stretchMode alternateValue="1" type="QString">ActualHeight</stretchMode>
+        <stretchMode type="QString" alternateValue="1">ActualHeight</stretchMode>
         <showStretchability type="bool">false</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">Only commercial version supports columns. Please read documentation.</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">0</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
-       <children>
-        <ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">47,83</pos>
-          <x type="double">47</x>
-          <y type="double">83</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </ItemSelection>
-       </children>
       </Item>
      </children>
     </Band>
-    <Band layoutType="1" moduleName="Standard::Detail" moduleVersion="1" extends="" layoutPriority="50">
+    <Band layoutPriority="50" moduleVersion="1" extends="" moduleName="Standard::Detail" layoutType="1">
      <properties>
       <objectName type="QString">detail</objectName>
       <enabled type="bool">true</enabled>
@@ -235,6 +224,7 @@
        <style type="int">1</style>
        <width type="int">0</width>
       </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
       <backgroundBrush type="QBrush">
        <color type="QColor">0,0,0,255</color>
        <style type="int">0</style>
@@ -255,7 +245,7 @@
       <forceNewPage type="bool">false</forceNewPage>
      </properties>
      <children>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_1</objectName>
         <enabled type="bool">true</enabled>
@@ -278,28 +268,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">0</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[LINE]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_2</objectName>
         <enabled type="bool">true</enabled>
@@ -322,28 +313,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">1</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."firstname"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_3</objectName>
         <enabled type="bool">true</enabled>
@@ -366,28 +358,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">2</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."lastname"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_4</objectName>
         <enabled type="bool">true</enabled>
@@ -410,28 +403,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">3</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."address"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_5</objectName>
         <enabled type="bool">true</enabled>
@@ -454,28 +448,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">4</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."city"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+      <Item moduleVersion="1" extends="Standard::Memo" moduleName="Extended::Memo">
        <properties>
         <objectName type="QString">memo_6</objectName>
         <enabled type="bool">true</enabled>
@@ -498,28 +493,29 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">6</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <textFlags type="int">129</textFlags>
-        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
         <showStretchability type="bool">true</showStretchability>
         <allowHTML type="bool">false</allowHTML>
         <allowExpressions type="bool">true</allowExpressions>
         <text type="QString">[data."zipcode"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="double">1</textMargin>
+        <textMargin type="QPointF">1,0</textMargin>
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <stretchFont type="bool">false</stretchFont>
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleName="Standard::Barcode" moduleVersion="1" extends="">
+      <Item moduleVersion="1" extends="" moduleName="Standard::Barcode">
        <properties>
         <objectName type="QString">barcode</objectName>
         <enabled type="bool">true</enabled>
@@ -542,26 +538,27 @@
          <style type="int">1</style>
          <width type="int">0</width>
         </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
         <backgroundBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </backgroundBrush>
         <order type="int">7</order>
-        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
         <color type="QColor">0,0,0,255</color>
-        <paintType alternateValue="1" type="QString">KeepAspectRatio</paintType>
-        <frameType alternateValue="0" type="QString">NO_FRAME</frameType>
-        <barcodeType alternateValue="20" type="QString">CODE128</barcodeType>
+        <paintType type="QString" alternateValue="1">KeepAspectRatio</paintType>
+        <frameType type="QString" alternateValue="0">NO_FRAME</frameType>
+        <barcodeType type="QString" alternateValue="20">CODE128</barcodeType>
         <barcodeHeight type="int">15</barcodeHeight>
         <barcodeWhitespaceWidth type="int">0</barcodeWhitespaceWidth>
         <barcodeBoderWidth type="int">0</barcodeBoderWidth>
         <barcodeWidth type="int">0</barcodeWidth>
         <barcodeSecurityLevel type="int">-1</barcodeSecurityLevel>
         <pdf417Max type="int">928</pdf417Max>
-        <msiPlessey alternateValue="0" type="QString">MSI_PLESSEY_</msiPlessey>
+        <msiPlessey type="QString" alternateValue="0">MSI_PLESSEY_</msiPlessey>
         <exCode39_43Extension type="bool">false</exCode39_43Extension>
-        <drawTextType alternateValue="0" type="QString">NO_TEXT</drawTextType>
+        <drawTextType type="QString" alternateValue="0">NO_TEXT</drawTextType>
         <primaryMessage type="QString"></primaryMessage>
         <script type="QString">[data."id"]</script>
         <testText type="QString">05072006</testText>
@@ -569,11 +566,14 @@
       </Item>
      </children>
     </Band>
-    <PageGUI>
-     <properties/>
+    <Extended::PageGUI>
+     <properties>
+      <objectName type="QString"></objectName>
+     </properties>
      <children>
-      <Scene>
+      <Extended::Scene>
        <properties>
+        <objectName type="QString"></objectName>
         <backgroundBrush type="QBrush">
          <color type="QColor">160,160,164,255</color>
          <style type="int">1</style>
@@ -590,21 +590,37 @@
         <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
         <sortCacheEnabled type="bool">false</sortCacheEnabled>
         <stickyFocus type="bool">true</stickyFocus>
+        <minimumRenderSize type="double">0</minimumRenderSize>
        </properties>
        <children>
         <QGraphicsSceneBspTreeIndex>
          <properties>
+          <objectName type="QString"></objectName>
           <bspTreeDepth type="int">5</bspTreeDepth>
          </properties>
         </QGraphicsSceneBspTreeIndex>
        </children>
-      </Scene>
-      <Magnets>
-       <properties/>
-      </Magnets>
+      </Extended::Scene>
+      <Extended::Magnets>
+       <properties>
+        <objectName type="QString"></objectName>
+       </properties>
+      </Extended::Magnets>
      </children>
-    </PageGUI>
+    </Extended::PageGUI>
    </children>
   </Page>
+  <Storage moduleVersion="1" extends="" moduleName="Standard::Resource">
+   <properties>
+    <objectName type="QString">res</objectName>
+    <localPath type="QString"></localPath>
+    <objects type="QVariantHash">
+     <key name="business.db">
+      <value type="QByteArray">U1FMaXRlIGZvcm1hdCAzAAQAAQEAQCAgAAAANAAAAAgAAAAIAAAAAgAAAB4AAAAEAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0AC3mBgUAAAAABAAAAAAABgP7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAA0AAAABAx0AAx0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgWABEgkJFRchFRkhgUV7AgEBAhUhMTA1NkMxMDAzMDMvMDEvMjAxNU5vbmVQTzEyMzRNYXJrIFR3YWluQW4gaW52b2ljZSBub3RlIGNhbiBnbyBoZXJlLiBNdWx0aWxpbmUgbm90ZXMgYXJlIHN1cHBvcnRlZCBsaWtlIHlvdSBtYXkgc2VlIGluIHRoaXMgZXhhbXBsZS5UaGVyZSBpcyBhIHBheW1lbnQgZGV0YWlscyB0ZXh0LiBNdWx0aWxpbmUgaXMgc3VwcG9ydGVkAMcTCgDkVVNQUzAzLzE1LzIwMTUNAAAAAAQAAAPqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0AAAAOAOkAA8oDjwNTAxoC6AKyAnYCPQIJAdMBlgFhASAA6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQ4IARcfMRcRFw5Bbmt0aVZhbndpbmtpZTM5NTYgRWlnaHRoIENpcmNsZUJ5cm9uQ0E5NDMyMT8NCAEZHUMZERcNV2F5bG9uSGFyZGlzb24xMDc4IEZvdXJ0aCBTb3V0aCBCb3VsZXZhcmRIYXJtb25JTDg2NDMyMwwIARkdKRsRFwxFbGxlbnNWYW5tZXRlcjQwMyBFbG0gQ2lyY2xlT3JjaGFyZENPODA2MzI7CwgBGxc3IREXC0FuZGVhbmFQcmF0dDEwOTYgRWlnaHRoIEJvdWxldmFyZERlcyBNb2luZXNJQTEwMzQ1NAoIARUdLxsRFwpBbGlhQm9oYW5ub241MzA2IG1hcGxlIEF2ZW51ZVNlaWxpbmdPSzc1MzQ5MgkIARcXKx8RFwlCcmFkeUphbWVzODc1IExha2UgQ2lyY2xlU3RvY2tob2xtV0k5ODM0NzcICAETGy8lERcIVGlhQmVyZ21hbjQzMjcgQ2VkYXIgQXZlbnVlSmFja3NvbnZpbGxlTkM3NjMyMDoHCAEbGSspERcHQ2Fyb2x5bkxvbmRvbjk5MCBIaWxsIFN0cmVldE1ldGFsaW5lIEZhbGxzV0E2NzkwMTQGCAEVFy0jERcGVmlkYUJyb2NrMzk1IFNpeHRoIENpcmNsZVdyaWdodHNib3JvVFg4OTM3MjAFCAEXGSsZERcFU3RldmVOZWVsZXk3OTMgTWFpbiBTdHJlZXRFZHdhcmROQzc2MzQ4NwQIARUdLyERFwRUeXJhTWFyY290dGU2NzQ1IEZpZnRoIENpcmNsZVNwcmluZ2Jvcm9QQTU0MzIyOgMIARsZMyERFwNDYWxpc3RhQmFza2luMjAxNyBTZXZlbnRoIFN0cmVldEJvY2EgUmF0b25GTDk0NzY1OQIIARsbMx0RFwJKYXVuaXRhSm9obnNvbjU1MDUgUGFyayBCb3VsZXZhcmREcnVtbW9uZE9LNzMxMjQ0AQgJGRsxGxEVWGltZW5hR2FycmV0dDIyNzggU2Vjb25kIFN0cmVldFBhcmFtdXNOSjc4NDMNAAAABAAWAAOuArIBrwAWAAAAAAAAgxYJBxcZGQGGB3RhYmxlb3JkZXJzb3JkZXJzAkNSRUFURSBUQUJMRSBvcmRlcnMgKAogICAgImlkIiBJTlRFR0VSIE5PVCBOVUxMLAogICAgImN1c3RvbWVyX2lkIiBJTlRFR0VSIE5PVCBOVUxMLAogICAgImludm9pY2VfbnVtYmVyIiBURVhULAogICAgImFjY291bnRfbnVtYmVyIiBURVhULAogICAgImRhdGUiIFRFWFQsCiAgICAidGVybXMiIFRFWFQsCiAgICAicG8iIFRFWFQsCiAgICAic2FsZXNfcmVwcmVzZW50YXRpdmUiIFRFWFQsCiAgICAibm90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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</value>
+     </key>
+    </objects>
+    <reports type="QVariantHash"/>
+   </properties>
+  </Storage>
  </children>
 </Report>
