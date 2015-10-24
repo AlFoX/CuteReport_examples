@@ -6,7 +6,7 @@
   <description type="QString">Notes: &lt;newline>Script is used to hide "memo_pages" object if engine doesn't support 'PAGES' variable.&lt;newline>Only Commercial version supports PAGES at the time.</description>
   <script type="QString">memo_pages.printInit.connect(setMemoEnabled);&lt;newline>&lt;newline>function setMemoEnabled()&lt;newline>{&lt;newline>	print(PAGES);&lt;newline>	if (typeof PAGES === 'undefined' || PAGES == 0) {&lt;newline> 		memo_pages.enabled = false;&lt;newline>	}&lt;newline>}</script>
   <version type="int">0</version>
-  <fileUrl type="QString">file:/home/alex/temp/cutereport/git_storage/Barcode_pro.qtrp</fileUrl>
+  <fileUrl type="QString">file:/home/alex/work/projects/CuteReport/examples/reports/Barcode_pro.qtrp</fileUrl>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
@@ -90,8 +90,8 @@
        <properties>
         <objectName type="QString">memoitem</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">0,0,130.2,6.4</geometry>
-        <boundingRect type="QRectF">0,0,130.2,6.4</boundingRect>
+        <geometry type="QRectF">0,0,130.2,6.12679</geometry>
+        <boundingRect type="QRectF">0,0,130.2,6.12679</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -180,8 +180,8 @@
        <properties>
         <objectName type="QString">barcode</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">0,6.17321,59.8,10</geometry>
-        <boundingRect type="QRectF">0,6.17321,59.8,10</boundingRect>
+        <geometry type="QRectF">130.2,6.12679,59.8,10.7732</geometry>
+        <boundingRect type="QRectF">130.2,6.12679,59.8,10.7732</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -212,34 +212,17 @@
         <barcodeType type="QString">CODE128</barcodeType>
         <text type="QString">[data."length"]</text>
         <primaryMessage type="QString"></primaryMessage>
+        <testText type="QString">111</testText>
+        <testPrimaryMessage type="QString"></testPrimaryMessage>
         <option1 type="int">-1</option1>
         <option2 type="int">-1</option2>
         <option3 type="int">-1</option3>
-        <textVisible type="bool">true</textVisible>
+        <textVisible type="bool">false</textVisible>
+        <hFactor type="double">0.35</hFactor>
+        <alignment type="int">36</alignment>
         <examplePreview type="bool">true</examplePreview>
         <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
-       <children>
-        <Extended::ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">45,255</pos>
-          <x type="double">45</x>
-          <y type="double">255</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </Extended::ItemSelection>
-       </children>
       </Item>
      </children>
     </Band>

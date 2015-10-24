@@ -6,7 +6,7 @@
   <description type="QString"></description>
   <script type="QString"></script>
   <version type="int">0</version>
-  <fileUrl type="QString">file:/home/alex/temp/cutereport/git_storage/chart2.qtrp</fileUrl>
+  <fileUrl type="QString">git:/reports/chart2.qtrp</fileUrl>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
@@ -24,7 +24,7 @@
     <format type="QString">A4</format>
     <paperSize type="QSizeF">210,297</paperSize>
     <unit type="QString">Millimeter</unit>
-    <dpi type="int">111</dpi>
+    <dpi type="int">126</dpi>
     <columns type="int">1</columns>
     <fillDirection type="int">1</fillDirection>
     <background type="QColor">255,255,255,255</background>
@@ -34,7 +34,7 @@
     <marginTop type="double">10</marginTop>
     <marginRight type="double">10</marginRight>
     <marginBottom type="double">10</marginBottom>
-    <margins type="QMargins">10,10,10,10</margins>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
     <printOnPreviousPage type="bool">false</printOnPreviousPage>
     <allowMirrorMargins type="bool">true</allowMirrorMargins>
     <endlessWidth type="bool">false</endlessWidth>
@@ -88,8 +88,8 @@
        <properties>
         <objectName type="QString">chart</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">3.22916,2.96459,172.869,103.392</geometry>
-        <boundingRect type="QRectF">3.22916,2.96459,172.869,103.392</boundingRect>
+        <geometry type="QRectF">3.76959,3.14473,172.869,103.392</geometry>
+        <boundingRect type="QRectF">3.76959,3.14473,172.869,103.392</boundingRect>
         <frame type="int">15</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -154,7 +154,7 @@
          <style type="int">1</style>
          <width type="int">1</width>
         </plotAreaBackgroundPen>
-        <margins type="QMargins">10,10,10,10</margins>
+        <margins type="CuteReport::Margins">10,10,10,10</margins>
         <title type="QString"></title>
         <titleBrush type="QBrush">
          <color type="QColor">0,0,0,255</color>
@@ -190,13 +190,16 @@
           <topNValues type="int">0</topNValues>
           <data type="QVariantHash">
            <key name="11">
-            <value type="QString">91, 28, 4, 16</value>
+            <value type="QString">-91; 28; -4; 16</value>
            </key>
            <key name="1">
-            <value type="QString">Item1 (test), Item2, Item3, Item4</value>
+            <value type="QString">Item1 (test); Item2; Item3; Item4</value>
            </key>
            <key name="20">
-            <value type="QString">lime,red,yellow,fuchsia</value>
+            <value type="QString">lime; red; yellow; fuchsia</value>
+           </key>
+           <key name="21">
+            <value type="QString"></value>
            </key>
           </data>
          </properties>
@@ -205,6 +208,8 @@
          <properties>
           <serieType type="int">0</serieType>
           <labelPosition type="int">4</labelPosition>
+          <labelRotation type="int">0</labelRotation>
+          <labelAngle type="double">45</labelAngle>
          </properties>
         </ExternalData>
         <ExternalData type="Axis" name="AxisX1">
@@ -214,19 +219,19 @@
           <visible type="bool">true</visible>
           <pen type="QPen">
            <brush type="QBrush">
-            <color type="QColor">85,255,0,255</color>
+            <color type="QColor">0,0,0,255</color>
             <style type="int">1</style>
             <texture type="QPixmap"></texture>
            </brush>
            <capStyle type="int">16</capStyle>
-           <color type="QColor">85,255,0,255</color>
-           <isCosmetic type="bool">true</isCosmetic>
+           <color type="QColor">0,0,0,255</color>
+           <isCosmetic type="bool">false</isCosmetic>
            <joinStyle type="int">64</joinStyle>
            <miterLimit type="double">2</miterLimit>
            <style type="int">1</style>
            <width type="int">3</width>
           </pen>
-          <gridVisible type="bool">false</gridVisible>
+          <gridVisible type="bool">true</gridVisible>
           <gridPen type="QPen">
            <brush type="QBrush">
             <color type="QColor">0,0,0,255</color>
@@ -241,18 +246,37 @@
            <style type="int">1</style>
            <width type="int">0</width>
           </gridPen>
-          <labelsRotation type="int">1</labelsRotation>
-          <labelsAngle type="double">0</labelsAngle>
+          <labelsRotation type="int">-392623392</labelsRotation>
+          <labelsAngle type="double">6.90734148784767e-310</labelsAngle>
           <labelsColor type="QColor">0,0,0,255</labelsColor>
-          <labelsFont type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</labelsFont>
+          <labelsFont type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</labelsFont>
           <labelsVisible type="bool">true</labelsVisible>
           <lineVisible type="bool">true</lineVisible>
           <titleVisible type="bool">true</titleVisible>
           <titleColor type="QColor">0,0,0,255</titleColor>
-          <titleFont type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</titleFont>
+          <titleFont type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</titleFont>
           <titleText type="QString"></titleText>
          </properties>
         </ExternalData>
+        <Extended::ItemSelection>
+         <properties>
+          <parent type=""/>
+          <opacity type="double">1</opacity>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <pos type="QPointF">69,66</pos>
+          <x type="double">69</x>
+          <y type="double">66</y>
+          <z type="double">100</z>
+          <rotation type="double">0</rotation>
+          <scale type="double">1</scale>
+          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
+          <effect type=""/>
+          <children type=""/>
+          <width type="double">0</width>
+          <height type="double">0</height>
+         </properties>
+        </Extended::ItemSelection>
        </children>
       </Item>
       <Item moduleName="Standard::Arc" moduleVersion="1" extends="">
@@ -557,39 +581,26 @@
         <color type="QColor">0,0,0,255</color>
         <frameType type="QString">NO_FRAME</frameType>
         <barcodeType type="QString">CODE128</barcodeType>
-        <barcodeBoderWidth type="double">1</barcodeBoderWidth>
-        <whitespaceWidth type="double">0</whitespaceWidth>
-        <primaryMessage type="QString"></primaryMessage>
         <text type="QString">11111</text>
+        <primaryMessage type="QString"></primaryMessage>
+        <testText type="QString">Full support of ASCII text;</testText>
+        <testPrimaryMessage type="QString"></testPrimaryMessage>
+        <option1 type="int">-1</option1>
+        <option2 type="int">-1</option2>
+        <option3 type="int">-1</option3>
+        <textVisible type="bool">true</textVisible>
+        <hFactor type="double">0.35</hFactor>
+        <alignment type="int">36</alignment>
+        <examplePreview type="bool">true</examplePreview>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
        </properties>
-       <children>
-        <ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">117,604</pos>
-          <x type="double">117</x>
-          <y type="double">604</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </ItemSelection>
-       </children>
       </Item>
      </children>
     </Band>
-    <PageGUI>
+    <Extended::PageGUI>
      <properties/>
      <children>
-      <Scene>
+      <Extended::Scene>
        <properties>
         <backgroundBrush type="QBrush">
          <color type="QColor">160,160,164,255</color>
@@ -601,7 +612,7 @@
          <style type="int">0</style>
          <texture type="QPixmap"></texture>
         </foregroundBrush>
-        <sceneRect type="QRectF">0,0,1006,1386</sceneRect>
+        <sceneRect type="QRectF">0,0,1142,1574</sceneRect>
         <bspTreeDepth type="int">5</bspTreeDepth>
         <palette type="QPalette"/>
         <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
@@ -615,12 +626,12 @@
          </properties>
         </QGraphicsSceneBspTreeIndex>
        </children>
-      </Scene>
-      <Magnets>
+      </Extended::Scene>
+      <Extended::Magnets>
        <properties/>
-      </Magnets>
+      </Extended::Magnets>
      </children>
-    </PageGUI>
+    </Extended::PageGUI>
    </children>
   </Page>
   <Dataset moduleName="Standard::CSV" moduleVersion="1" extends="">

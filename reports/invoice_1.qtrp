@@ -6,7 +6,7 @@
   <description type="QString">Simple invoice example</description>
   <script type="QString"></script>
   <version type="int">0</version>
-  <fileUrl type="QString">file:/home/alex/temp/cutereport/git_storage/invoice_1.qtrp</fileUrl>
+  <fileUrl type="QString">git:/reports/invoice_1.qtrp</fileUrl>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
@@ -120,27 +120,6 @@
         <scaleType alternateValue="1" type="QString">ScaleImage</scaleType>
         <center type="bool">true</center>
        </properties>
-       <children>
-        <Extended::ItemSelection>
-         <properties>
-          <parent type=""/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">47,52</pos>
-          <x type="double">47</x>
-          <y type="double">52</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </Extended::ItemSelection>
-       </children>
       </Item>
       <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
@@ -2337,8 +2316,8 @@
      <properties>
       <objectName type="QString">summary_1</objectName>
       <enabled type="bool">true</enabled>
-      <geometry type="QRectF">10,163.557,195,27.2259</geometry>
-      <boundingRect type="QRectF">10,163.557,195,27.2259</boundingRect>
+      <geometry type="QRectF">10,163.557,195,45.4001</geometry>
+      <boundingRect type="QRectF">10,163.557,195,45.4001</boundingRect>
       <frame type="int">0</frame>
       <opacity type="double">1</opacity>
       <rotation type="double">0</rotation>
@@ -2825,8 +2804,8 @@
        <properties>
         <objectName type="QString">memo_53</objectName>
         <enabled type="bool">true</enabled>
-        <geometry type="QRectF">168.284,17.5138,21.7155,7</geometry>
-        <boundingRect type="QRectF">168.284,17.5138,21.7155,7</boundingRect>
+        <geometry type="QRectF">168.285,17.5138,21.7155,7</geometry>
+        <boundingRect type="QRectF">168.285,17.5138,21.7155,7</boundingRect>
         <frame type="int">0</frame>
         <opacity type="double">1</opacity>
         <rotation type="double">0</rotation>
@@ -2865,6 +2844,117 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
        </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memo_54</objectName>
+        <enabled type="bool">true</enabled>
+        <geometry type="QRectF">79.7759,24.5138,110.224,7.56207</geometry>
+        <boundingRect type="QRectF">79.7759,24.5138,110.224,7.56207</boundingRect>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="int">1</width>
+        </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <order type="int">11</order>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <textFlags type="int">4226</textFlags>
+        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">( [moneySpell(order."total", 'USD', "", "m")] )</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <font type="QFont">Arial,10,-1,5,50,0,0,0,0,0</font>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memo_55</objectName>
+        <enabled type="bool">true</enabled>
+        <geometry type="QRectF">79.7769,35.7017,110.224,8</geometry>
+        <boundingRect type="QRectF">79.7769,35.7017,110.224,8</boundingRect>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="int">1</width>
+        </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <order type="int">12</order>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <textFlags type="int">4225</textFlags>
+        <stretchMode alternateValue="0" type="QString">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[moneySpell(123, 'RUR', 'ru', 'm', 2) ]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+       </properties>
+       <children>
+        <Extended::ItemSelection>
+         <properties>
+          <parent type=""/>
+          <opacity type="double">1</opacity>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <pos type="QPointF">411,910</pos>
+          <x type="double">411</x>
+          <y type="double">910</y>
+          <z type="double">100</z>
+          <rotation type="double">0</rotation>
+          <scale type="double">1</scale>
+          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
+          <effect type=""/>
+          <children type=""/>
+          <width type="double">0</width>
+          <height type="double">0</height>
+         </properties>
+        </Extended::ItemSelection>
+       </children>
       </Item>
      </children>
     </Band>

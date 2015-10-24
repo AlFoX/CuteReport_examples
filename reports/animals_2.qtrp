@@ -1,20 +1,19 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <objectName type="QString">Animals_text_flowing_</objectName>
   <name type="QString">Animals (text  flowing)</name>
   <author type="QString">Mikhalov Alexander &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report shows how to make complex text flowing.&lt;newline>Text flowing is supported only by commercial CuteReport version .</description>
   <script type="QString"></script>
   <version type="int">0</version>
-  <fileUrl type="QString">git:reports/animals_2.qtrp</fileUrl>
+  <fileUrl type="QString">file:/home/alex/work/projects/CuteReport/examples/reports/animals_2.qtrp</fileUrl>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
   <variables type="QVariantHash"/>
  </properties>
  <children>
-  <Dataset moduleVersion="1" moduleName="Standard::SQL" extends="">
+  <Dataset moduleName="Standard::SQL" moduleVersion="1" extends="">
    <properties>
     <objectName type="QString">data</objectName>
     <parentDataset type="QString"></parentDataset>
@@ -29,17 +28,13 @@
    </properties>
    <children>
     <QSqlQueryModel>
-     <properties>
-      <objectName type="QString"></objectName>
-     </properties>
+     <properties/>
     </QSqlQueryModel>
     <QSortFilterProxyModel>
      <properties>
-      <objectName type="QString"></objectName>
-      <sourceModel type="QAbstractItemModel*"/>
       <filterRegExp type="QRegExp"/>
       <filterKeyColumn type="int">0</filterKeyColumn>
-      <dynamicSortFilter type="bool">true</dynamicSortFilter>
+      <dynamicSortFilter type="bool">false</dynamicSortFilter>
       <filterCaseSensitivity type="Qt::CaseSensitivity"/>
       <sortCaseSensitivity type="Qt::CaseSensitivity"/>
       <isSortLocaleAware type="bool">false</isSortLocaleAware>
@@ -49,7 +44,7 @@
     </QSortFilterProxyModel>
    </children>
   </Dataset>
-  <Page moduleVersion="1" moduleName="Extended::Page" extends="Standard::Page">
+  <Page moduleName="Extended::Page" moduleVersion="1" extends="Standard::Page">
    <properties>
     <objectName type="QString">page</objectName>
     <orientation type="int">0</orientation>
@@ -59,13 +54,18 @@
     <dpi type="int">101</dpi>
     <columns type="int">1</columns>
     <fillDirection type="int">1</fillDirection>
+    <background type="QColor">255,255,255,255</background>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
     <marginLeft type="double">10</marginLeft>
     <marginTop type="double">10</marginTop>
     <marginRight type="double">10</marginRight>
     <marginBottom type="double">10</marginBottom>
-    <background type="QColor">255,255,255,255</background>
-    <order type="int">0</order>
-    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <allowMirrorMargins type="bool">true</allowMirrorMargins>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
     <useGrid type="bool">true</useGrid>
     <gridStep type="double">0.5</gridStep>
     <magnetValue type="int">15</magnetValue>
@@ -73,7 +73,7 @@
     <gridSteps type="QString">0=0.5</gridSteps>
    </properties>
    <children>
-    <Band layoutPriority="50" moduleVersion="1" moduleName="Standard::Detail" layoutType="1" extends="">
+    <Band layoutType="1" moduleName="Standard::Detail" moduleVersion="1" extends="" layoutPriority="50">
      <properties>
       <objectName type="QString">detail</objectName>
       <enabled type="bool">true</enabled>
@@ -117,7 +117,7 @@
       <forceNewPage type="bool">false</forceNewPage>
      </properties>
      <children>
-      <Item moduleVersion="1" moduleName="Standard::Image" extends="">
+      <Item moduleName="Standard::Image" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">image</objectName>
         <enabled type="bool">true</enabled>
@@ -156,7 +156,7 @@
         <center type="bool">true</center>
        </properties>
       </Item>
-      <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
         <objectName type="QString">memo_2</objectName>
         <enabled type="bool">true</enabled>
@@ -200,30 +200,8 @@
         <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString">memo_1</flowTo>
        </properties>
-       <children>
-        <Extended::ItemSelection>
-         <properties>
-          <objectName type="QString"></objectName>
-          <parent type="QGraphicsObject*"/>
-          <opacity type="double">1</opacity>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <pos type="QPointF">40,108</pos>
-          <x type="double">40</x>
-          <y type="double">108</y>
-          <z type="double">100</z>
-          <rotation type="double">0</rotation>
-          <scale type="double">1</scale>
-          <transformOriginPoint type="QPointF">0,0</transformOriginPoint>
-          <effect type=""/>
-          <children type=""/>
-          <width type="double">0</width>
-          <height type="double">0</height>
-         </properties>
-        </Extended::ItemSelection>
-       </children>
       </Item>
-      <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
         <objectName type="QString">memo_3</objectName>
         <enabled type="bool">true</enabled>
@@ -268,7 +246,7 @@
         <flowTo type="QString">memo_2</flowTo>
        </properties>
       </Item>
-      <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
        <properties>
         <objectName type="QString">memo_1</objectName>
         <enabled type="bool">true</enabled>
@@ -313,7 +291,7 @@
         <flowTo type="QString"></flowTo>
        </properties>
       </Item>
-      <Item moduleVersion="1" moduleName="Standard::Ellipse" extends="">
+      <Item moduleName="Standard::Ellipse" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">ellipse</objectName>
         <enabled type="bool">true</enabled>
@@ -365,7 +343,7 @@
         </brush>
        </properties>
        <children>
-        <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+        <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
          <properties>
           <objectName type="QString">memo_title</objectName>
           <enabled type="bool">true</enabled>
@@ -412,7 +390,7 @@
         </Item>
        </children>
       </Item>
-      <Item moduleVersion="1" moduleName="Standard::Ellipse" extends="">
+      <Item moduleName="Standard::Ellipse" moduleVersion="1" extends="">
        <properties>
         <objectName type="QString">ellipse_1</objectName>
         <enabled type="bool">true</enabled>
@@ -467,13 +445,10 @@
      </children>
     </Band>
     <Extended::PageGUI>
-     <properties>
-      <objectName type="QString"></objectName>
-     </properties>
+     <properties/>
      <children>
       <Extended::Scene>
        <properties>
-        <objectName type="QString"></objectName>
         <backgroundBrush type="QBrush">
          <color type="QColor">160,160,164,255</color>
          <style type="int">1</style>
@@ -487,30 +462,26 @@
         <sceneRect type="QRectF">0,0,935,1190</sceneRect>
         <bspTreeDepth type="int">5</bspTreeDepth>
         <palette type="QPalette"/>
-        <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+        <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
         <sortCacheEnabled type="bool">false</sortCacheEnabled>
         <stickyFocus type="bool">true</stickyFocus>
-        <minimumRenderSize type="double">0</minimumRenderSize>
        </properties>
        <children>
         <QGraphicsSceneBspTreeIndex>
          <properties>
-          <objectName type="QString"></objectName>
           <bspTreeDepth type="int">5</bspTreeDepth>
          </properties>
         </QGraphicsSceneBspTreeIndex>
        </children>
       </Extended::Scene>
       <Extended::Magnets>
-       <properties>
-        <objectName type="QString"></objectName>
-       </properties>
+       <properties/>
       </Extended::Magnets>
      </children>
     </Extended::PageGUI>
    </children>
   </Page>
-  <Storage moduleVersion="1" moduleName="Standard::Resource" extends="">
+  <Storage moduleName="Standard::Resource" moduleVersion="1" extends="">
    <properties>
     <objectName type="QString">res</objectName>
     <localPath type="QString"></localPath>
