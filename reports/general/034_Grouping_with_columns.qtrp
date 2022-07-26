@@ -1,0 +1,1139 @@
+<!DOCTYPE CuteReport>
+<Report>
+ <properties>
+  <name type="QString">Page with columns</name>
+  <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">Demonstrates ability of CuteReport to print some columns on a page and to fill columns out in 2 diffrent ways:&lt;newline>1) fill fout irst column from top to bottom and then switch to next column (vertical filling)&lt;newline>2) fill out first column with 1 detail, then fill out second column with one detail, then go back to the first column and so on (horizontal filling)&lt;newline>&lt;newline>This report shows horizontal filling as more complicated one.</description>
+  <script type="QString"></script>
+  <version type="double">2</version>
+  <created type="QDateTime">2017-06-24T15:23:19</created>
+  <updated type="QDateTime">2017-06-24T15:26:29</updated>
+  <picture type="QPixmap"></picture>
+  <generatePicture type="bool">true</generatePicture>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
+  <variables type="QVariantHash"/>
+  <customData type="QVariantHash"/>
+  <inheritanceData type="QVariantHash"/>
+ </properties>
+ <children>
+  <Page moduleName="Extended::Page" moduleVersion="1" extends="Standard::Page">
+   <properties>
+    <objectName type="QString">page</objectName>
+    <visible type="bool">true</visible>
+    <orientation type="int">0</orientation>
+    <format type="QString">A4</format>
+    <paperSize type="QSizeF">210,297</paperSize>
+    <duplex type="int">1</duplex>
+    <unit type="QString">Millimeter</unit>
+    <dpi type="int">106</dpi>
+    <columns type="int">2</columns>
+    <columnFillDirection type="int">1</columnFillDirection>
+    <backgroundBrush type="QBrush">
+     <color type="QColor">255,255,255,255</color>
+     <style type="int">1</style>
+     <texture type="QPixmap"></texture>
+    </backgroundBrush>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+    <dataset type="QString"></dataset>
+    <quantity type="int">1</quantity>
+    <marginLeft type="double">10</marginLeft>
+    <marginTop type="double">10</marginTop>
+    <marginRight type="double">10</marginRight>
+    <marginBottom type="double">10</marginBottom>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <allowMirrorMargins type="bool">true</allowMirrorMargins>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
+    <pageFlags type="int">0</pageFlags>
+    <outlineText type="QString"></outlineText>
+    <backPicture type="QPixmap"></backPicture>
+    <backPictureFlags type="int">23</backPictureFlags>
+    <stretchDesignHeight type="bool">false</stretchDesignHeight>
+    <useGrid type="bool">true</useGrid>
+    <gridStep type="double">0.20000000298023224</gridStep>
+    <magnetValue type="int">7</magnetValue>
+    <magnetRate type="int">6</magnetRate>
+    <gridSteps type="QString">0=0.2|7=1</gridSteps>
+    <resetPageNumber type="bool">false</resetPageNumber>
+    <printIfEmpty type="bool">true</printIfEmpty>
+   </properties>
+   <children>
+    <Band layoutType="1" layoutPriority="50" moduleName="Standard::Detail" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">detail</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,51,95,8</geometry>
+      <frame type="int">3</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">true</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">0.10000000000000001</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">0</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">1</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <dataset type="QString">data</dataset>
+      <zebra type="bool">false</zebra>
+      <alternateBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">0</style>
+       <texture type="QPixmap"></texture>
+      </alternateBrush>
+      <forceNewPage type="bool">false</forceNewPage>
+      <allowSplit type="bool">false</allowSplit>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_1</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">17,7.59959e-07,58.4,8</geometry>
+        <frame type="int">2</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">195,195,195,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">195,195,195,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.5</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,13,-1,5,50,1,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">3969</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[data."title"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_2</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">75.4,7.59959e-07,13.6,8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.5</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,13,-1,5,50,1,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">133</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[data."length"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_10</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">5.2,0,11.8,8</geometry>
+        <frame type="int">2</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">220,220,220,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">220,220,220,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.5</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,13,-1,5,50,1,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">129</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[LINE]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Standard::Ellipse" moduleVersion="1" extends="">
+       <properties>
+        <objectName type="QString">ellipse</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">2.8,2.6,2,2</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">0</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">220,220,220,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Noto Sans,11,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">1</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <pen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">0</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </pen>
+        <brush type="QBrush">
+         <color type="QColor">220,220,220,255</color>
+         <style type="int">1</style>
+         <texture type="QPixmap"></texture>
+        </brush>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutType="1" layoutPriority="100" moduleName="Standard::Page Header" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">pageheader</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,10,190,20</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">0</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">false</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">10</miterLimit>
+       <style type="int">1</style>
+       <width type="double">3</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="1">Inner</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">15</style>
+       <texture type="QPixmap"></texture>
+       <gradient>
+        <spread type="int">0</spread>
+        <coordinateMode type="int">2</coordinateMode>
+        <type type="int">0</type>
+        <start type="QPointF">0,0</start>
+        <final type="QPointF">0,1</final>
+        <stops>
+         <stop>
+          <point type="double">0</point>
+          <color type="QColor">223,223,223,255</color>
+         </stop>
+         <stop>
+          <point type="double">0.40000000000000002</point>
+          <color type="QColor">216,216,216,255</color>
+         </stop>
+         <stop>
+          <point type="double">0.59999999999999998</point>
+          <color type="QColor">181,181,181,255</color>
+         </stop>
+         <stop>
+          <point type="double">1</point>
+          <color type="QColor">158,158,158,255</color>
+         </stop>
+        </stops>
+       </gradient>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">0</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <firstPage type="bool">true</firstPage>
+      <once type="bool">false</once>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">5.2,3,178.8,13.2</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,30,-1,5,75,1,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">132</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">Music store collection</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutType="1" layoutPriority="75" moduleName="Standard::Title" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">title</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,30,190,10</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">true</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">0</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">220,220,220,255</color>
+       <style type="int">1</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">1</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_4</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">16.4,1.5,54.4,8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,15,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">132</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">Title</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_5</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">70.8,1.5,24.2,8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,15,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">132</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">lenght</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_6</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">163.2,1.2,24.2,8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,15,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">1</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">132</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">lenght</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_7</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">108.8,1.2,54.4,8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,15,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">2</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">132</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">Title</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Standard::Line" moduleVersion="1" extends="">
+       <properties>
+        <objectName type="QString">line</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">95.4,2.8,0,5</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.29999999999999999</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Noto Sans,11,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">3</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <linePen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.29999999999999999</width>
+        </linePen>
+        <lineStyle type="QString" alternateValue="0">Vertical</lineStyle>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutType="2" layoutPriority="100" moduleName="Standard::Page Footer" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">pagefooter</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,281,190,6</geometry>
+      <frame type="int">15</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">171,171,171,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">171,171,171,255</color>
+       <isCosmetic type="bool">true</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">0</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">232,232,232,255</color>
+       <style type="int">1</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">0</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <firstPage type="bool">true</firstPage>
+      <lastPage type="bool">true</lastPage>
+      <once type="bool">false</once>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_pageNumber</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">148.171,0,37.8,6</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,10,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">130</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">page [PAGE]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_8</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">25.8,0,69.6,5.8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,10,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">129</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">my music collection</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutType="1" layoutPriority="50" moduleName="Standard::Detail Header" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">detailheader</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,40,190,11</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">true</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">0</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">15</style>
+       <texture type="QPixmap"></texture>
+       <gradient>
+        <spread type="int">0</spread>
+        <coordinateMode type="int">2</coordinateMode>
+        <type type="int">0</type>
+        <start type="QPointF">0,0</start>
+        <final type="QPointF">0,1</final>
+        <stops>
+         <stop>
+          <point type="double">0</point>
+          <color type="QColor">255,241,214,255</color>
+         </stop>
+         <stop>
+          <point type="double">0.40000000000000002</point>
+          <color type="QColor">255,222,191,255</color>
+         </stop>
+         <stop>
+          <point type="double">0.59999999999999998</point>
+          <color type="QColor">255,197,138,255</color>
+         </stop>
+         <stop>
+          <point type="double">1</point>
+          <color type="QColor">255,160,100,255</color>
+         </stop>
+        </stops>
+       </gradient>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">0</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <dataset type="QString">data</dataset>
+      <condition type="QString">[data."artistname"]</condition>
+      <reprintOnNewPage type="bool">true</reprintOnNewPage>
+      <startNewPage type="bool">false</startNewPage>
+      <resetDetailNumber type="bool">true</resetDetailNumber>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_9</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">1.49012e-07,-0.799999,95,11.8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,17,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">129</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[data."artistname"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutType="1" layoutPriority="50" moduleName="Standard::Detail Footer" moduleVersion="1" extends="">
+     <properties>
+      <objectName type="QString">detailfooter</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,59,190,12.6</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">true</isCosmetic>
+       <joinStyle type="int">64</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">0</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">228,228,228,255</color>
+       <style type="int">1</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">2</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <dataset type="QString">data</dataset>
+      <condition type="QString">[data."artistname"]</condition>
+     </properties>
+     <children>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_11</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">1.22353,0,101.376,5.8</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,10,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">129</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">[data."artistname"]  statistics: </text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+      <Item moduleName="Extended::Memo" moduleVersion="1" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memoitem_14</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">18.8,5.8,168.6,6</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">true</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,10,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">129</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">tracks: [count(data)]   min: [min(data."length")] sec     max: [max(data."length")] sec    avg: [avg(data."length") #n%2?2f] sec    Total length: [sum(data."length") / 60] minute(s)</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+   </children>
+  </Page>
+  <Dataset moduleName="Standard::SQL" moduleVersion="1" extends="">
+   <properties>
+    <objectName type="QString">data</objectName>
+    <parentDataset type="QString"></parentDataset>
+    <filterConditions type="QStringList"/>
+    <filterColumns type="QStringList"/>
+    <testingFor type="QString"></testingFor>
+    <datasetFlags type="int">0</datasetFlags>
+    <connectionType type="int">0</connectionType>
+    <connectionName type="QString"></connectionName>
+    <query type="QString">select artist.name as artistname, title,  artist.photo as artistphoto, album.name as albumname, year, length as length, genre, album.photo as albumphoto &lt;newline>from song&lt;newline>left join album on song.album = album.id&lt;newline>left join artist on song.artist = artist.id&lt;newline>order by artistname, albumname </query>
+    <dbhost type="QString"></dbhost>
+    <dbname type="QString">file:[_DEMOPATH]/datasets/music.db</dbname>
+    <dbuser type="QString"></dbuser>
+    <dbpasswd type="QString"></dbpasswd>
+    <driver type="QString">QSQLITE</driver>
+    <options type="QString"></options>
+   </properties>
+  </Dataset>
+ </children>
+</Report>
