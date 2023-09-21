@@ -1,0 +1,491 @@
+<!DOCTYPE CuteReport>
+<Report>
+ <properties>
+  <name type="QString">Charts</name>
+  <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">This example demonstrates ability of Cutereport to build Chart based on static data or dataset data.&lt;newline>Axes are created automatically and pretty numbers for axis scale assigned.</description>
+  <script type="QString"></script>
+  <version type="double">2</version>
+  <created type="QDateTime">2017-06-25T23:31:27</created>
+  <updated type="QDateTime">2017-06-25T23:31:27</updated>
+  <picture type="QPixmap"></picture>
+  <generatePicture type="bool">false</generatePicture>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
+  <variables type="QVariantHash"/>
+  <customData type="QVariantHash"/>
+  <inheritanceData type="QVariantHash"/>
+ </properties>
+ <children>
+  <Page moduleVersion="1" extends="Standard::Page" moduleName="Extended::Page">
+   <properties>
+    <objectName type="QString">page</objectName>
+    <visible type="bool">true</visible>
+    <orientation type="int">0</orientation>
+    <format type="QString">Letter</format>
+    <paperSize type="QSizeF">215,279</paperSize>
+    <duplex type="int">1</duplex>
+    <unit type="QString">Millimeter</unit>
+    <dpi type="int">116</dpi>
+    <columns type="int">1</columns>
+    <columnFillDirection type="int">1</columnFillDirection>
+    <backgroundBrush type="QBrush">
+     <color type="QColor">255,255,255,255</color>
+     <style type="int">1</style>
+     <texture type="QPixmap"></texture>
+    </backgroundBrush>
+    <order type="int">0</order>
+    <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+    <dataset type="QString"></dataset>
+    <quantity type="int">1</quantity>
+    <marginLeft type="double">10</marginLeft>
+    <marginTop type="double">10</marginTop>
+    <marginRight type="double">10</marginRight>
+    <marginBottom type="double">10</marginBottom>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <allowMirrorMargins type="bool">true</allowMirrorMargins>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
+    <pageFlags type="int">0</pageFlags>
+    <outlineText type="QString"></outlineText>
+    <backPicture type="QPixmap"></backPicture>
+    <backPictureFlags type="int">23</backPictureFlags>
+    <stretchDesignHeight type="bool">false</stretchDesignHeight>
+    <useGrid type="bool">false</useGrid>
+    <gridStep type="double">2</gridStep>
+    <magnetValue type="int">0</magnetValue>
+    <magnetRate type="int">6</magnetRate>
+    <gridSteps type="QString">0=2</gridSteps>
+    <resetPageNumber type="bool">false</resetPageNumber>
+    <printIfEmpty type="bool">true</printIfEmpty>
+   </properties>
+   <children>
+    <Band moduleVersion="1" extends="" layoutPriority="100" layoutType="1" moduleName="Standard::Page Header">
+     <properties>
+      <objectName type="QString">page header</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,10,195,251.246</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">false</isCosmetic>
+       <joinStyle type="int">0</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">1</width>
+      </borderPen>
+      <borderType alternateValue="0" type="QString">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">0</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Ubuntu,11,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">0</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <firstPage type="bool">true</firstPage>
+      <once type="bool">false</once>
+     </properties>
+     <children>
+      <Item moduleVersion="1" extends="" moduleName="Extended::Chart">
+       <properties>
+        <objectName type="QString">chart</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">4.06454,4.83805,181.819,101.149</geometry>
+        <frame type="int">15</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">195,195,195,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">195,195,195,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.29999999999999999</width>
+        </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Noto Sans,11,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">0</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <backgroundPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </backgroundPen>
+        <backgroundRoundness type="double">9.6513470975742476e-317</backgroundRoundness>
+        <plotAreaBackgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </plotAreaBackgroundBrush>
+        <plotAreaBackgroundPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </plotAreaBackgroundPen>
+        <margins type="CuteReport::Margins">10,10,10,10</margins>
+        <title type="QString">Static Chart</title>
+        <titleBrush type="QBrush">
+         <color type="QColor">88,88,88,255</color>
+         <style type="int">1</style>
+         <texture type="QPixmap"></texture>
+        </titleBrush>
+        <titlePen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">0</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </titlePen>
+        <titleFont type="QFont">Trebuchet MS,14,-1,5,75,0,0,0,0,0</titleFont>
+        <backgroundVisible type="bool">false</backgroundVisible>
+        <axisLabelRotation type="int">0</axisLabelRotation>
+        <axisLabelAngle type="double">0</axisLabelAngle>
+       </properties>
+       <children>
+        <ExternalData type="Data" name="Data1">
+         <properties>
+          <objectName type="QString">Data1</objectName>
+          <sourceType type="int">1</sourceType>
+          <dataset type="QString"></dataset>
+          <dataDirection type="int">0</dataDirection>
+          <firstRowIsHeader type="bool">false</firstRowIsHeader>
+          <topNValues type="int">0</topNValues>
+          <data type="QVariantList">
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">set1</value>
+            </key>
+            <key name="10">
+             <value type="QString"></value>
+            </key>
+            <key name="11">
+             <value type="QString"></value>
+            </key>
+            <key name="23">
+             <value type="QString"></value>
+            </key>
+           </item>
+          </data>
+          <staticData type="QVariantList">
+           <item type="QVariantHash"/>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">test</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">-93;28;-30;40</value>
+            </key>
+            <key name="23">
+             <value type="QString">orange</value>
+            </key>
+           </item>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">New Set</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">30;-51;-32;45</value>
+            </key>
+            <key name="23">
+             <value type="QString">blue</value>
+            </key>
+           </item>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">New Set</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">33;-55;-30;41</value>
+            </key>
+            <key name="23">
+             <value type="QString">green</value>
+            </key>
+           </item>
+          </staticData>
+         </properties>
+        </ExternalData>
+        <ExternalData type="Serie" name="Serie1">
+         <properties>
+          <objectName type="QString">Serie1</objectName>
+          <serieType type="int">0</serieType>
+          <labelPosition type="int">4</labelPosition>
+          <labelRotation type="int">1</labelRotation>
+          <labelAngle type="double">45</labelAngle>
+         </properties>
+        </ExternalData>
+       </children>
+      </Item>
+      <Item moduleVersion="1" extends="" moduleName="Extended::Chart">
+       <properties>
+        <objectName type="QString">chart_1</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">4.0431,114.65,181.819,101.149</geometry>
+        <frame type="int">15</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">195,195,195,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">195,195,195,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">0.29999999999999999</width>
+        </borderPen>
+        <borderType alternateValue="0" type="QString">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Noto Sans,11,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">1</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode alternateValue="0" type="QString">AlwaysShift</shiftMode>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <backgroundPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </backgroundPen>
+        <backgroundRoundness type="double">9.6513470975742476e-317</backgroundRoundness>
+        <plotAreaBackgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </plotAreaBackgroundBrush>
+        <plotAreaBackgroundPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </plotAreaBackgroundPen>
+        <margins type="CuteReport::Margins">10,10,10,10</margins>
+        <title type="QString">Sales Report</title>
+        <titleBrush type="QBrush">
+         <color type="QColor">88,88,88,255</color>
+         <style type="int">1</style>
+         <texture type="QPixmap"></texture>
+        </titleBrush>
+        <titlePen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">0</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">64</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </titlePen>
+        <titleFont type="QFont">Trebuchet MS,14,-1,5,75,0,0,0,0,0</titleFont>
+        <backgroundVisible type="bool">false</backgroundVisible>
+        <axisLabelRotation type="int">0</axisLabelRotation>
+        <axisLabelAngle type="double">0</axisLabelAngle>
+       </properties>
+       <children>
+        <ExternalData type="Data" name="Data1">
+         <properties>
+          <objectName type="QString">Data1</objectName>
+          <sourceType type="int">1</sourceType>
+          <dataset type="QString">data2</dataset>
+          <dataDirection type="int">0</dataDirection>
+          <firstRowIsHeader type="bool">false</firstRowIsHeader>
+          <topNValues type="int">0</topNValues>
+          <data type="QVariantList">
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">set1</value>
+            </key>
+            <key name="10">
+             <value type="QString">[data2."name"]</value>
+            </key>
+            <key name="11">
+             <value type="QString">[data2."quantity"]</value>
+            </key>
+            <key name="23">
+             <value type="QString">royalblue</value>
+            </key>
+           </item>
+          </data>
+          <staticData type="QVariantList">
+           <item type="QVariantHash"/>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">test</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">-93;28;-30;40</value>
+            </key>
+            <key name="23">
+             <value type="QString">orange</value>
+            </key>
+           </item>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">New Set</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">30;-51;-32;45</value>
+            </key>
+            <key name="23">
+             <value type="QString">blue</value>
+            </key>
+           </item>
+           <item type="QVariantHash">
+            <key name="1">
+             <value type="QString">New Set</value>
+            </key>
+            <key name="10">
+             <value type="QString">item1;item2;item3;item4</value>
+            </key>
+            <key name="11">
+             <value type="QString">33;-55;-30;41</value>
+            </key>
+            <key name="23">
+             <value type="QString">green</value>
+            </key>
+           </item>
+          </staticData>
+         </properties>
+        </ExternalData>
+        <ExternalData type="Serie" name="Serie1">
+         <properties>
+          <objectName type="QString">Serie1</objectName>
+          <serieType type="int">0</serieType>
+          <labelPosition type="int">4</labelPosition>
+          <labelRotation type="int">1</labelRotation>
+          <labelAngle type="double">45</labelAngle>
+         </properties>
+        </ExternalData>
+       </children>
+      </Item>
+     </children>
+    </Band>
+   </children>
+  </Page>
+  <Dataset moduleVersion="1" extends="" moduleName="Standard::SQL">
+   <properties>
+    <objectName type="QString">data2</objectName>
+    <parentDataset type="QString"></parentDataset>
+    <filterConditions type="QStringList"/>
+    <filterColumns type="QStringList"/>
+    <testingFor type="QString"></testingFor>
+    <datasetFlags type="int">0</datasetFlags>
+    <connectionType type="int">0</connectionType>
+    <connectionName type="QString"></connectionName>
+    <query type="QString">select p.firstname  || ' ' || p.lastname as name, year, sum(r.quantity ) as quantity&lt;newline>from sale_person p &lt;newline>left join sale_report r on p.id = r.sale_person_id&lt;newline>where r.quantity is not null&lt;newline>group by name, year&lt;newline>order by name, year&lt;newline></query>
+    <dbhost type="QString"></dbhost>
+    <dbname type="QString">file:[_DEMOPATH]/datasets/business.db</dbname>
+    <dbuser type="QString"></dbuser>
+    <dbpasswd type="QString"></dbpasswd>
+    <driver type="QString">QSQLITE</driver>
+    <options type="QString"></options>
+   </properties>
+  </Dataset>
+ </children>
+</Report>

@@ -1,0 +1,336 @@
+<!DOCTYPE CuteReport>
+<Report>
+ <properties>
+  <name type="QString">Plural spell</name>
+  <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">Demonstrates functionality of the Spellout module to spell word depending of its plurality.</description>
+  <script type="QString">var reportDefaultLang = ${tr};&lt;newline>var translator_codes = Engine.reportData('translator_codes');&lt;newline>var translator_languages = Engine.reportData('translator_languages');&lt;newline>&lt;newline>form.languages.addItem('Default');&lt;newline>form.languages.addItems(translator_languages);&lt;newline>&lt;newline>if (form.exec()) {&lt;newline>    var index = form.languages.currentIndex;&lt;newline>    var newLang = translator_codes[index - 1];&lt;newline>    ${tr} = newLang;&lt;newline>&lt;newline>    var apples = form.apples.value;&lt;newline>    var oranges = form.oranges.value;&lt;newline>    var bananas = form.bananas.value;&lt;newline>&lt;newline>    Engine.run();&lt;newline>}</script>
+  <version type="double">2</version>
+  <created type="QDateTime">2017-06-26T00:28:48</created>
+  <updated type="QDateTime">2017-06-28T20:31:15</updated>
+  <picture type="QPixmap"></picture>
+  <generatePicture type="bool">false</generatePicture>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
+  <variables type="QVariantHash">
+   <key name="tr">
+    <value type="QVariantHash">
+     <key name="modules">
+      <value type="QStringList">
+       <string type="QString">Translator</string>
+       <string type="QString"></string>
+      </value>
+     </key>
+     <key name="value">
+      <value type=""/>
+     </key>
+    </value>
+   </key>
+  </variables>
+  <customData type="QVariantHash">
+   <key name="moduleVariables">
+    <value type="QStringList">
+     <string type="QString">tr</string>
+    </value>
+   </key>
+   <key name="translator">
+    <value type="QVariantHash">
+     <key name="items">
+      <value type="QVariantHash">
+       <key name="">
+        <value type="QVariantHash">
+         <key name="data">
+          <value type="QVariantHash">
+           <key name="-1">
+            <value type="QVariantHash">
+             <key name="isHTML">
+              <value type="bool">false</value>
+             </key>
+             <key name="tr">
+              <value type="QVariantHash">
+               <key name="ru">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+               <key name="uk">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+              </value>
+             </key>
+            </value>
+           </key>
+           <key name="0">
+            <value type="QVariantHash">
+             <key name="isHTML">
+              <value type="bool">false</value>
+             </key>
+             <key name="tr">
+              <value type="QVariantHash">
+               <key name="ru">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+               <key name="uk">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+              </value>
+             </key>
+            </value>
+           </key>
+          </value>
+         </key>
+         <key name="ids">
+          <value type="QVariantHash">
+           <key name="You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&#xa;You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&#xa;You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]">
+            <value type="int">0</value>
+           </key>
+          </value>
+         </key>
+        </value>
+       </key>
+       <key name="memo">
+        <value type="QVariantHash">
+         <key name="data">
+          <value type="QVariantHash">
+           <key name="0">
+            <value type="QVariantHash">
+             <key name="isHTML">
+              <value type="bool">false</value>
+             </key>
+             <key name="tr">
+              <value type="QVariantHash">
+               <key name="ru">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+               <key name="uk">
+                <value type="QVariantHash">
+                 <key name="actual">
+                  <value type="bool">true</value>
+                 </key>
+                 <key name="str">
+                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
+                 </key>
+                </value>
+               </key>
+              </value>
+             </key>
+            </value>
+           </key>
+          </value>
+         </key>
+         <key name="ids">
+          <value type="QVariantHash">
+           <key name="You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&#xa;You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&#xa;You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]">
+            <value type="int">0</value>
+           </key>
+          </value>
+         </key>
+        </value>
+       </key>
+      </value>
+     </key>
+     <key name="langs">
+      <value type="QStringList">
+       <string type="QString">uk</string>
+       <string type="QString">ru</string>
+      </value>
+     </key>
+    </value>
+   </key>
+   <key name="translator_codes">
+    <value type="QStringList">
+     <string type="QString">en</string>
+     <string type="QString">uk</string>
+     <string type="QString">ru</string>
+    </value>
+   </key>
+   <key name="translator_languages">
+    <value type="QStringList">
+     <string type="QString">en - English (American English)</string>
+     <string type="QString">uk - Ukrainian (українська)</string>
+     <string type="QString">ru - Russian (русский)</string>
+    </value>
+   </key>
+  </customData>
+  <inheritanceData type="QVariantHash"/>
+ </properties>
+ <children>
+  <Page moduleVersion="1" moduleName="Extended::Page" extends="Standard::Page">
+   <properties>
+    <objectName type="QString">page</objectName>
+    <visible type="bool">true</visible>
+    <orientation type="int">0</orientation>
+    <format type="QString">A4</format>
+    <paperSize type="QSizeF">210,297</paperSize>
+    <duplex type="int">1</duplex>
+    <unit type="QString">Millimeter</unit>
+    <dpi type="int">131</dpi>
+    <columns type="int">1</columns>
+    <columnFillDirection type="int">1</columnFillDirection>
+    <backgroundBrush type="QBrush">
+     <color type="QColor">255,255,255,255</color>
+     <style type="int">1</style>
+     <texture type="QPixmap"></texture>
+    </backgroundBrush>
+    <order type="int">0</order>
+    <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
+    <dataset type="QString"></dataset>
+    <quantity type="int">1</quantity>
+    <marginLeft type="double">10</marginLeft>
+    <marginTop type="double">10</marginTop>
+    <marginRight type="double">10</marginRight>
+    <marginBottom type="double">10</marginBottom>
+    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <allowMirrorMargins type="bool">true</allowMirrorMargins>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
+    <pageFlags type="int">0</pageFlags>
+    <outlineText type="QString"></outlineText>
+    <backPicture type="QPixmap"></backPicture>
+    <backPictureFlags type="int">23</backPictureFlags>
+    <stretchDesignHeight type="bool">false</stretchDesignHeight>
+    <useGrid type="bool">true</useGrid>
+    <gridStep type="double">2</gridStep>
+    <magnetValue type="int">0</magnetValue>
+    <magnetRate type="int">6</magnetRate>
+    <gridSteps type="QString">0=2</gridSteps>
+    <resetPageNumber type="bool">false</resetPageNumber>
+    <printIfEmpty type="bool">true</printIfEmpty>
+   </properties>
+   <children>
+    <Band moduleVersion="1" layoutPriority="100" moduleName="Standard::Page Header" extends="" layoutType="1">
+     <properties>
+      <objectName type="QString">page header</objectName>
+      <visible type="bool">true</visible>
+      <geometry type="QRectF">10,10,190,54</geometry>
+      <frame type="int">0</frame>
+      <opacity type="double">1</opacity>
+      <rotation type="double">0</rotation>
+      <borderPen type="QPen">
+       <brush type="QBrush">
+        <color type="QColor">0,0,0,255</color>
+        <style type="int">1</style>
+        <texture type="QPixmap"></texture>
+       </brush>
+       <capStyle type="int">16</capStyle>
+       <color type="QColor">0,0,0,255</color>
+       <isCosmetic type="bool">false</isCosmetic>
+       <joinStyle type="int">0</joinStyle>
+       <miterLimit type="double">2</miterLimit>
+       <style type="int">1</style>
+       <width type="double">1</width>
+      </borderPen>
+      <borderType type="QString" alternateValue="0">Middle</borderType>
+      <backgroundBrush type="QBrush">
+       <color type="QColor">0,0,0,255</color>
+       <style type="int">0</style>
+       <texture type="QPixmap"></texture>
+      </backgroundBrush>
+      <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
+      <parentFont type="bool">false</parentFont>
+      <order type="int">0</order>
+      <baseItemFlags type="int">0</baseItemFlags>
+      <outlineText type="QString"></outlineText>
+      <stretchable type="bool">false</stretchable>
+      <showStretchability type="bool">false</showStretchability>
+      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <firstPage type="bool">true</firstPage>
+      <once type="bool">false</once>
+     </properties>
+     <children>
+      <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+       <properties>
+        <objectName type="QString">memo</objectName>
+        <visible type="bool">true</visible>
+        <geometry type="QRectF">2,4,180,46</geometry>
+        <frame type="int">0</frame>
+        <opacity type="double">1</opacity>
+        <rotation type="double">0</rotation>
+        <borderPen type="QPen">
+         <brush type="QBrush">
+          <color type="QColor">0,0,0,255</color>
+          <style type="int">1</style>
+          <texture type="QPixmap"></texture>
+         </brush>
+         <capStyle type="int">16</capStyle>
+         <color type="QColor">0,0,0,255</color>
+         <isCosmetic type="bool">false</isCosmetic>
+         <joinStyle type="int">0</joinStyle>
+         <miterLimit type="double">2</miterLimit>
+         <style type="int">1</style>
+         <width type="double">1</width>
+        </borderPen>
+        <borderType type="QString" alternateValue="0">Middle</borderType>
+        <backgroundBrush type="QBrush">
+         <color type="QColor">0,0,0,255</color>
+         <style type="int">0</style>
+         <texture type="QPixmap"></texture>
+        </backgroundBrush>
+        <font type="QFont">Arial,14.5,-1,5,50,0,0,0,0,0</font>
+        <parentFont type="bool">false</parentFont>
+        <order type="int">1</order>
+        <baseItemFlags type="int">0</baseItemFlags>
+        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
+        <textFlags type="int">4225</textFlags>
+        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <allowHTML type="bool">false</allowHTML>
+        <allowExpressions type="bool">true</allowExpressions>
+        <text type="QString">You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&lt;newline>You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&lt;newline>You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textMargin type="QPointF">1,0</textMargin>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <stretchFont type="bool">false</stretchFont>
+        <expDelimiters type="QString">[ , ]</expDelimiters>
+        <flowTo type="QString"></flowTo>
+        <allowSplit type="bool">false</allowSplit>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+   </children>
+  </Page>
+  <Form moduleVersion="1" moduleName="Extended::Form" extends="">
+   <properties>
+    <objectName type="QString">form</objectName>
+    <data type="QString">&lt;?xml version="1.0" encoding="UTF-8"?>&lt;newline>&lt;ui version="4.0">&lt;newline> &lt;class>form&lt;/class>&lt;newline> &lt;widget class="QDialog" name="form">&lt;newline>  &lt;property name="geometry">&lt;newline>   &lt;rect>&lt;newline>    &lt;x>0&lt;/x>&lt;newline>    &lt;y>0&lt;/y>&lt;newline>    &lt;width>529&lt;/width>&lt;newline>    &lt;height>278&lt;/height>&lt;newline>   &lt;/rect>&lt;newline>  &lt;/property>&lt;newline>  &lt;property name="windowTitle">&lt;newline>   &lt;string>Dialog&lt;/string>&lt;newline>  &lt;/property>&lt;newline>  &lt;layout class="QGridLayout" name="gridLayout">&lt;newline>   &lt;item row="4" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_2">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many apples do you have:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="6" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="bananas">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>5&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="2" column="1" colspan="2">&lt;newline>    &lt;widget class="QComboBox" name="languages"/>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="4" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="apples">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>1&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="5" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="oranges">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>2&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="7" column="1">&lt;newline>    &lt;spacer name="verticalSpacer">&lt;newline>     &lt;property name="sizeHint" stdset="0">&lt;newline>      &lt;size>&lt;newline>       &lt;width>20&lt;/width>&lt;newline>       &lt;height>40&lt;/height>&lt;newline>      &lt;/size>&lt;newline>     &lt;/property>&lt;newline>    &lt;/spacer>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="5" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_3">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many oranges do you have:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="2" column="0">&lt;newline>    &lt;widget class="QLabel" name="label">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>Your preferred language:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="0" column="0" colspan="3">&lt;newline>    &lt;widget class="QLabel" name="label_5">&lt;newline>     &lt;property name="font">&lt;newline>      &lt;font>&lt;newline>       &lt;pointsize>10&lt;/pointsize>&lt;newline>       &lt;weight>75&lt;/weight>&lt;newline>       &lt;bold>true&lt;/bold>&lt;newline>      &lt;/font>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="frameShape">&lt;newline>      &lt;enum>QFrame::NoFrame&lt;/enum>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>I am very good in spelling out. Please answer me questions below and I will be able to spell it out for you.&lt;/string>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="textFormat">&lt;newline>      &lt;enum>Qt::PlainText&lt;/enum>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="wordWrap">&lt;newline>      &lt;bool>true&lt;/bool>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="8" column="2">&lt;newline>    &lt;widget class="QPushButton" name="bPrint">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>Print&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="6" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_4">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many bananas do you have&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="1" column="0">&lt;newline>    &lt;spacer name="verticalSpacer_2">&lt;newline>     &lt;property name="sizeHint" stdset="0">&lt;newline>      &lt;size>&lt;newline>       &lt;width>20&lt;/width>&lt;newline>       &lt;height>40&lt;/height>&lt;newline>      &lt;/size>&lt;newline>     &lt;/property>&lt;newline>    &lt;/spacer>&lt;newline>   &lt;/item>&lt;newline>  &lt;/layout>&lt;newline> &lt;/widget>&lt;newline> &lt;resources/>&lt;newline> &lt;connections>&lt;newline>  &lt;connection>&lt;newline>   &lt;sender>bPrint&lt;/sender>&lt;newline>   &lt;signal>clicked()&lt;/signal>&lt;newline>   &lt;receiver>form&lt;/receiver>&lt;newline>   &lt;slot>accept()&lt;/slot>&lt;newline>   &lt;hints>&lt;newline>    &lt;hint type="sourcelabel">&lt;newline>     &lt;x>331&lt;/x>&lt;newline>     &lt;y>274&lt;/y>&lt;newline>    &lt;/hint>&lt;newline>    &lt;hint type="destinationlabel">&lt;newline>     &lt;x>199&lt;/x>&lt;newline>     &lt;y>149&lt;/y>&lt;newline>    &lt;/hint>&lt;newline>   &lt;/hints>&lt;newline>  &lt;/connection>&lt;newline> &lt;/connections>&lt;newline>&lt;/ui>&lt;newline></data>
+   </properties>
+  </Form>
+ </children>
+</Report>

@@ -1,0 +1,12 @@
+<!DOCTYPE CuteReport>
+<?exarologic-application progid="CuteReport.Template" version="2.0" encoding="utf-8"?>
+<TemplateInfo>
+ <properties>
+  <objectName type="QString"></objectName>
+  <label type="QString"></label>
+  <name type="QString"></name>
+  <url type="QUrl"></url>
+  <description type="QString"></description>
+  <dependencyElements type="QStringList"/>
+ </properties>
+</TemplateInfo>
