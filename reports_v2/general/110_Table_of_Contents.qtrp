@@ -3,7 +3,7 @@
 <Report>
  <properties>
   <objectName type="QString"></objectName>
-  <id type="QString">{86900952-96d2-41f7-8c57-d7e5b8fd5cfb}</id>
+  <id type="QString">{e48a3f57-5efc-4eac-9163-f8b09455d4ec}</id>
   <name type="QString">Table of Contents</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates functionality of the "Index" band. First page "Index of Contents" is automatically generated.</description>
@@ -16,6 +16,7 @@
   <picture type="QPixmap"></picture>
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
+  <hasPicture type="bool">false</hasPicture>
   <variablesData type="QVariantHash"/>
   <customData type="QVariantHash">
    <key name="translator_map_v1">
@@ -36,6 +37,7 @@
    <properties>
     <objectName type="QString">page_index</objectName>
     <id type="QString">{9f25001e-0939-4597-bb80-d5944c1f5a1f}</id>
+    <parent type="QString"></parent>
     <objectFlags type="int">7209833</objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
@@ -106,17 +108,25 @@
     <outlineText type="QString"></outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
     <printIfEmpty type="bool">true</printIfEmpty>
+    <grid type="CuteReport::StdPageGrid*">
+     <properties>
+      <objectName type="QString"></objectName>
+      <enabled type="bool">true</enabled>
+      <step type="double">1</step>
+     </properties>
+    </grid>
    </properties>
    <children>
     <Band layoutPriority="100" layoutType="2" name="Std::PageFooter" type="Band" version="1">
      <properties>
       <objectName type="QString">page footer_2</objectName>
       <id type="QString">{3af752e6-bd26-4d1d-b318-617eb62cec4a}</id>
+      <parent type="QString">page_index</parent>
       <objectFlags type="int">-1274409</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,261.4,195.9,8</geometry>
+      <geometry type="QRectF">10,261.4,195.9,7.6</geometry>
       <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -194,11 +204,12 @@
        <properties>
         <objectName type="QString">memo_6</objectName>
         <id type="QString">{bffc574d-6549-4f28-9ba3-22958aa30ddc}</id>
+        <parent type="QString">page footer_2</parent>
         <objectFlags type="int">-134217729</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">130.144,0,64.8558,8</geometry>
+        <geometry type="QRectF">131,0,64,8</geometry>
         <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -290,11 +301,12 @@
      <properties>
       <objectName type="QString">detail_1</objectName>
       <id type="QString">{1daafcdb-b509-410c-9626-0f9ea5c20879}</id>
+      <parent type="QString">page_index</parent>
       <objectFlags type="int">-2123422465</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,36.4102,195.9,13.4108</geometry>
+      <geometry type="QRectF">10,36,195.9,15</geometry>
       <order type="int">1</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -364,12 +376,12 @@
        </properties>
       </outline>
       <zebra type="bool">false</zebra>
-      <backgroundAlternate type="CuteReport::BackgroundType*">
+      <background2 type="CuteReport::BackgroundType*">
        <properties>
         <objectName type="QString"></objectName>
-        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
         <opacity type="double">1</opacity>
-        <color type="QColor">0,0,0,255</color>
+        <color type="QColor">240,240,240,255</color>
         <gradient type="CuteReport::GradientType*">
          <properties>
           <objectName type="QString"></objectName>
@@ -390,7 +402,8 @@
         </gradient>
         <autoType type="bool">true</autoType>
        </properties>
-      </backgroundAlternate>
+      </background2>
+      <useBackground2 type="bool">false</useBackground2>
       <forceNewPage type="bool">false</forceNewPage>
       <allowSplit type="bool">false</allowSplit>
      </properties>
@@ -399,11 +412,12 @@
        <properties>
         <objectName type="QString">text</objectName>
         <id type="QString">{2253eefe-ab7e-44cc-b3ee-5c637ef48203}</id>
+        <parent type="QString">detail_1</parent>
         <objectFlags type="int">8323199</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">0.0718468,0.326093,144.191,12.937</geometry>
+        <geometry type="QRectF">1,1,144,13</geometry>
         <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -493,11 +507,12 @@
        <properties>
         <objectName type="QString">text_1</objectName>
         <id type="QString">{ede6b1cd-a137-4544-9704-da1c3a39cdc7}</id>
+        <parent type="QString">detail_1</parent>
         <objectFlags type="int">159322495</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">144.58,0.434254,50.9384,12.6693</geometry>
+        <geometry type="QRectF">145,1,50,13</geometry>
         <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -589,11 +604,12 @@
      <properties>
       <objectName type="QString">detailHeader</objectName>
       <id type="QString">{520eab87-6dc5-4e28-994d-4d8917b91e9f}</id>
+      <parent type="QString">page_index</parent>
       <objectFlags type="int">464176928</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,10,195.9,26.4102</geometry>
+      <geometry type="QRectF">10,10,195.9,26</geometry>
       <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -672,11 +688,12 @@
        <properties>
         <objectName type="QString">text_2</objectName>
         <id type="QString">{b029c039-a367-494a-af3d-e03539ea4cbd}</id>
+        <parent type="QString">detailHeader</parent>
         <objectFlags type="int">8257663</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">42.9257,5.36571,119.796,16.4453</geometry>
+        <geometry type="QRectF">43,6,119,17</geometry>
         <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -770,6 +787,7 @@
    <properties>
     <objectName type="QString">page</objectName>
     <id type="QString">{a545e1f6-4c46-4ad2-a173-2310c89d46ec}</id>
+    <parent type="QString"></parent>
     <objectFlags type="int">-15</objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
@@ -840,12 +858,20 @@
     <outlineText type="QString"></outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
     <printIfEmpty type="bool">true</printIfEmpty>
+    <grid type="CuteReport::StdPageGrid*">
+     <properties>
+      <objectName type="QString"></objectName>
+      <enabled type="bool">true</enabled>
+      <step type="double">1</step>
+     </properties>
+    </grid>
    </properties>
    <children>
     <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
      <properties>
       <objectName type="QString">detail</objectName>
       <id type="QString">{082f9a85-7e49-42a1-b58e-1ecea120654c}</id>
+      <parent type="QString">page</parent>
       <objectFlags type="int">2004848639</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
@@ -920,12 +946,12 @@
        </properties>
       </outline>
       <zebra type="bool">false</zebra>
-      <backgroundAlternate type="CuteReport::BackgroundType*">
+      <background2 type="CuteReport::BackgroundType*">
        <properties>
         <objectName type="QString"></objectName>
-        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
         <opacity type="double">1</opacity>
-        <color type="QColor">0,0,0,255</color>
+        <color type="QColor">240,240,240,255</color>
         <gradient type="CuteReport::GradientType*">
          <properties>
           <objectName type="QString"></objectName>
@@ -946,7 +972,8 @@
         </gradient>
         <autoType type="bool">true</autoType>
        </properties>
-      </backgroundAlternate>
+      </background2>
+      <useBackground2 type="bool">false</useBackground2>
       <forceNewPage type="bool">false</forceNewPage>
       <allowSplit type="bool">false</allowSplit>
      </properties>
@@ -955,6 +982,7 @@
        <properties>
         <objectName type="QString">image</objectName>
         <id type="QString">{f941bcee-4a84-41fd-8c87-bd3bfe34feaf}</id>
+        <parent type="QString">detail</parent>
         <objectFlags type="int">8323199</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1034,11 +1062,12 @@
        <properties>
         <objectName type="QString">memo_2</objectName>
         <id type="QString">{f7307355-14b4-4211-8cda-4d4771f963d5}</id>
+        <parent type="QString">detail</parent>
         <objectFlags type="int">-1827407361</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1.5,17,150.5,22</geometry>
+        <geometry type="QRectF">2,17,150,22</geometry>
         <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -1128,11 +1157,12 @@
        <properties>
         <objectName type="QString">memo_3</objectName>
         <id type="QString">{3f5a3e73-806a-4750-aa62-ddf0c9975aa3}</id>
+        <parent type="QString">detail</parent>
         <objectFlags type="int">1</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1.5,39,192,1.0489</geometry>
+        <geometry type="QRectF">2,39,192,1</geometry>
         <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -1222,6 +1252,7 @@
        <properties>
         <objectName type="QString">memo_1</objectName>
         <id type="QString">{3a1a4e7d-cf5b-42d5-be1d-4818b461e1c6}</id>
+        <parent type="QString">detail</parent>
         <objectFlags type="int">1</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1316,6 +1347,7 @@
        <properties>
         <objectName type="QString">ellipse_1</objectName>
         <id type="QString">{1a822aeb-d93c-48ca-a720-8b289635c2ee}</id>
+        <parent type="QString">detail</parent>
         <objectFlags type="int">-131077</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1426,11 +1458,12 @@
          <properties>
           <objectName type="QString">ellipse</objectName>
           <id type="QString">{5f917c95-ea95-4b1a-bd10-90857a8cd48e}</id>
+          <parent type="QString">ellipse_1</parent>
           <objectFlags type="int">2097243</objectFlags>
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">2.5,0,56.5,11</geometry>
+          <geometry type="QRectF">3,0,56,11</geometry>
           <order type="int">0</order>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
@@ -1540,11 +1573,12 @@
            <properties>
             <objectName type="QString">memo_title</objectName>
             <id type="QString">{dca565e5-d9ca-4916-8d63-5c253aaba75e}</id>
+            <parent type="QString">ellipse</parent>
             <objectFlags type="int">1</objectFlags>
             <enabled type="bool">true</enabled>
             <visible type="bool">true</visible>
             <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-            <geometry type="QRectF">4.5,0.5,47.5,10</geometry>
+            <geometry type="QRectF">5,1,47,10</geometry>
             <order type="int">0</order>
             <opacity type="double">1</opacity>
             <font type="CuteReport::FontType*">
@@ -1640,11 +1674,12 @@
      <properties>
       <objectName type="QString">page footer</objectName>
       <id type="QString">{0fb7419f-e8ab-4b2b-8c19-d048e10bd6c5}</id>
+      <parent type="QString">page</parent>
       <objectFlags type="int">3145772</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,261.4,195.9,8</geometry>
+      <geometry type="QRectF">10,261.8,195.9,7.6</geometry>
       <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -1722,6 +1757,7 @@
        <properties>
         <objectName type="QString">memo</objectName>
         <id type="QString">{887c92f1-d26b-4f96-986a-cad7e312776b}</id>
+        <parent type="QString">page footer</parent>
         <objectFlags type="int">1</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1820,6 +1856,7 @@
    <properties>
     <objectName type="QString">data</objectName>
     <id type="QString">{ead1d821-cab3-4cad-beb8-41bf36b2b8a9}</id>
+    <parent type="QString"></parent>
     <objectFlags type="int">0</objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
