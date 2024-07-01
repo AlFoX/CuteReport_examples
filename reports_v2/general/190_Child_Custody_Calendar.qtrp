@@ -1,0 +1,2134 @@
+<!DOCTYPE CuteReport>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0" encoding="utf-8"?>
+<Report>
+ <properties>
+  <objectName type="QString"></objectName>
+  <id type="QString">{ed663a38-00c6-4646-b134-e687ccdcdefc}</id>
+  <name type="QString">Child Custody Calendar</name>
+  <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">An example of using Calendar dataset, Table item and its delegates along with some scripting to produce a child custody calendar.&lt;newline>Custody days pattern, pattern start date, calendar start and end months are configured via report's variables. Desired colors can be set on the table Legend rectangles. Script events are used for datasets and Table item to adjust current pattern position and Table's delegate background color.</description>
+  <version type="int">2</version>
+  <script type="QString">const shifts = ${shift_pattern}.split(',')&lt;newline>var shiftIndex = -1;&lt;newline>&lt;newline>months.fromYear = ${yearFrom}&lt;newline>months.fromMonth = ${monthFrom}&lt;newline>months.toYear = ${yearTo}&lt;newline>months.toMonth = ${monthTo}&lt;newline>&lt;newline>var shiftStartDate = new Date(${shiftStartDate})&lt;newline>&lt;newline>function createDateFromMonthAndYear(month, year) {&lt;newline>    // Month in JavaScript Date object is 0-indexed (0 for January, 11 for December)&lt;newline>    // So, we subtract 1 from the provided month&lt;newline>    const date = new Date(year, month - 1, 1);&lt;newline>    return date;&lt;newline>}&lt;newline>&lt;newline>function differenceInDays(date1, date2) {&lt;newline>    // Convert both dates to UTC timestamps&lt;newline>    const utc1 = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());&lt;newline>    const utc2 = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());&lt;newline>&lt;newline>    // Calculate the difference in milliseconds&lt;newline>    const diff = utc2 - utc1;&lt;newline>&lt;newline>    // Convert the difference from milliseconds to days&lt;newline>    const days = Math.floor(diff / (1000 * 60 * 60 * 24));&lt;newline>    &lt;newline>    return days;&lt;newline>}</script>
+  <created type="QDateTime"></created>
+  <defaultStorage type="QString"></defaultStorage>
+  <defaultRenderer type="QString"></defaultRenderer>
+  <defaultPrinter type="QString"></defaultPrinter>
+  <picture type="QPixmap">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H/r4+ISGhsbFxYnFYk9PTzMzMzc3t4yMDD8/P2Tpf05oaKjuz039+/e/f/8+EZWUlBBRenp6TExMfHx8UlKSbgkRlZeXE5FCoVAoFDU1NQ231g2AzUlGvXr1io6OJiIXF5fNmzc7Ojq6ubnt3bt3zJgxKSkpjo6OIpHIwsLi9u3b8fHxSqUyODiYSV0wjtdff/3QoUN+fn5+fn702D5I+/btT58+ffr06SFDhsTExDg7O2s0mqKiIisrq3feecfZ2bmhV994GMTp008/JaKNGzfq7uoP/qxatcrExKRt27YqlcrExGTUqFGmpqZardbwimBkLi4uubm5paWlnTp1okf7IJ9++mmXLl0cHBwkEsmgQYMcHR1TUlJu3LgRFhZmZWWVk5MTERHBcS/XX2LYb63+4I+JiQkRiUQi3Q3d4QeO4162l/jF0KpVK/2hvLr7ICdPnqyoqNC/6SEhIUTk6ekpEolewjcaf3d6uURFRU18wpG9iV9//PfH0e+DKJVK3a9LvZf5r08v3e8PYKLePkhdL22WCPOdXkJRuSf/ZGlrW6OvyAsIO3sAzGBnD4AZxAmAGcQJgBnECYAZg47sPeUqUwAvgGe9WBqO7AEwg509AGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmMLkd4IkwuR2gwWBnD4AZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGUxuB3giTG4HaDDY2QNgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAaT2wGeCJPbARoMdvYAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJjB5HaAJ8LkdoAGg509AGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmMLkd4IkwuR2gwWBnD4AZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZzMYFeCLMxgVoMNjZA2AGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBpPbAZ4Ik9sBGgx29gCYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmPk/WbE+wqtLpHgAAAAASUVORK5CYII=</picture>
+  <generatePicture type="bool">false</generatePicture>
+  <pictureUrl type="QUrl"></pictureUrl>
+  <hasPicture type="bool">true</hasPicture>
+  <translations type="QStringList"/>
+  <customData type="QVariantHash">
+   <key name="translator_map_v1">
+    <value type="QVariantHash">
+     <key name="Page [$PAGE]">
+      <value type="QString">Page [PAGE]</value>
+     </key>
+    </value>
+   </key>
+  </customData>
+  <variables type="CuteReport::ReportVariables*">
+   <properties>
+    <objectName type="QString">_property_variables</objectName>
+    <variables type="QVariantHash">
+     <key name="monthFrom">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Integer</value>
+       </key>
+       <key name="value">
+        <value type="int">8</value>
+       </key>
+      </value>
+     </key>
+     <key name="monthTo">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Integer</value>
+       </key>
+       <key name="value">
+        <value type="int">12</value>
+       </key>
+      </value>
+     </key>
+     <key name="shiftStartDate">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Date</value>
+       </key>
+       <key name="value">
+        <value type="QDate">2024-05-06</value>
+       </key>
+      </value>
+     </key>
+     <key name="shift_1">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{69114399-8174-415f-aa92-ae504314b741}">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="QString">Father</value>
+       </key>
+      </value>
+     </key>
+     <key name="shift_2">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{c4e7fd17-8988-444e-a99f-fe7cacc4ff95}">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="QString">Mother</value>
+       </key>
+      </value>
+     </key>
+     <key name="shift_pattern">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="QString">MF,F,FM,M,MF,F,F,F,F,FM,M,M,M,M</value>
+       </key>
+      </value>
+     </key>
+     <key name="yearFrom">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Integer</value>
+       </key>
+       <key name="value">
+        <value type="int">2024</value>
+       </key>
+      </value>
+     </key>
+     <key name="yearTo">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">true</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38673482-61bb-4290-af00-269b4478a936}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{38afe432-46e7-4028-9fe4-074f0fff4a06}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{4e0c043c-b1ac-40c1-a179-9ec4f74bce04}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{6ebb49a4-1f57-427a-adce-4ec6b77a652a}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{c85cc0f0-a14f-475c-bcac-9a1acf23b587}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb647ebb-42c2-4ac9-90cf-625cbd21e562}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{cb93525e-88c5-4da7-a155-ac1867faaf56}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d03435b8-ba7d-4213-8ce0-3e3cc407b2ce}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Integer</value>
+       </key>
+       <key name="value">
+        <value type="int">2024</value>
+       </key>
+      </value>
+     </key>
+    </variables>
+   </properties>
+  </variables>
+  <inheritance type="CuteReport::ReportInheritance*">
+   <properties>
+    <objectName type="QString">_property_inheritance</objectName>
+    <baseReportName type="QString"></baseReportName>
+    <baseReportFileName type="QString"></baseReportFileName>
+    <lookupPaths type="QStringList"/>
+    <inheritedIdData type="QVariantMap"/>
+    <itemPropertyData type="QVariantMap">
+     <key name="{5d37cae6-d64d-43f7-8661-dffde2556a29}">
+      <value type="QVariantMap">
+       <key name="propName">
+        <value type="QString">geometry</value>
+       </key>
+       <key name="propValueNew">
+        <value type="QRectF">10,10,190,273</value>
+       </key>
+       <key name="propValueOrig">
+        <value type="QRectF">10,10,190,131</value>
+       </key>
+      </value>
+     </key>
+    </itemPropertyData>
+   </properties>
+  </inheritance>
+ </properties>
+ <children>
+  <Page name="Std::Page" type="Page" version="1">
+   <properties>
+    <objectName type="QString">page</objectName>
+    <id type="QString">{4cd0fe17-5a77-4e88-a139-fc656df8923a}</id>
+    <objectFlags type="int">25344</objectFlags>
+    <enabled type="bool">true</enabled>
+    <visible type="bool">true</visible>
+    <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
+    <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
+    <paperSize type="QSizeF">210,297</paperSize>
+    <format type="QString">A4</format>
+    <margins type="CuteReport::MirrorMarginsType*">
+     <properties>
+      <objectName type="QString">_property_margins</objectName>
+      <left type="double">10</left>
+      <top type="double">10</top>
+      <right type="double">10</right>
+      <bottom type="double">10</bottom>
+      <allowMirror type="bool">true</allowMirror>
+     </properties>
+    </margins>
+    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
+    <columns type="int">1</columns>
+    <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
+    <background type="CuteReport::BackgroundType*">
+     <properties>
+      <objectName type="QString">_property_background</objectName>
+      <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+      <opacity type="double">1</opacity>
+      <color type="QColor">255,255,255,255</color>
+      <gradient type="CuteReport::GradientType*">
+       <properties>
+        <objectName type="QString">_property_gradient</objectName>
+        <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+        <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+        <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+        <rotation type="double">0</rotation>
+        <stopValues type="QStringList">
+         <string type="QString">0</string>
+         <string type="QString">1</string>
+        </stopValues>
+        <stopColors type="QStringList">
+         <string type="QString">blue</string>
+         <string type="QString">yellow</string>
+        </stopColors>
+        <startPoint type="QPointF">0,0</startPoint>
+        <stopPoint type="QPointF">0,1</stopPoint>
+       </properties>
+      </gradient>
+      <autoType type="bool">true</autoType>
+     </properties>
+    </background>
+    <order type="int">0</order>
+    <font type="CuteReport::FontType*">
+     <properties>
+      <objectName type="QString">_property_font</objectName>
+      <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+      <family type="QString">Noto Sans [monotype]</family>
+      <size type="double">10.5</size>
+      <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+      <italic type="bool">false</italic>
+      <underline type="bool">false</underline>
+      <overline type="bool">false</overline>
+      <strikeout type="bool">false</strikeout>
+      <outline type="bool">false</outline>
+     </properties>
+    </font>
+    <quantity type="int">1</quantity>
+    <dataset type="QString"></dataset>
+    <domain type="QString"></domain>
+    <printOnPreviousPage type="bool">false</printOnPreviousPage>
+    <endlessWidth type="bool">false</endlessWidth>
+    <endlessHeight type="bool">false</endlessHeight>
+    <outlineText type="QString"></outlineText>
+    <resetPageNumber type="bool">false</resetPageNumber>
+    <printIfEmpty type="bool">true</printIfEmpty>
+    <grid type="CuteReport::StdPageGrid*">
+     <properties>
+      <objectName type="QString">_property_grid</objectName>
+      <enabled type="bool">true</enabled>
+      <step type="double">1</step>
+     </properties>
+    </grid>
+   </properties>
+   <children>
+    <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
+     <properties>
+      <objectName type="QString">detail</objectName>
+      <id type="QString">{5d37cae6-d64d-43f7-8661-dffde2556a29}</id>
+      <objectFlags type="int">654276863</objectFlags>
+      <enabled type="bool">true</enabled>
+      <visible type="bool">true</visible>
+      <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+      <geometry type="QRectF">10,10,190,273</geometry>
+      <order type="int">0</order>
+      <opacity type="double">1</opacity>
+      <font type="CuteReport::FontType*">
+       <properties>
+        <objectName type="QString">_property_font</objectName>
+        <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+        <family type="QString">Noto Sans [monotype]</family>
+        <size type="double">15.5</size>
+        <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+        <italic type="bool">false</italic>
+        <underline type="bool">false</underline>
+        <overline type="bool">false</overline>
+        <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
+       </properties>
+      </font>
+      <background type="CuteReport::BackgroundType*">
+       <properties>
+        <objectName type="QString">_property_background</objectName>
+        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <opacity type="double">1</opacity>
+        <color type="QColor">0,0,0,255</color>
+        <gradient type="CuteReport::GradientType*">
+         <properties>
+          <objectName type="QString">_property_gradient</objectName>
+          <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+          <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+          <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
+          <stopValues type="QStringList">
+           <string type="QString">0</string>
+           <string type="QString">1</string>
+          </stopValues>
+          <stopColors type="QStringList">
+           <string type="QString">blue</string>
+           <string type="QString">yellow</string>
+          </stopColors>
+          <startPoint type="QPointF">0,0</startPoint>
+          <stopPoint type="QPointF">0,1</stopPoint>
+         </properties>
+        </gradient>
+        <autoType type="bool">true</autoType>
+       </properties>
+      </background>
+      <frame type="CuteReport::FrameType*">
+       <properties>
+        <objectName type="QString">_property_frame</objectName>
+        <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+        <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.85</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+       </properties>
+      </frame>
+      <dataset type="QString">months</dataset>
+      <stretching textValue="StretchVertical" type="enum" typeName="QFlags&lt;CuteReport::Band::StretchingType>">1</stretching>
+      <outline type="CuteReport::OutlineType*">
+       <properties>
+        <objectName type="QString">_property_outline</objectName>
+        <text type="QString"></text>
+       </properties>
+      </outline>
+      <zebra type="bool">false</zebra>
+      <background2 type="CuteReport::BackgroundType*">
+       <properties>
+        <objectName type="QString">_property_background2</objectName>
+        <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+        <opacity type="double">1</opacity>
+        <color type="QColor">240,240,240,255</color>
+        <gradient type="CuteReport::GradientType*">
+         <properties>
+          <objectName type="QString">_property_gradient</objectName>
+          <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+          <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+          <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
+          <stopValues type="QStringList">
+           <string type="QString">0</string>
+           <string type="QString">1</string>
+          </stopValues>
+          <stopColors type="QStringList">
+           <string type="QString">blue</string>
+           <string type="QString">yellow</string>
+          </stopColors>
+          <startPoint type="QPointF">0,0</startPoint>
+          <stopPoint type="QPointF">0,1</stopPoint>
+         </properties>
+        </gradient>
+        <autoType type="bool">true</autoType>
+       </properties>
+      </background2>
+      <useBackground2 type="bool">false</useBackground2>
+      <forceNewPage type="bool">false</forceNewPage>
+      <allowSplit type="bool">false</allowSplit>
+     </properties>
+     <children>
+      <Item name="Ext::Table" type="Item" version="1">
+       <properties>
+        <objectName type="QString">table</objectName>
+        <id type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">5,19,182,131</geometry>
+        <order type="int">0</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">19.9</size>
+          <weight textValue="DemiBold" type="enum" typeName="QFont::Weight">600</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">223,69,69,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">2147483647</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <dataset type="QString">dataset</dataset>
+        <rows type="CuteReport::TableLineType*">
+         <properties>
+          <objectName type="QString">_property_rows</objectName>
+          <header type="CuteReport::TableHeaderType*">
+           <properties>
+            <objectName type="QString">_property_header</objectName>
+            <visible type="bool">false</visible>
+            <height type="double">10</height>
+            <color type="QColor">0,0,0,255</color>
+            <font type="CuteReport::FontType*">
+             <properties>
+              <objectName type="QString">_property_font</objectName>
+              <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+              <family type="QString">Noto Sans</family>
+              <size type="double">11</size>
+              <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+              <italic type="bool">false</italic>
+              <underline type="bool">false</underline>
+              <overline type="bool">false</overline>
+              <strikeout type="bool">false</strikeout>
+              <outline type="bool">false</outline>
+             </properties>
+            </font>
+            <background type="CuteReport::BackgroundType*">
+             <properties>
+              <objectName type="QString">_property_background</objectName>
+              <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+              <opacity type="double">1</opacity>
+              <color type="QColor">0,0,0,255</color>
+              <gradient type="CuteReport::GradientType*">
+               <properties>
+                <objectName type="QString">_property_gradient</objectName>
+                <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+                <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+                <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+                <rotation type="double">0</rotation>
+                <stopValues type="QStringList">
+                 <string type="QString">0</string>
+                 <string type="QString">1</string>
+                </stopValues>
+                <stopColors type="QStringList">
+                 <string type="QString">blue</string>
+                 <string type="QString">yellow</string>
+                </stopColors>
+                <startPoint type="QPointF">0,0</startPoint>
+                <stopPoint type="QPointF">0,1</stopPoint>
+               </properties>
+              </gradient>
+              <autoType type="bool">true</autoType>
+             </properties>
+            </background>
+           </properties>
+          </header>
+          <count type="int">5</count>
+          <maxCount type="int">-1</maxCount>
+          <sizeType textValue="Proportional" type="enum" typeName="CuteReport::TableLineType::SizeType">2</sizeType>
+          <defaultSize type="double">8</defaultSize>
+          <minSize type="double">8</minSize>
+          <maxSize type="double">50</maxSize>
+          <length type="double">131</length>
+          <hidden type="QStringList"/>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+          <cellData type="QVariantList">
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+          </cellData>
+         </properties>
+        </rows>
+        <columns type="CuteReport::TableLineType*">
+         <properties>
+          <objectName type="QString">_property_columns</objectName>
+          <header type="CuteReport::TableHeaderType*">
+           <properties>
+            <objectName type="QString">_property_header</objectName>
+            <visible type="bool">true</visible>
+            <height type="double">20</height>
+            <color type="QColor">83,54,234,255</color>
+            <font type="CuteReport::FontType*">
+             <properties>
+              <objectName type="QString">_property_font</objectName>
+              <inherit textValue="Family|Size" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">3</inherit>
+              <family type="QString">Noto Sans</family>
+              <size type="double">25</size>
+              <weight textValue="Bold" type="enum" typeName="QFont::Weight">700</weight>
+              <italic type="bool">false</italic>
+              <underline type="bool">false</underline>
+              <overline type="bool">false</overline>
+              <strikeout type="bool">false</strikeout>
+              <outline type="bool">false</outline>
+             </properties>
+            </font>
+            <background type="CuteReport::BackgroundType*">
+             <properties>
+              <objectName type="QString">_property_background</objectName>
+              <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+              <opacity type="double">0.3</opacity>
+              <color type="QColor">35,143,91,255</color>
+              <gradient type="CuteReport::GradientType*">
+               <properties>
+                <objectName type="QString">_property_gradient</objectName>
+                <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+                <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+                <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+                <rotation type="double">0</rotation>
+                <stopValues type="QStringList">
+                 <string type="QString">0</string>
+                 <string type="QString">1</string>
+                </stopValues>
+                <stopColors type="QStringList">
+                 <string type="QString">blue</string>
+                 <string type="QString">yellow</string>
+                </stopColors>
+                <startPoint type="QPointF">0,0</startPoint>
+                <stopPoint type="QPointF">0,1</stopPoint>
+               </properties>
+              </gradient>
+              <autoType type="bool">true</autoType>
+             </properties>
+            </background>
+           </properties>
+          </header>
+          <count type="int">10</count>
+          <maxCount type="int">-1</maxCount>
+          <sizeType textValue="FitProportional" type="enum" typeName="CuteReport::TableLineType::SizeType">3</sizeType>
+          <defaultSize type="double">20</defaultSize>
+          <minSize type="double">8</minSize>
+          <maxSize type="double">50</maxSize>
+          <length type="double">182</length>
+          <hidden type="QStringList">
+           <string type="QString">weekIndex</string>
+           <string type="QString">Month</string>
+           <string type="QString">Week</string>
+          </hidden>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+          <cellData type="QVariantList">
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">13.09688325</item>
+           <item type="double">15.602158265625</item>
+           <item type="double">12.443692734374999</item>
+           <item type="double">15.275563007812499</item>
+           <item type="double">13.237443234374998</item>
+           <item type="double">9.020643703125</item>
+           <item type="double">11.0256905390625</item>
+           <item type="double">-1</item>
+          </cellData>
+         </properties>
+        </columns>
+        <cellDelegateId type="QString">{2f9da5d3-f348-4d55-ba59-db8aace66af4}</cellDelegateId>
+        <headerDelegateId type="QString">{7b7e0854-9376-45a6-bb3b-5badf71ec315}</headerDelegateId>
+       </properties>
+       <children>
+        <Item name="Std::Memo" type="Item" version="1">
+         <properties>
+          <objectName type="QString">memo_11</objectName>
+          <id type="QString">{7b7e0854-9376-45a6-bb3b-5badf71ec315}</id>
+          <objectFlags type="int">0</objectFlags>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+          <geometry type="QRectF">72.8,0,36.4,26.2</geometry>
+          <order type="int">1</order>
+          <opacity type="double">1</opacity>
+          <font type="CuteReport::FontType*">
+           <properties>
+            <objectName type="QString">_property_font</objectName>
+            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+            <family type="QString">Noto Sans</family>
+            <size type="double">19.9</size>
+            <weight textValue="Bold" type="enum" typeName="QFont::Weight">700</weight>
+            <italic type="bool">false</italic>
+            <underline type="bool">false</underline>
+            <overline type="bool">false</overline>
+            <strikeout type="bool">false</strikeout>
+            <outline type="bool">false</outline>
+           </properties>
+          </font>
+          <background type="CuteReport::BackgroundType*">
+           <properties>
+            <objectName type="QString">_property_background</objectName>
+            <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+            <opacity type="double">1</opacity>
+            <color type="QColor">247,191,191,255</color>
+            <gradient type="CuteReport::GradientType*">
+             <properties>
+              <objectName type="QString">_property_gradient</objectName>
+              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">0</rotation>
+              <stopValues type="QStringList">
+               <string type="QString">0</string>
+               <string type="QString">1</string>
+              </stopValues>
+              <stopColors type="QStringList">
+               <string type="QString">blue</string>
+               <string type="QString">yellow</string>
+              </stopColors>
+              <startPoint type="QPointF">0,0</startPoint>
+              <stopPoint type="QPointF">0,1</stopPoint>
+             </properties>
+            </gradient>
+            <autoType type="bool">true</autoType>
+           </properties>
+          </background>
+          <frame type="CuteReport::FrameType*">
+           <properties>
+            <objectName type="QString">_property_frame</objectName>
+            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">15</frames>
+            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+            <line type="CuteReport::LineType*">
+             <properties>
+              <objectName type="QString">_property_line</objectName>
+              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+              <color type="QColor">0,0,0,255</color>
+              <width type="double">0.7</width>
+              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+              <opacity type="double">1</opacity>
+             </properties>
+            </line>
+           </properties>
+          </frame>
+          <rotation type="double">0</rotation>
+          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+          <text type="QString">test</text>
+          <textColor type="QColor">0,0,0,255</textColor>
+          <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">132</textFlags>
+          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+          <showStretchability type="bool">true</showStretchability>
+          <delimiters type="QString">[ , ]</delimiters>
+          <stretchFont type="bool">false</stretchFont>
+          <allowHtml type="bool">false</allowHtml>
+          <allowExpressions type="bool">true</allowExpressions>
+          <textMargins type="CuteReport::MarginsType*">
+           <properties>
+            <objectName type="QString">_property_textMargins</objectName>
+            <left type="double">1</left>
+            <top type="double">0</top>
+            <right type="double">0</right>
+            <bottom type="double">0</bottom>
+           </properties>
+          </textMargins>
+          <lineSpacing type="double">100</lineSpacing>
+          <textIndent type="double">0</textIndent>
+         </properties>
+        </Item>
+        <Item name="Std::Memo" type="Item" version="1">
+         <properties>
+          <objectName type="QString">memo_12</objectName>
+          <id type="QString">{2f9da5d3-f348-4d55-ba59-db8aace66af4}</id>
+          <objectFlags type="int">0</objectFlags>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+          <geometry type="QRectF">72.8,52.4,36.4,26.2</geometry>
+          <order type="int">0</order>
+          <opacity type="double">1</opacity>
+          <font type="CuteReport::FontType*">
+           <properties>
+            <objectName type="QString">_property_font</objectName>
+            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+            <family type="QString">Noto Sans</family>
+            <size type="double">19.9</size>
+            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+            <italic type="bool">false</italic>
+            <underline type="bool">false</underline>
+            <overline type="bool">false</overline>
+            <strikeout type="bool">false</strikeout>
+            <outline type="bool">false</outline>
+           </properties>
+          </font>
+          <background type="CuteReport::BackgroundType*">
+           <properties>
+            <objectName type="QString">_property_background</objectName>
+            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+            <opacity type="double">1</opacity>
+            <color type="QColor">38,221,147,255</color>
+            <gradient type="CuteReport::GradientType*">
+             <properties>
+              <objectName type="QString">_property_gradient</objectName>
+              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">-90</rotation>
+              <stopValues type="QStringList">
+               <string type="QString">0</string>
+               <string type="QString">0.4</string>
+              </stopValues>
+              <stopColors type="QStringList">
+               <string type="QString">blue</string>
+               <string type="QString">yellow</string>
+              </stopColors>
+              <startPoint type="QPointF">0,0</startPoint>
+              <stopPoint type="QPointF">0,1</stopPoint>
+             </properties>
+            </gradient>
+            <autoType type="bool">true</autoType>
+           </properties>
+          </background>
+          <frame type="CuteReport::FrameType*">
+           <properties>
+            <objectName type="QString">_property_frame</objectName>
+            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">2147483647</frames>
+            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+            <line type="CuteReport::LineType*">
+             <properties>
+              <objectName type="QString">_property_line</objectName>
+              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+              <color type="QColor">0,0,0,255</color>
+              <width type="double">0.5</width>
+              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+              <opacity type="double">1</opacity>
+             </properties>
+            </line>
+           </properties>
+          </frame>
+          <rotation type="double">0</rotation>
+          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+          <text type="QString"></text>
+          <textColor type="QColor">0,0,0,255</textColor>
+          <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">132</textFlags>
+          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+          <showStretchability type="bool">true</showStretchability>
+          <delimiters type="QString">[ , ]</delimiters>
+          <stretchFont type="bool">false</stretchFont>
+          <allowHtml type="bool">false</allowHtml>
+          <allowExpressions type="bool">true</allowExpressions>
+          <textMargins type="CuteReport::MarginsType*">
+           <properties>
+            <objectName type="QString">_property_textMargins</objectName>
+            <left type="double">1</left>
+            <top type="double">0</top>
+            <right type="double">0</right>
+            <bottom type="double">0</bottom>
+           </properties>
+          </textMargins>
+          <lineSpacing type="double">100</lineSpacing>
+          <textIndent type="double">0</textIndent>
+         </properties>
+        </Item>
+        <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+         <properties>
+          <objectName type="QString">table_event</objectName>
+          <id type="QString">{a34b17a8-403c-459a-a500-35f88a863efb}</id>
+          <objectFlags type="int">0</objectFlags>
+          <trigger type="int">4</trigger>
+          <availableTriggers type="QList&lt;QObject*>"/>
+          <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
+          <composedScript type="QString">table.headerDataBefore.connect(table_event_headerDataBefore)&lt;newline>function table_event_headerDataBefore(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	console.log("------------------------ value:" + data.value())&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>	cell.background.color = "#dfa0a0"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>}&lt;newline></composedScript>
+          <script type="QString">console.log("------------------------ value:" + data.value())&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>cell.background.color = "#dfa0a0"&lt;newline>cell.textColor = "#8c0000"&lt;newline>}</script>
+         </properties>
+        </Event>
+        <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+         <properties>
+          <objectName type="QString">table_event_1</objectName>
+          <id type="QString">{7bca9760-d45c-403a-bcbd-dd11cabc1493}</id>
+          <objectFlags type="int">0</objectFlags>
+          <trigger type="int">6</trigger>
+          <availableTriggers type="QList&lt;QObject*>"/>
+          <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
+          <composedScript type="QString">table.gridPrintBefore.connect(table_event_1_gridPrintBefore)&lt;newline>function table_event_1_gridPrintBefore(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	console.log("------------------------ grid value:" + data.value())&lt;newline>	&lt;newline>	const dateISO = data.value("dateISO")&lt;newline>	const date = new Date(dateISO)&lt;newline>	&lt;newline>	console.log("------------------------ data before"); &lt;newline>	console.log("------------------------ date: " + date); &lt;newline>	&lt;newline>	var days = differenceInDays(shiftStartDate, date)&lt;newline>	var shiftLength = shifts.length&lt;newline>	var shiftDelta = days % shiftLength&lt;newline>	shiftIndex = shiftDelta -1&lt;newline>	if (shiftIndex &lt; 0)&lt;newline>	   shiftIndex = shiftIndex + shiftLength&lt;newline>	&lt;newline>	console.log("------------------------ days: " + days); &lt;newline>	console.log("------------------------ shiftLength: " + shiftLength); &lt;newline>	console.log("------------------------ shiftDelta: " + shiftDelta); &lt;newline>	&lt;newline>	shiftIndex++&lt;newline>	if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	if ( shifts[shiftIndex] == "F") {&lt;newline>	    cell.background.color = fatherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "M") {&lt;newline>	    cell.background.color = motherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "FM") {&lt;newline>	    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>	} else if ( shifts[shiftIndex] == "MF") {&lt;newline>	    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>	}&lt;newline>	&lt;newline>	if (!data.value("currentMonth"))&lt;newline>	   cell.opacity = 0.3&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+          <script type="QString">console.log("------------------------ grid value:" + data.value())&lt;newline>&lt;newline>const dateISO = data.value("dateISO")&lt;newline>const date = new Date(dateISO)&lt;newline>&lt;newline>console.log("------------------------ data before"); &lt;newline>console.log("------------------------ date: " + date); &lt;newline>&lt;newline>var days = differenceInDays(shiftStartDate, date)&lt;newline>var shiftLength = shifts.length&lt;newline>var shiftDelta = days % shiftLength&lt;newline>shiftIndex = shiftDelta -1&lt;newline>if (shiftIndex &lt; 0)&lt;newline>   shiftIndex = shiftIndex + shiftLength&lt;newline>&lt;newline>console.log("------------------------ days: " + days); &lt;newline>console.log("------------------------ shiftLength: " + shiftLength); &lt;newline>console.log("------------------------ shiftDelta: " + shiftDelta); &lt;newline>&lt;newline>shiftIndex++&lt;newline>if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>if ( shifts[shiftIndex] == "F") {&lt;newline>    cell.background.color = fatherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "M") {&lt;newline>    cell.background.color = motherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "FM") {&lt;newline>    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>} else if ( shifts[shiftIndex] == "MF") {&lt;newline>    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>}&lt;newline>&lt;newline>if (!data.value("currentMonth"))&lt;newline>   cell.opacity = 0.3&lt;newline>&lt;newline></script>
+         </properties>
+        </Event>
+       </children>
+      </Item>
+      <Item name="Ext::Text" type="Item" version="1">
+       <properties>
+        <objectName type="QString">text</objectName>
+        <id type="QString">{284eb451-67d2-4392-ab94-5698d11dc09b}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">30,2,132,15</geometry>
+        <order type="int">1</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">23.2</size>
+          <weight textValue="Bold" type="enum" typeName="QFont::Weight">700</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[months."monthLong"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">132</textFlags>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">1</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">20</textIndent>
+        <flowTo type="QString"></flowTo>
+       </properties>
+      </Item>
+      <Item name="Ext::Table" type="Item" version="1">
+       <properties>
+        <objectName type="QString">table_1</objectName>
+        <id type="QString">{27cfb927-752a-4f02-9822-1cd91b94c78b}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">5,171,182,98</geometry>
+        <order type="int">2</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">12</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <dataset type="QString"></dataset>
+        <rows type="CuteReport::TableLineType*">
+         <properties>
+          <objectName type="QString">_property_rows</objectName>
+          <header type="CuteReport::TableHeaderType*">
+           <properties>
+            <objectName type="QString">_property_header</objectName>
+            <visible type="bool">false</visible>
+            <height type="double">10</height>
+            <color type="QColor">83,54,234,255</color>
+            <font type="CuteReport::FontType*">
+             <properties>
+              <objectName type="QString">_property_font</objectName>
+              <inherit textValue="Family|Size" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">3</inherit>
+              <family type="QString">Noto Sans</family>
+              <size type="double">11</size>
+              <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+              <italic type="bool">false</italic>
+              <underline type="bool">false</underline>
+              <overline type="bool">false</overline>
+              <strikeout type="bool">false</strikeout>
+              <outline type="bool">false</outline>
+             </properties>
+            </font>
+            <background type="CuteReport::BackgroundType*">
+             <properties>
+              <objectName type="QString">_property_background</objectName>
+              <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+              <opacity type="double">1</opacity>
+              <color type="QColor">0,0,0,255</color>
+              <gradient type="CuteReport::GradientType*">
+               <properties>
+                <objectName type="QString">_property_gradient</objectName>
+                <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+                <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+                <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+                <rotation type="double">0</rotation>
+                <stopValues type="QStringList">
+                 <string type="QString">0</string>
+                 <string type="QString">1</string>
+                </stopValues>
+                <stopColors type="QStringList">
+                 <string type="QString">blue</string>
+                 <string type="QString">yellow</string>
+                </stopColors>
+                <startPoint type="QPointF">0,0</startPoint>
+                <stopPoint type="QPointF">0,1</stopPoint>
+               </properties>
+              </gradient>
+              <autoType type="bool">true</autoType>
+             </properties>
+            </background>
+           </properties>
+          </header>
+          <count type="int">7</count>
+          <maxCount type="int">-1</maxCount>
+          <sizeType textValue="FitProportional" type="enum" typeName="CuteReport::TableLineType::SizeType">3</sizeType>
+          <defaultSize type="double">8</defaultSize>
+          <minSize type="double">8</minSize>
+          <maxSize type="double">50</maxSize>
+          <length type="double">98</length>
+          <hidden type="QStringList"/>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+          <cellData type="QVariantList">
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+           <item type="double">-1</item>
+          </cellData>
+         </properties>
+        </rows>
+        <columns type="CuteReport::TableLineType*">
+         <properties>
+          <objectName type="QString">_property_columns</objectName>
+          <header type="CuteReport::TableHeaderType*">
+           <properties>
+            <objectName type="QString">_property_header</objectName>
+            <visible type="bool">false</visible>
+            <height type="double">10</height>
+            <color type="QColor">83,54,234,255</color>
+            <font type="CuteReport::FontType*">
+             <properties>
+              <objectName type="QString">_property_font</objectName>
+              <inherit textValue="Family|Size" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">3</inherit>
+              <family type="QString">Noto Sans</family>
+              <size type="double">11</size>
+              <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+              <italic type="bool">false</italic>
+              <underline type="bool">false</underline>
+              <overline type="bool">false</overline>
+              <strikeout type="bool">false</strikeout>
+              <outline type="bool">false</outline>
+             </properties>
+            </font>
+            <background type="CuteReport::BackgroundType*">
+             <properties>
+              <objectName type="QString">_property_background</objectName>
+              <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+              <opacity type="double">1</opacity>
+              <color type="QColor">0,0,0,255</color>
+              <gradient type="CuteReport::GradientType*">
+               <properties>
+                <objectName type="QString">_property_gradient</objectName>
+                <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+                <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+                <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+                <rotation type="double">0</rotation>
+                <stopValues type="QStringList">
+                 <string type="QString">0</string>
+                 <string type="QString">1</string>
+                </stopValues>
+                <stopColors type="QStringList">
+                 <string type="QString">blue</string>
+                 <string type="QString">yellow</string>
+                </stopColors>
+                <startPoint type="QPointF">0,0</startPoint>
+                <stopPoint type="QPointF">0,1</stopPoint>
+               </properties>
+              </gradient>
+              <autoType type="bool">true</autoType>
+             </properties>
+            </background>
+           </properties>
+          </header>
+          <count type="int">1</count>
+          <maxCount type="int">-1</maxCount>
+          <sizeType textValue="FitProportional" type="enum" typeName="CuteReport::TableLineType::SizeType">3</sizeType>
+          <defaultSize type="double">20</defaultSize>
+          <minSize type="double">8</minSize>
+          <maxSize type="double">50</maxSize>
+          <length type="double">182</length>
+          <hidden type="QStringList"/>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+          <cellData type="QVariantList">
+           <item type="double">-1</item>
+          </cellData>
+         </properties>
+        </columns>
+        <cellDelegateId type="QString"></cellDelegateId>
+        <headerDelegateId type="QString"></headerDelegateId>
+       </properties>
+      </Item>
+      <Item name="Ext::Text" type="Item" version="1">
+       <properties>
+        <objectName type="QString">text_1</objectName>
+        <id type="QString">{1341069e-9d33-4f89-92cc-0955430e9764}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">5,157,95,9</geometry>
+        <order type="int">3</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">Notes:</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">129</textFlags>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">1</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+        <flowTo type="QString"></flowTo>
+       </properties>
+      </Item>
+      <Item name="Std::Rectangle" type="Item" version="1">
+       <properties>
+        <objectName type="QString">fatherRect</objectName>
+        <id type="QString">{c523ebdb-c194-4746-bd3d-b2c51b5ad052}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">113,154,6,6</geometry>
+        <order type="int">4</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">165,219,255,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">15</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+       </properties>
+      </Item>
+      <Item name="Ext::Text" type="Item" version="1">
+       <properties>
+        <objectName type="QString">text_2</objectName>
+        <id type="QString">{69114399-8174-415f-aa92-ae504314b741}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">119,154,68,6</geometry>
+        <order type="int">5</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[${shift_1}]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">129</textFlags>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">1</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">20</textIndent>
+        <flowTo type="QString"></flowTo>
+       </properties>
+      </Item>
+      <Item name="Ext::Text" type="Item" version="1">
+       <properties>
+        <objectName type="QString">text_3</objectName>
+        <id type="QString">{c4e7fd17-8988-444e-a99f-fe7cacc4ff95}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">119,160,68,6</geometry>
+        <order type="int">6</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[${shift_2}]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">129</textFlags>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">1</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">20</textIndent>
+        <flowTo type="QString"></flowTo>
+       </properties>
+      </Item>
+      <Item name="Std::Rectangle" type="Item" version="1">
+       <properties>
+        <objectName type="QString">motherRect</objectName>
+        <id type="QString">{93aa2e3e-1100-4421-8439-1c375962f846}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">113,160,6,6</geometry>
+        <order type="int">7</order>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">255,178,228,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">15</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+   </children>
+  </Page>
+  <Dataset name="Std::Calendar" type="Dataset" version="1">
+   <properties>
+    <objectName type="QString">dataset</objectName>
+    <id type="QString">{14fc9104-b1b4-4dd8-aa8b-64a27f5616cd}</id>
+    <objectFlags type="int">0</objectFlags>
+    <parentDataset type="QString">months</parentDataset>
+    <description type="QString"></description>
+    <isGlobal type="bool">false</isGlobal>
+    <sortFields type="QString"></sortFields>
+    <filter type="CuteReport::ModelFilter*">
+     <properties>
+      <objectName type="QString">_property_filter</objectName>
+      <column type="int">-1</column>
+      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
+      <string type="QString"></string>
+      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+     </properties>
+    </filter>
+    <transform type="CuteReport::DatasetTransform*">
+     <properties>
+      <objectName type="QString">_property_transform</objectName>
+      <enabled type="bool">true</enabled>
+      <headerToRow type="bool">false</headerToRow>
+      <aliases type="QStringList">
+       <string type="QString">weekNumber:Week</string>
+       <string type="QString">monthShort:Month</string>
+      </aliases>
+      <rowHeaders type="QStringList">
+       <string type="QString">weekIndex</string>
+       <string type="QString">monthShort:firstValue:rightSide</string>
+      </rowHeaders>
+      <columnHeaders type="QStringList">
+       <string type="QString">weekDayShort</string>
+      </columnHeaders>
+      <cells type="QStringList">
+       <string type="QString">day:split</string>
+      </cells>
+      <roles type="QStringList">
+       <string type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</string>
+      </roles>
+      <rowHeadersStr type="QString">weekIndex; monthShort:firstValue:rightSide</rowHeadersStr>
+      <columnHeadersStr type="QString">weekDayShort</columnHeadersStr>
+      <cellsStr type="QString">day:split</cellsStr>
+      <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
+      <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</rolesStr>
+     </properties>
+    </transform>
+    <from type="QDate">2024-12-01</from>
+    <to type="QDate">2024-12-31</to>
+    <fromEntireMonth type="bool">true</fromEntireMonth>
+    <toEntireMonth type="bool">true</toEntireMonth>
+    <fillEmptyWeekdaysBefore type="bool">true</fillEmptyWeekdaysBefore>
+    <fillEmptyWeekdaysAfter type="bool">true</fillEmptyWeekdaysAfter>
+    <firstDayOfWeek textValue="Sunday" type="enum" typeName="CuteReport::CalendarDataset::DayOfWeek">7</firstDayOfWeek>
+    <fields type="QStringList">
+     <string type="QString">dateISO</string>
+     <string type="QString">day</string>
+     <string type="QString">weekDay</string>
+     <string type="QString">weekDayShort</string>
+     <string type="QString">weekDayLong</string>
+     <string type="QString">weekNumber</string>
+     <string type="QString">monthNumber</string>
+     <string type="QString">monthShort</string>
+     <string type="QString">monthLong</string>
+     <string type="QString">year</string>
+     <string type="QString">weekIndex</string>
+     <string type="QString">isToday</string>
+     <string type="QString">isSelectedPeriod</string>
+    </fields>
+    <fieldsStr type="QString">dateISO, day, weekDay, weekDayShort, weekDayLong, weekNumber, monthNumber, monthShort, monthLong, year, weekIndex, isToday, isSelectedPeriod</fieldsStr>
+   </properties>
+  </Dataset>
+  <Dataset name="Std::Calendar" type="Dataset" version="1">
+   <properties>
+    <objectName type="QString">months</objectName>
+    <id type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</id>
+    <objectFlags type="int">0</objectFlags>
+    <parentDataset type="QString"></parentDataset>
+    <description type="QString"></description>
+    <isGlobal type="bool">false</isGlobal>
+    <sortFields type="QString"></sortFields>
+    <filter type="CuteReport::ModelFilter*">
+     <properties>
+      <objectName type="QString">_property_filter</objectName>
+      <column type="int">-1</column>
+      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
+      <string type="QString"></string>
+      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+     </properties>
+    </filter>
+    <transform type="CuteReport::DatasetTransform*">
+     <properties>
+      <objectName type="QString">_property_transform</objectName>
+      <enabled type="bool">false</enabled>
+      <headerToRow type="bool">false</headerToRow>
+      <aliases type="QStringList">
+       <string type="QString"></string>
+      </aliases>
+      <rowHeaders type="QStringList">
+       <string type="QString"></string>
+      </rowHeaders>
+      <columnHeaders type="QStringList">
+       <string type="QString"></string>
+      </columnHeaders>
+      <cells type="QStringList">
+       <string type="QString"></string>
+      </cells>
+      <roles type="QStringList">
+       <string type="QString"></string>
+      </roles>
+      <rowHeadersStr type="QString"></rowHeadersStr>
+      <columnHeadersStr type="QString"></columnHeadersStr>
+      <cellsStr type="QString"></cellsStr>
+      <aliasesStr type="QString"></aliasesStr>
+      <rolesStr type="QString"></rolesStr>
+     </properties>
+    </transform>
+    <from type="QDate">2024-05-01</from>
+    <to type="QDate">2025-05-31</to>
+    <fromEntireMonth type="bool">true</fromEntireMonth>
+    <toEntireMonth type="bool">true</toEntireMonth>
+    <fillEmptyWeekdaysBefore type="bool">false</fillEmptyWeekdaysBefore>
+    <fillEmptyWeekdaysAfter type="bool">false</fillEmptyWeekdaysAfter>
+    <firstDayOfWeek textValue="FromLocale" type="enum" typeName="CuteReport::CalendarDataset::DayOfWeek">0</firstDayOfWeek>
+    <fields type="QStringList">
+     <string type="QString">monthNumber</string>
+     <string type="QString">monthShort</string>
+     <string type="QString">monthLong</string>
+     <string type="QString">year</string>
+    </fields>
+    <fieldsStr type="QString">monthNumber, monthShort, monthLong, year</fieldsStr>
+   </properties>
+   <children>
+    <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+     <properties>
+      <objectName type="QString">months_event</objectName>
+      <id type="QString">{5398fa59-15b6-4c58-a48e-9d64edb46757}</id>
+      <objectFlags type="int">0</objectFlags>
+      <trigger type="int">12</trigger>
+      <availableTriggers type="QList&lt;QObject*>"/>
+      <elementId type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</elementId>
+      <composedScript type="QString">months.afterNext.connect(months_event_afterNext)&lt;newline>function months_event_afterNext()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	&lt;newline>	dataset.fromYear = self.value("year")&lt;newline>	dataset.fromMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	dataset.toYear = self.value("year")&lt;newline>	dataset.toMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+      <script type="QString">/*! Insert your script here */&lt;newline>&lt;newline>dataset.fromYear = self.value("year")&lt;newline>dataset.fromMonth = self.value("monthNumber")&lt;newline>&lt;newline>dataset.toYear = self.value("year")&lt;newline>dataset.toMonth = self.value("monthNumber")&lt;newline>&lt;newline></script>
+     </properties>
+    </Event>
+   </children>
+  </Dataset>
+ </children>
+</Report>
