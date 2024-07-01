@@ -63,7 +63,7 @@
    <properties>
     <objectName type="QString">page</objectName>
     <id type="QString">{11794aec-af21-4a85-8a76-abc287e83874}</id>
-    <objectFlags type="int">768</objectFlags>
+    <objectFlags type="int"></objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>

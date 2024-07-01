@@ -37,7 +37,7 @@
    <properties>
     <objectName type="QString">data</objectName>
     <id type="QString">{40bc4dd7-0cd6-4c9a-8a0c-6010cab774a7}</id>
-    <objectFlags type="int">-469827483</objectFlags>
+    <objectFlags type="int"></objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <sortFields type="QString"></sortFields>
@@ -68,7 +68,7 @@
    <properties>
     <objectName type="QString">page</objectName>
     <id type="QString">{6ac1fafc-776e-4731-9de4-513196044e7f}</id>
-    <objectFlags type="int">880</objectFlags>
+    <objectFlags type="int"></objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
@@ -144,7 +144,7 @@
      <properties>
       <objectName type="QString">title</objectName>
       <id type="QString">{bae79a41-4e36-4a24-8c5e-dea599afca36}</id>
-      <objectFlags type="int">2883632</objectFlags>
+      <objectFlags type="int"></objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -223,7 +223,7 @@
        <properties>
         <objectName type="QString">memo</objectName>
         <id type="QString">{5fe8c9c9-1c9e-4463-ab0c-a4997e95a0d9}</id>
-        <objectFlags type="int">3211313</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -428,7 +428,7 @@
        <properties>
         <objectName type="QString">memo_2</objectName>
         <id type="QString">{90cdb62c-3149-4207-997f-26f9faabdfee}</id>
-        <objectFlags type="int">8192127</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -530,7 +530,7 @@
        <properties>
         <objectName type="QString">memo_4</objectName>
         <id type="QString">{9e32118a-e5ae-4273-924b-c9ced23c5b99}</id>
-        <objectFlags type="int">226303921</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -624,7 +624,7 @@
        <properties>
         <objectName type="QString">memo_5</objectName>
         <id type="QString">{0cfa1fb7-ae98-4d82-987c-b5703e9c3b64}</id>
-        <objectFlags type="int">-335544833</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -718,7 +718,7 @@
        <properties>
         <objectName type="QString">memo_6</objectName>
         <id type="QString">{401c7ea6-4780-4455-9b01-afc18b9352c9}</id>
-        <objectFlags type="int">8323199</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -812,7 +812,7 @@
          <properties>
           <objectName type="QString">rectangle_1</objectName>
           <id type="QString">{6867f95e-ad1e-4be0-a577-a756492cadfd}</id>
-          <objectFlags type="int">-1386111776</objectFlags>
+          <objectFlags type="int"></objectFlags>
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -887,7 +887,7 @@
        <properties>
         <objectName type="QString">memo_1</objectName>
         <id type="QString">{33c5a0f2-c379-45f3-ac60-2cf9ed995bf6}</id>
-        <objectFlags type="int">134217726</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -1075,7 +1075,7 @@
        <properties>
         <objectName type="QString">memo_7</objectName>
         <id type="QString">{f4f7642d-a137-4b37-b086-7b148c16349d}</id>
-        <objectFlags type="int">207926960</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
@@ -1327,7 +1327,7 @@
        <properties>
         <objectName type="QString">memo_8</objectName>
         <id type="QString">{4e3c825e-a943-439d-948a-4057d5648a99}</id>
-        <objectFlags type="int">-961171216</objectFlags>
+        <objectFlags type="int"></objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>

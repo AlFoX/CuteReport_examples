@@ -1,33 +1,28 @@
 <!DOCTYPE CuteReport>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0" encoding="utf-8"?>
 <Report>
  <properties>
+  <objectName type="QString"></objectName>
+  <id type="QString">{5f6dec6a-2ad1-4c00-9f0d-53dcd050e986}</id>
   <name type="QString">Plural spell</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
-  <description type="QString">Demonstrates functionality of the Spellout module to spell word depending of its plurality.</description>
-  <script type="QString">var reportDefaultLang = ${tr};&lt;newline>var translator_codes = Engine.reportData('translator_codes');&lt;newline>var translator_languages = Engine.reportData('translator_languages');&lt;newline>&lt;newline>form.languages.addItem('Default');&lt;newline>form.languages.addItems(translator_languages);&lt;newline>&lt;newline>if (form.exec()) {&lt;newline>    var index = form.languages.currentIndex;&lt;newline>    var newLang = translator_codes[index - 1];&lt;newline>    ${tr} = newLang;&lt;newline>&lt;newline>    var apples = form.apples.value;&lt;newline>    var oranges = form.oranges.value;&lt;newline>    var bananas = form.bananas.value;&lt;newline>&lt;newline>    Engine.run();&lt;newline>}</script>
-  <version type="double">2</version>
-  <created type="QDateTime">2017-06-26T00:28:48</created>
-  <updated type="QDateTime">2017-06-28T20:31:15</updated>
-  <picture type="QPixmap"></picture>
-  <generatePicture type="bool">false</generatePicture>
+  <description type="QString">Demonstrates functionality of the Spellout module to spell a word depending of its plurality.</description>
+  <version type="int">2</version>
+  <script type="QString"></script>
+  <created type="QDateTime"></created>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
-  <variables type="QVariantHash">
-   <key name="tr">
-    <value type="QVariantHash">
-     <key name="modules">
-      <value type="QStringList">
-       <string type="QString">Translator</string>
-       <string type="QString"></string>
-      </value>
-     </key>
-     <key name="value">
-      <value type=""/>
-     </key>
-    </value>
-   </key>
-  </variables>
+  <picture type="QPixmap"></picture>
+  <generatePicture type="bool">false</generatePicture>
+  <pictureUrl type="QUrl"></pictureUrl>
+  <hasPicture type="bool">false</hasPicture>
+  <translations type="QStringList">
+   <string type="QString">en</string>
+   <string type="QString">uk</string>
+   <string type="QString">ru</string>
+   <string type="QString">cs</string>
+  </translations>
   <customData type="QVariantHash">
    <key name="moduleVariables">
     <value type="QStringList">
@@ -38,124 +33,32 @@
     <value type="QVariantHash">
      <key name="items">
       <value type="QVariantHash">
-       <key name="">
+       <key name="{b7330836-024d-4547-809e-dc34ab228d37}">
         <value type="QVariantHash">
-         <key name="data">
+         <key name="name">
+          <value type="QString">memo</value>
+         </key>
+         <key name="properties">
           <value type="QVariantHash">
-           <key name="-1">
+           <key name="text">
             <value type="QVariantHash">
-             <key name="isHTML">
-              <value type="bool">false</value>
-             </key>
              <key name="tr">
               <value type="QVariantHash">
+               <key name="cs">
+                <value type="QString">Máte [spell.number(${apples},'','it') ] [ spell.plural(${apples}, 'one{jablko} few{jablka} many{jablek} other{jablek}') ]&lt;newline>Máte [spell.number(${oranges},'','he')] [ spell.plural(${oranges}, 'one{pomeranč} few{oranžové} many{oranžových} other{oranžové}') ]&lt;newline>Máte [spell.number(${bananas},'','he')] [ spell.plural(${bananas}, 'one{banán} few{banány} many{banánů} other{banány}') ]</value>
+               </key>
+               <key name="outdatedLangs">
+                <value type="QString">cs</value>
+               </key>
                <key name="ru">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
-                 </key>
-                </value>
+                <value type="QString">У вас есть [spell.number(${apples},'','it') ] [ spell.plural(${apples}, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [spell.number(${oranges},'','he')] [ spell.plural(${oranges}, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [spell.number(${bananas},'','he')] [ spell.plural(${bananas}, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
                </key>
                <key name="uk">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
-                 </key>
-                </value>
+                <value type="QString">Ви маєте [spell.number(${apples},'','it') ] [ spell.plural(${apples}, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [spell.number(${oranges},'','he')] [ spell.plural(${oranges}, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [spell.number(${bananas},'','he')] [ spell.plural(${bananas}, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
                </key>
               </value>
              </key>
             </value>
-           </key>
-           <key name="0">
-            <value type="QVariantHash">
-             <key name="isHTML">
-              <value type="bool">false</value>
-             </key>
-             <key name="tr">
-              <value type="QVariantHash">
-               <key name="ru">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
-                 </key>
-                </value>
-               </key>
-               <key name="uk">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
-                 </key>
-                </value>
-               </key>
-              </value>
-             </key>
-            </value>
-           </key>
-          </value>
-         </key>
-         <key name="ids">
-          <value type="QVariantHash">
-           <key name="You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&#xa;You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&#xa;You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]">
-            <value type="int">0</value>
-           </key>
-          </value>
-         </key>
-        </value>
-       </key>
-       <key name="memo">
-        <value type="QVariantHash">
-         <key name="data">
-          <value type="QVariantHash">
-           <key name="0">
-            <value type="QVariantHash">
-             <key name="isHTML">
-              <value type="bool">false</value>
-             </key>
-             <key name="tr">
-              <value type="QVariantHash">
-               <key name="ru">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">У вас есть [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблоко} few{яблока} many{яблок} other{яблока}') ]&lt;newline>У вас есть [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинов} other{апельсина}') ]&lt;newline>У вас есть [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананов} other{банана}')  ]</value>
-                 </key>
-                </value>
-               </key>
-               <key name="uk">
-                <value type="QVariantHash">
-                 <key name="actual">
-                  <value type="bool">true</value>
-                 </key>
-                 <key name="str">
-                  <value type="QString">Ви маєте [ numberSpell(apples,'','it') ] [ pluralSpell(apples, 'one{яблуко} few{яблука} many{яблук} other{яблука}') ]&lt;newline>Ви маєте [numberSpell(oranges,'','he')] [ pluralSpell(oranges, 'one{апельсин} few{апельсина} many{апельсинів} other{апельсина}') ]&lt;newline>Ви маєте [numberSpell(bananas,'','he')] [ pluralSpell(bananas, 'one{банан} few{банана} many{бананів} other{банана}')  ]</value>
-                 </key>
-                </value>
-               </key>
-              </value>
-             </key>
-            </value>
-           </key>
-          </value>
-         </key>
-         <key name="ids">
-          <value type="QVariantHash">
-           <key name="You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&#xa;You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&#xa;You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]">
-            <value type="int">0</value>
            </key>
           </value>
          </key>
@@ -167,7 +70,27 @@
       <value type="QStringList">
        <string type="QString">uk</string>
        <string type="QString">ru</string>
+       <string type="QString">cs</string>
       </value>
+     </key>
+     <key name="languageCodes">
+      <value type="QStringList">
+       <string type="QString">en</string>
+       <string type="QString">uk</string>
+       <string type="QString">ru</string>
+       <string type="QString">cs</string>
+      </value>
+     </key>
+     <key name="languageNames">
+      <value type="QStringList">
+       <string type="QString">English</string>
+       <string type="QString">Ukrainian</string>
+       <string type="QString">Russian</string>
+       <string type="QString">Czech</string>
+      </value>
+     </key>
+     <key name="version">
+      <value type="int">2</value>
      </key>
     </value>
    </key>
@@ -176,160 +99,392 @@
      <string type="QString">en</string>
      <string type="QString">uk</string>
      <string type="QString">ru</string>
+     <string type="QString">cs</string>
     </value>
    </key>
    <key name="translator_languages">
     <value type="QStringList">
-     <string type="QString">en - English (American English)</string>
-     <string type="QString">uk - Ukrainian (українська)</string>
-     <string type="QString">ru - Russian (русский)</string>
+     <string type="QString">English</string>
+     <string type="QString">Ukrainian</string>
+     <string type="QString">Russian</string>
+     <string type="QString">Czech</string>
     </value>
    </key>
   </customData>
-  <inheritanceData type="QVariantHash"/>
+  <variables type="CuteReport::ReportVariables*">
+   <properties>
+    <objectName type="QString">_property_variables</objectName>
+    <variables type="QVariantHash">
+     <key name="apples">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{b7330836-024d-4547-809e-dc34ab228d37}">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="int">3</value>
+       </key>
+      </value>
+     </key>
+     <key name="bananas">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{b7330836-024d-4547-809e-dc34ab228d37}">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="int">5</value>
+       </key>
+      </value>
+     </key>
+     <key name="oranges">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{b7330836-024d-4547-809e-dc34ab228d37}">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="int">111</value>
+       </key>
+      </value>
+     </key>
+     <key name="tr">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="">
+          <value type="int">0</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">String</value>
+       </key>
+       <key name="value">
+        <value type="QString">uk</value>
+       </key>
+      </value>
+     </key>
+    </variables>
+   </properties>
+  </variables>
+  <inheritance type="CuteReport::ReportInheritance*">
+   <properties>
+    <objectName type="QString">_property_inheritance</objectName>
+    <baseReportName type="QString"></baseReportName>
+    <baseReportFileName type="QString"></baseReportFileName>
+    <lookupPaths type="QStringList"/>
+    <inheritedIdData type="QVariantMap"/>
+    <itemPropertyData type="QVariantMap"/>
+   </properties>
+  </inheritance>
  </properties>
  <children>
-  <Page moduleVersion="1" moduleName="Extended::Page" extends="Standard::Page">
+  <Page name="Std::Page" type="Page" version="1">
    <properties>
     <objectName type="QString">page</objectName>
+    <id type="QString">{ac46d69c-30c4-4186-904f-8bf9b6b3de4b}</id>
+    <objectFlags type="int">24576</objectFlags>
+    <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
-    <orientation type="int">0</orientation>
-    <format type="QString">A4</format>
+    <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
+    <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
     <paperSize type="QSizeF">210,297</paperSize>
-    <duplex type="int">1</duplex>
-    <unit type="QString">Millimeter</unit>
-    <dpi type="int">131</dpi>
+    <format type="QString">A4</format>
+    <margins type="CuteReport::MirrorMarginsType*">
+     <properties>
+      <objectName type="QString">_property_margins</objectName>
+      <left type="double">10</left>
+      <top type="double">10</top>
+      <right type="double">10</right>
+      <bottom type="double">10</bottom>
+      <allowMirror type="bool">true</allowMirror>
+     </properties>
+    </margins>
+    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
     <columns type="int">1</columns>
-    <columnFillDirection type="int">1</columnFillDirection>
-    <backgroundBrush type="QBrush">
-     <color type="QColor">255,255,255,255</color>
-     <style type="int">1</style>
-     <texture type="QPixmap"></texture>
-    </backgroundBrush>
+    <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
+    <background type="CuteReport::BackgroundType*">
+     <properties>
+      <objectName type="QString">_property_background</objectName>
+      <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+      <opacity type="double">1</opacity>
+      <color type="QColor">255,255,255,255</color>
+      <gradient type="CuteReport::GradientType*">
+       <properties>
+        <objectName type="QString">_property_gradient</objectName>
+        <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+        <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+        <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+        <rotation type="double">0</rotation>
+        <stopValues type="QStringList">
+         <string type="QString">0</string>
+         <string type="QString">1</string>
+        </stopValues>
+        <stopColors type="QStringList">
+         <string type="QString">blue</string>
+         <string type="QString">yellow</string>
+        </stopColors>
+        <startPoint type="QPointF">0,0</startPoint>
+        <stopPoint type="QPointF">0,1</stopPoint>
+       </properties>
+      </gradient>
+      <autoType type="bool">true</autoType>
+     </properties>
+    </background>
     <order type="int">0</order>
-    <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
-    <dataset type="QString"></dataset>
+    <font type="CuteReport::FontType*">
+     <properties>
+      <objectName type="QString">_property_font</objectName>
+      <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+      <family type="QString">Noto Sans [monotype]</family>
+      <size type="double">10.5</size>
+      <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+      <italic type="bool">false</italic>
+      <underline type="bool">false</underline>
+      <overline type="bool">false</overline>
+      <strikeout type="bool">false</strikeout>
+      <outline type="bool">false</outline>
+     </properties>
+    </font>
     <quantity type="int">1</quantity>
-    <marginLeft type="double">10</marginLeft>
-    <marginTop type="double">10</marginTop>
-    <marginRight type="double">10</marginRight>
-    <marginBottom type="double">10</marginBottom>
-    <margins type="CuteReport::Margins">10,10,10,10</margins>
+    <dataset type="QString"></dataset>
+    <domain type="QString"></domain>
     <printOnPreviousPage type="bool">false</printOnPreviousPage>
-    <allowMirrorMargins type="bool">true</allowMirrorMargins>
     <endlessWidth type="bool">false</endlessWidth>
     <endlessHeight type="bool">false</endlessHeight>
-    <pageFlags type="int">0</pageFlags>
     <outlineText type="QString"></outlineText>
-    <backPicture type="QPixmap"></backPicture>
-    <backPictureFlags type="int">23</backPictureFlags>
-    <stretchDesignHeight type="bool">false</stretchDesignHeight>
-    <useGrid type="bool">true</useGrid>
-    <gridStep type="double">2</gridStep>
-    <magnetValue type="int">0</magnetValue>
-    <magnetRate type="int">6</magnetRate>
-    <gridSteps type="QString">0=2</gridSteps>
     <resetPageNumber type="bool">false</resetPageNumber>
     <printIfEmpty type="bool">true</printIfEmpty>
+    <grid type="CuteReport::StdPageGrid*">
+     <properties>
+      <objectName type="QString">_property_grid</objectName>
+      <enabled type="bool">false</enabled>
+      <step type="double">1</step>
+     </properties>
+    </grid>
    </properties>
    <children>
-    <Band moduleVersion="1" layoutPriority="100" moduleName="Standard::Page Header" extends="" layoutType="1">
+    <Band layoutPriority="100" layoutType="1" name="Std::PageHeader" type="Band" version="1">
      <properties>
       <objectName type="QString">page header</objectName>
+      <id type="QString">{d17af2a2-3882-4daa-a895-19054554ac58}</id>
+      <objectFlags type="int">0</objectFlags>
+      <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
+      <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,10,190,54</geometry>
-      <frame type="int">0</frame>
-      <opacity type="double">1</opacity>
-      <rotation type="double">0</rotation>
-      <borderPen type="QPen">
-       <brush type="QBrush">
-        <color type="QColor">0,0,0,255</color>
-        <style type="int">1</style>
-        <texture type="QPixmap"></texture>
-       </brush>
-       <capStyle type="int">16</capStyle>
-       <color type="QColor">0,0,0,255</color>
-       <isCosmetic type="bool">false</isCosmetic>
-       <joinStyle type="int">0</joinStyle>
-       <miterLimit type="double">2</miterLimit>
-       <style type="int">1</style>
-       <width type="double">1</width>
-      </borderPen>
-      <borderType type="QString" alternateValue="0">Middle</borderType>
-      <backgroundBrush type="QBrush">
-       <color type="QColor">0,0,0,255</color>
-       <style type="int">0</style>
-       <texture type="QPixmap"></texture>
-      </backgroundBrush>
-      <font type="QFont">Noto Sans [monotype],10.5,-1,5,50,0,0,0,0,0</font>
-      <parentFont type="bool">false</parentFont>
       <order type="int">0</order>
-      <baseItemFlags type="int">0</baseItemFlags>
-      <outlineText type="QString"></outlineText>
-      <stretchable type="bool">false</stretchable>
-      <showStretchability type="bool">false</showStretchability>
-      <stretchOriginalSize type="QSizeF">-1,-1</stretchOriginalSize>
+      <opacity type="double">1</opacity>
+      <font type="CuteReport::FontType*">
+       <properties>
+        <objectName type="QString">_property_font</objectName>
+        <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+        <family type="QString">Noto Sans [monotype]</family>
+        <size type="double">10.5</size>
+        <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+        <italic type="bool">false</italic>
+        <underline type="bool">false</underline>
+        <overline type="bool">false</overline>
+        <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
+       </properties>
+      </font>
+      <background type="CuteReport::BackgroundType*">
+       <properties>
+        <objectName type="QString">_property_background</objectName>
+        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <opacity type="double">1</opacity>
+        <color type="QColor">0,0,0,255</color>
+        <gradient type="CuteReport::GradientType*">
+         <properties>
+          <objectName type="QString">_property_gradient</objectName>
+          <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+          <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+          <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
+          <stopValues type="QStringList">
+           <string type="QString">0</string>
+           <string type="QString">1</string>
+          </stopValues>
+          <stopColors type="QStringList">
+           <string type="QString">blue</string>
+           <string type="QString">yellow</string>
+          </stopColors>
+          <startPoint type="QPointF">0,0</startPoint>
+          <stopPoint type="QPointF">0,1</stopPoint>
+         </properties>
+        </gradient>
+        <autoType type="bool">true</autoType>
+       </properties>
+      </background>
+      <frame type="CuteReport::FrameType*">
+       <properties>
+        <objectName type="QString">_property_frame</objectName>
+        <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+        <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.85</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+       </properties>
+      </frame>
+      <dataset type="QString"></dataset>
+      <stretching textValue="StretchVertical" type="enum" typeName="QFlags&lt;CuteReport::Band::StretchingType>">1</stretching>
+      <outline type="CuteReport::OutlineType*">
+       <properties>
+        <objectName type="QString">_property_outline</objectName>
+        <text type="QString"></text>
+       </properties>
+      </outline>
       <firstPage type="bool">true</firstPage>
+      <lastPage type="bool">true</lastPage>
       <once type="bool">false</once>
      </properties>
      <children>
-      <Item moduleVersion="1" moduleName="Extended::Memo" extends="Standard::Memo">
+      <Item name="Ext::Text" type="Item" version="1">
        <properties>
         <objectName type="QString">memo</objectName>
+        <id type="QString">{b7330836-024d-4547-809e-dc34ab228d37}</id>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">2,4,180,46</geometry>
-        <frame type="int">0</frame>
+        <order type="int">0</order>
         <opacity type="double">1</opacity>
-        <rotation type="double">0</rotation>
-        <borderPen type="QPen">
-         <brush type="QBrush">
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Arial</family>
+          <size type="double">14.5</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
           <color type="QColor">0,0,0,255</color>
-          <style type="int">1</style>
-          <texture type="QPixmap"></texture>
-         </brush>
-         <capStyle type="int">16</capStyle>
-         <color type="QColor">0,0,0,255</color>
-         <isCosmetic type="bool">false</isCosmetic>
-         <joinStyle type="int">0</joinStyle>
-         <miterLimit type="double">2</miterLimit>
-         <style type="int">1</style>
-         <width type="double">1</width>
-        </borderPen>
-        <borderType type="QString" alternateValue="0">Middle</borderType>
-        <backgroundBrush type="QBrush">
-         <color type="QColor">0,0,0,255</color>
-         <style type="int">0</style>
-         <texture type="QPixmap"></texture>
-        </backgroundBrush>
-        <font type="QFont">Arial,14.5,-1,5,50,0,0,0,0,0</font>
-        <parentFont type="bool">false</parentFont>
-        <order type="int">1</order>
-        <baseItemFlags type="int">0</baseItemFlags>
-        <shiftMode type="QString" alternateValue="0">AlwaysShift</shiftMode>
-        <textFlags type="int">4225</textFlags>
-        <stretchMode type="QString" alternateValue="0">DontStretch</stretchMode>
-        <showStretchability type="bool">true</showStretchability>
-        <allowHTML type="bool">false</allowHTML>
-        <allowExpressions type="bool">true</allowExpressions>
-        <text type="QString">You have [ numberSpell(apples) ] [ pluralSpell(apples, 'one{apple} other{apples}') ]&lt;newline>You have [numberSpell(oranges)] [ pluralSpell(oranges, 'one{orange} other{oranges}') ]&lt;newline>You have [numberSpell(bananas)] [ pluralSpell(bananas, 'one{banans} other{bananas}') ]</text>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.85</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">You have [spell.number(${apples}) ] [ spell.plural(${apples}, 'one{apple} other{apples}') ]&lt;newline>You have [spell.number(${oranges})] [ spell.plural(${oranges}, 'one{orange} other{oranges}') ]&lt;newline>You have [spell.number(${bananas})] [ spell.plural(${bananas}, 'one{banans} other{bananas}') ]</text>
         <textColor type="QColor">0,0,0,255</textColor>
-        <textMargin type="QPointF">1,0</textMargin>
+        <textFlags textValue="AlignLeft|AlignVCenter|TextWordWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">4225</textFlags>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">1</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
-        <stretchFont type="bool">false</stretchFont>
-        <expDelimiters type="QString">[ , ]</expDelimiters>
         <flowTo type="QString"></flowTo>
-        <allowSplit type="bool">false</allowSplit>
        </properties>
       </Item>
      </children>
     </Band>
    </children>
   </Page>
-  <Form moduleVersion="1" moduleName="Extended::Form" extends="">
+  <Form name="Std::QmlForm" type="Form" version="1">
    <properties>
     <objectName type="QString">form</objectName>
-    <data type="QString">&lt;?xml version="1.0" encoding="UTF-8"?>&lt;newline>&lt;ui version="4.0">&lt;newline> &lt;class>form&lt;/class>&lt;newline> &lt;widget class="QDialog" name="form">&lt;newline>  &lt;property name="geometry">&lt;newline>   &lt;rect>&lt;newline>    &lt;x>0&lt;/x>&lt;newline>    &lt;y>0&lt;/y>&lt;newline>    &lt;width>529&lt;/width>&lt;newline>    &lt;height>278&lt;/height>&lt;newline>   &lt;/rect>&lt;newline>  &lt;/property>&lt;newline>  &lt;property name="windowTitle">&lt;newline>   &lt;string>Dialog&lt;/string>&lt;newline>  &lt;/property>&lt;newline>  &lt;layout class="QGridLayout" name="gridLayout">&lt;newline>   &lt;item row="4" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_2">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many apples do you have:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="6" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="bananas">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>5&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="2" column="1" colspan="2">&lt;newline>    &lt;widget class="QComboBox" name="languages"/>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="4" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="apples">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>1&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="5" column="1" colspan="2">&lt;newline>    &lt;widget class="QSpinBox" name="oranges">&lt;newline>     &lt;property name="maximum">&lt;newline>      &lt;number>999999999&lt;/number>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="value">&lt;newline>      &lt;number>2&lt;/number>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="7" column="1">&lt;newline>    &lt;spacer name="verticalSpacer">&lt;newline>     &lt;property name="sizeHint" stdset="0">&lt;newline>      &lt;size>&lt;newline>       &lt;width>20&lt;/width>&lt;newline>       &lt;height>40&lt;/height>&lt;newline>      &lt;/size>&lt;newline>     &lt;/property>&lt;newline>    &lt;/spacer>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="5" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_3">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many oranges do you have:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="2" column="0">&lt;newline>    &lt;widget class="QLabel" name="label">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>Your preferred language:&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="0" column="0" colspan="3">&lt;newline>    &lt;widget class="QLabel" name="label_5">&lt;newline>     &lt;property name="font">&lt;newline>      &lt;font>&lt;newline>       &lt;pointsize>10&lt;/pointsize>&lt;newline>       &lt;weight>75&lt;/weight>&lt;newline>       &lt;bold>true&lt;/bold>&lt;newline>      &lt;/font>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="frameShape">&lt;newline>      &lt;enum>QFrame::NoFrame&lt;/enum>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>I am very good in spelling out. Please answer me questions below and I will be able to spell it out for you.&lt;/string>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="textFormat">&lt;newline>      &lt;enum>Qt::PlainText&lt;/enum>&lt;newline>     &lt;/property>&lt;newline>     &lt;property name="wordWrap">&lt;newline>      &lt;bool>true&lt;/bool>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="8" column="2">&lt;newline>    &lt;widget class="QPushButton" name="bPrint">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>Print&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="6" column="0">&lt;newline>    &lt;widget class="QLabel" name="label_4">&lt;newline>     &lt;property name="text">&lt;newline>      &lt;string>How many bananas do you have&lt;/string>&lt;newline>     &lt;/property>&lt;newline>    &lt;/widget>&lt;newline>   &lt;/item>&lt;newline>   &lt;item row="1" column="0">&lt;newline>    &lt;spacer name="verticalSpacer_2">&lt;newline>     &lt;property name="sizeHint" stdset="0">&lt;newline>      &lt;size>&lt;newline>       &lt;width>20&lt;/width>&lt;newline>       &lt;height>40&lt;/height>&lt;newline>      &lt;/size>&lt;newline>     &lt;/property>&lt;newline>    &lt;/spacer>&lt;newline>   &lt;/item>&lt;newline>  &lt;/layout>&lt;newline> &lt;/widget>&lt;newline> &lt;resources/>&lt;newline> &lt;connections>&lt;newline>  &lt;connection>&lt;newline>   &lt;sender>bPrint&lt;/sender>&lt;newline>   &lt;signal>clicked()&lt;/signal>&lt;newline>   &lt;receiver>form&lt;/receiver>&lt;newline>   &lt;slot>accept()&lt;/slot>&lt;newline>   &lt;hints>&lt;newline>    &lt;hint type="sourcelabel">&lt;newline>     &lt;x>331&lt;/x>&lt;newline>     &lt;y>274&lt;/y>&lt;newline>    &lt;/hint>&lt;newline>    &lt;hint type="destinationlabel">&lt;newline>     &lt;x>199&lt;/x>&lt;newline>     &lt;y>149&lt;/y>&lt;newline>    &lt;/hint>&lt;newline>   &lt;/hints>&lt;newline>  &lt;/connection>&lt;newline> &lt;/connections>&lt;newline>&lt;/ui>&lt;newline></data>
+    <id type="QString">{4bf4de5a-49bd-4291-87dd-bd7e27ff4dd5}</id>
+    <objectFlags type="int">0</objectFlags>
+    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 300&lt;newline>    width: 600&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>            CRLayoutLabel { text: "Default language:"  }&lt;newline>            CRLayoutDefaultLanguageLabel { }&lt;newline>&lt;newline>            CRLayoutLabel { text: "Selected language:" }&lt;newline>            CRLayoutLanguageSelector {}&lt;newline>&lt;newline>			CRLayoutLabel { text: "How many **__Apples__** do you have:" }&lt;newline>            CRLayoutSpinBox { varName: "apples" }&lt;newline>&lt;newline>            CRLayoutLabel { text: "How many **__Oranges__** do you have:" }&lt;newline>            CRLayoutSpinBox { varName: "oranges" }&lt;newline>&lt;newline>            CRLayoutLabel { text: "How many **__Bananas__** do you have:" }&lt;newline>            CRLayoutSpinBox {	varName: "bananas" }&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        CRLayoutSpacer { }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
    </properties>
   </Form>
  </children>
