@@ -3,8 +3,8 @@
 <Report>
  <properties>
   <objectName type="QString"></objectName>
-  <id type="QString">{7eb0e013-311c-442d-87ff-ce88126c7706}</id>
-  <name type="QString">Table of Contents</name>
+  <id type="QString">{571df3d1-0575-4a56-8c12-cdc08cb12cee}</id>
+  <name type="QString">Table of Contents 1</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to generate a table of contents based on functionality of the "toc" hidden dataset.&lt;newline>First page "Index of Contents" is automatically generated.</description>
   <version type="int">2</version>
@@ -17,7 +17,7 @@
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
   <hasPicture type="bool">true</hasPicture>
-  <variablesData type="QVariantHash"/>
+  <translations type="QStringList"/>
   <customData type="QVariantHash">
    <key name="translator_map_v1">
     <value type="QVariantHash">
@@ -30,6 +30,12 @@
     </value>
    </key>
   </customData>
+  <variables type="CuteReport::ReportVariables*">
+   <properties>
+    <objectName type="QString">_property_variables</objectName>
+    <variables type="QVariantHash"/>
+   </properties>
+  </variables>
   <inheritance type="CuteReport::ReportInheritance*">
    <properties>
     <objectName type="QString">_property_inheritance</objectName>
@@ -46,14 +52,13 @@
    <properties>
     <objectName type="QString">page_index</objectName>
     <id type="QString">{9f25001e-0939-4597-bb80-d5944c1f5a1f}</id>
-    <parent type="QString"></parent>
     <objectFlags type="int">24576</objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
     <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
     <paperSize type="QSizeF">215.9,279.4</paperSize>
-    <format type="QString">Letter</format>
+    <format type="QString"></format>
     <margins type="CuteReport::MirrorMarginsType*">
      <properties>
       <objectName type="QString">_property_margins</objectName>
@@ -79,6 +84,7 @@
         <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
         <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
         <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+        <rotation type="double">0</rotation>
         <stopValues type="QStringList">
          <string type="QString">0</string>
          <string type="QString">1</string>
@@ -106,6 +112,7 @@
       <underline type="bool">false</underline>
       <overline type="bool">false</overline>
       <strikeout type="bool">false</strikeout>
+      <outline type="bool">false</outline>
      </properties>
     </font>
     <quantity type="int">1</quantity>
@@ -130,12 +137,11 @@
      <properties>
       <objectName type="QString">page footer_2</objectName>
       <id type="QString">{3af752e6-bd26-4d1d-b318-617eb62cec4a}</id>
-      <parent type="QString">page_index</parent>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,263.019,195.9,5.981</geometry>
+      <geometry type="QRectF">10,263.02,195.9,5.98</geometry>
       <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -149,6 +155,7 @@
         <underline type="bool">false</underline>
         <overline type="bool">false</overline>
         <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
        </properties>
       </font>
       <background type="CuteReport::BackgroundType*">
@@ -163,6 +170,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -213,7 +221,6 @@
        <properties>
         <objectName type="QString">memo_6</objectName>
         <id type="QString">{bffc574d-6549-4f28-9ba3-22958aa30ddc}</id>
-        <parent type="QString">page footer_2</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -232,6 +239,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -246,6 +254,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -310,7 +319,6 @@
      <properties>
       <objectName type="QString">detail_1</objectName>
       <id type="QString">{1daafcdb-b509-410c-9626-0f9ea5c20879}</id>
-      <parent type="QString">page_index</parent>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
@@ -329,6 +337,7 @@
         <underline type="bool">false</underline>
         <overline type="bool">false</overline>
         <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
        </properties>
       </font>
       <background type="CuteReport::BackgroundType*">
@@ -343,6 +352,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -397,6 +407,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -421,7 +432,6 @@
        <properties>
         <objectName type="QString">text</objectName>
         <id type="QString">{2253eefe-ab7e-44cc-b3ee-5c637ef48203}</id>
-        <parent type="QString">detail_1</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -440,6 +450,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -454,6 +465,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -516,7 +528,6 @@
        <properties>
         <objectName type="QString">text_1</objectName>
         <id type="QString">{ede6b1cd-a137-4544-9704-da1c3a39cdc7}</id>
-        <parent type="QString">detail_1</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -535,6 +546,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -549,6 +561,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -613,7 +626,6 @@
      <properties>
       <objectName type="QString">detailHeader</objectName>
       <id type="QString">{520eab87-6dc5-4e28-994d-4d8917b91e9f}</id>
-      <parent type="QString">page_index</parent>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
@@ -632,6 +644,7 @@
         <underline type="bool">false</underline>
         <overline type="bool">false</overline>
         <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
        </properties>
       </font>
       <background type="CuteReport::BackgroundType*">
@@ -646,6 +659,7 @@
           <preset textValue="PlumPlate" type="enum" typeName="CuteReport::GradientType::Preset">28</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -697,7 +711,6 @@
        <properties>
         <objectName type="QString">text_2</objectName>
         <id type="QString">{b029c039-a367-494a-af3d-e03539ea4cbd}</id>
-        <parent type="QString">detailHeader</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -716,6 +729,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -730,6 +744,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -796,14 +811,13 @@
    <properties>
     <objectName type="QString">page</objectName>
     <id type="QString">{a545e1f6-4c46-4ad2-a173-2310c89d46ec}</id>
-    <parent type="QString"></parent>
     <objectFlags type="int">24576</objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
     <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
     <paperSize type="QSizeF">215.9,279.4</paperSize>
-    <format type="QString">Letter</format>
+    <format type="QString"></format>
     <margins type="CuteReport::MirrorMarginsType*">
      <properties>
       <objectName type="QString">_property_margins</objectName>
@@ -829,6 +843,7 @@
         <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
         <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
         <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+        <rotation type="double">0</rotation>
         <stopValues type="QStringList">
          <string type="QString">0</string>
          <string type="QString">1</string>
@@ -856,6 +871,7 @@
       <underline type="bool">false</underline>
       <overline type="bool">false</overline>
       <strikeout type="bool">false</strikeout>
+      <outline type="bool">false</outline>
      </properties>
     </font>
     <quantity type="int">1</quantity>
@@ -880,7 +896,6 @@
      <properties>
       <objectName type="QString">detail</objectName>
       <id type="QString">{082f9a85-7e49-42a1-b58e-1ecea120654c}</id>
-      <parent type="QString">page</parent>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
@@ -899,6 +914,7 @@
         <underline type="bool">false</underline>
         <overline type="bool">false</overline>
         <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
        </properties>
       </font>
       <background type="CuteReport::BackgroundType*">
@@ -913,6 +929,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -967,6 +984,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -991,7 +1009,6 @@
        <properties>
         <objectName type="QString">image</objectName>
         <id type="QString">{f941bcee-4a84-41fd-8c87-bd3bfe34feaf}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1010,6 +1027,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1024,6 +1042,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1071,7 +1090,6 @@
        <properties>
         <objectName type="QString">memo_2</objectName>
         <id type="QString">{f7307355-14b4-4211-8cda-4d4771f963d5}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1090,6 +1108,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1104,6 +1123,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1166,7 +1186,6 @@
        <properties>
         <objectName type="QString">memo_3</objectName>
         <id type="QString">{3f5a3e73-806a-4750-aa62-ddf0c9975aa3}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1185,6 +1204,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1199,6 +1219,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1261,7 +1282,6 @@
        <properties>
         <objectName type="QString">memo_1</objectName>
         <id type="QString">{3a1a4e7d-cf5b-42d5-be1d-4818b461e1c6}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1280,6 +1300,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1294,6 +1315,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1356,7 +1378,6 @@
        <properties>
         <objectName type="QString">ellipse_1</objectName>
         <id type="QString">{1a822aeb-d93c-48ca-a720-8b289635c2ee}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1375,6 +1396,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1389,6 +1411,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1446,6 +1469,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1467,7 +1491,6 @@
          <properties>
           <objectName type="QString">ellipse</objectName>
           <id type="QString">{5f917c95-ea95-4b1a-bd10-90857a8cd48e}</id>
-          <parent type="QString">ellipse_1</parent>
           <objectFlags type="int">0</objectFlags>
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
@@ -1486,6 +1509,7 @@
             <underline type="bool">false</underline>
             <overline type="bool">false</overline>
             <strikeout type="bool">false</strikeout>
+            <outline type="bool">false</outline>
            </properties>
           </font>
           <background type="CuteReport::BackgroundType*">
@@ -1500,6 +1524,7 @@
               <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
               <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
               <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">0</rotation>
               <stopValues type="QStringList">
                <string type="QString">0</string>
                <string type="QString">1</string>
@@ -1557,6 +1582,7 @@
               <preset textValue="WinterNeva" type="enum" typeName="CuteReport::GradientType::Preset">10</preset>
               <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
               <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">0</rotation>
               <stopValues type="QStringList">
                <string type="QString">0</string>
                <string type="QString">0.4</string>
@@ -1582,7 +1608,6 @@
            <properties>
             <objectName type="QString">memo_title</objectName>
             <id type="QString">{dca565e5-d9ca-4916-8d63-5c253aaba75e}</id>
-            <parent type="QString">ellipse</parent>
             <objectFlags type="int">0</objectFlags>
             <enabled type="bool">true</enabled>
             <visible type="bool">true</visible>
@@ -1601,6 +1626,7 @@
               <underline type="bool">false</underline>
               <overline type="bool">false</overline>
               <strikeout type="bool">false</strikeout>
+              <outline type="bool">false</outline>
              </properties>
             </font>
             <background type="CuteReport::BackgroundType*">
@@ -1615,6 +1641,7 @@
                 <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
                 <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
                 <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+                <rotation type="double">0</rotation>
                 <stopValues type="QStringList">
                  <string type="QString">0</string>
                  <string type="QString">1</string>
@@ -1681,7 +1708,6 @@
        <properties>
         <objectName type="QString">rectangle</objectName>
         <id type="QString">{4883bdf9-15d9-4fb8-ab45-699ceabead63}</id>
-        <parent type="QString">detail</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1700,6 +1726,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1714,6 +1741,7 @@
             <preset textValue="FebruaryInk" type="enum" typeName="CuteReport::GradientType::Preset">51</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1757,12 +1785,11 @@
      <properties>
       <objectName type="QString">page footer</objectName>
       <id type="QString">{0fb7419f-e8ab-4b2b-8c19-d048e10bd6c5}</id>
-      <parent type="QString">page</parent>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,265.6,195.9,3.8</geometry>
+      <geometry type="QRectF">10,263.76,195.9,5.64</geometry>
       <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
@@ -1776,6 +1803,7 @@
         <underline type="bool">false</underline>
         <overline type="bool">false</overline>
         <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
        </properties>
       </font>
       <background type="CuteReport::BackgroundType*">
@@ -1790,6 +1818,7 @@
           <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
           <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
           <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
           <stopValues type="QStringList">
            <string type="QString">0</string>
            <string type="QString">1</string>
@@ -1840,7 +1869,6 @@
        <properties>
         <objectName type="QString">memo</objectName>
         <id type="QString">{887c92f1-d26b-4f96-986a-cad7e312776b}</id>
-        <parent type="QString">page footer</parent>
         <objectFlags type="int">1</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1859,6 +1887,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1873,6 +1902,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -1935,7 +1965,6 @@
        <properties>
         <objectName type="QString">text_3</objectName>
         <id type="QString">{9f9cc1c9-6a0c-4dff-aa6c-81152fed8f13}</id>
-        <parent type="QString">page footer</parent>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
@@ -1954,6 +1983,7 @@
           <underline type="bool">false</underline>
           <overline type="bool">false</overline>
           <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
          </properties>
         </font>
         <background type="CuteReport::BackgroundType*">
@@ -1968,6 +1998,7 @@
             <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
             <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
             <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
             <stopValues type="QStringList">
              <string type="QString">0</string>
              <string type="QString">1</string>
@@ -2034,10 +2065,10 @@
    <properties>
     <objectName type="QString">data</objectName>
     <id type="QString">{ead1d821-cab3-4cad-beb8-41bf36b2b8a9}</id>
-    <parent type="QString"></parent>
     <objectFlags type="int">0</objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
+    <isGlobal type="bool">false</isGlobal>
     <sortFields type="QString"></sortFields>
     <filter type="CuteReport::ModelFilter*">
      <properties>
@@ -2048,7 +2079,33 @@
       <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
      </properties>
     </filter>
-    <isGlobal type="bool">false</isGlobal>
+    <transform type="CuteReport::DatasetTransform*">
+     <properties>
+      <objectName type="QString">_property_transform</objectName>
+      <enabled type="bool">false</enabled>
+      <headerToRow type="bool">false</headerToRow>
+      <aliases type="QStringList">
+       <string type="QString"></string>
+      </aliases>
+      <rowHeaders type="QStringList">
+       <string type="QString"></string>
+      </rowHeaders>
+      <columnHeaders type="QStringList">
+       <string type="QString"></string>
+      </columnHeaders>
+      <cells type="QStringList">
+       <string type="QString"></string>
+      </cells>
+      <roles type="QStringList">
+       <string type="QString"></string>
+      </roles>
+      <rowHeadersStr type="QString"></rowHeadersStr>
+      <columnHeadersStr type="QString"></columnHeadersStr>
+      <cellsStr type="QString"></cellsStr>
+      <aliasesStr type="QString"></aliasesStr>
+      <rolesStr type="QString"></rolesStr>
+     </properties>
+    </transform>
     <sourceType textValue="File" type="enum" typeName="CuteReport::SqlDataset::SourceType">0</sourceType>
     <connectionName type="QString"></connectionName>
     <connectionOptions type="QString"></connectionOptions>

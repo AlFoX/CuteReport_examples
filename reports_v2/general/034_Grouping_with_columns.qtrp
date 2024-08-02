@@ -3,7 +3,7 @@
 <Report>
  <properties>
   <objectName type="QString"></objectName>
-  <id type="QString">{1df38511-5f60-4db0-877b-f091b472fec5}</id>
+  <id type="QString">{0580d870-30c8-46c7-875c-e3de7ab0053c}</id>
   <name type="QString">Page with columns</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates ability of CuteReport to print some columns on a page and to fill columns out in 2 diffrent ways:&lt;newline>1) fills out first column from top to bottom and then switch to next column (vertical filling)&lt;newline>2) fills out first column with 1 detail, then fill out second column with one detail, then go back to the first column and so on (horizontal filling)&lt;newline>&lt;newline>This report shows horizontal filling as more complicated one.</description>
@@ -17,7 +17,6 @@
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
   <hasPicture type="bool">true</hasPicture>
-  <translations type="QStringList"/>
   <customData type="QVariantHash">
    <key name="translator_map_v1">
     <value type="QVariantHash">
@@ -33,6 +32,7 @@
     </value>
    </key>
   </customData>
+  <translations type="QStringList"/>
   <variables type="CuteReport::ReportVariables*">
    <properties>
     <objectName type="QString">_property_variables</objectName>
@@ -257,7 +257,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">18,0,63,8</geometry>
+        <geometry type="QRectF">17,0,58,8</geometry>
         <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -353,7 +353,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">81,0,12,8</geometry>
+        <geometry type="QRectF">76,0,13,8</geometry>
         <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -1027,7 +1027,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">74,2,21,8</geometry>
+        <geometry type="QRectF">71,2,24,8</geometry>
         <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -1315,7 +1315,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">93,2,4,7</geometry>
+        <geometry type="QRectF">96,3,1,5</geometry>
         <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
@@ -2166,21 +2166,11 @@
       <objectName type="QString">_property_transform</objectName>
       <enabled type="bool">false</enabled>
       <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString"></string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString"></string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString"></string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString"></string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString"></string>
-      </roles>
+      <aliases type="QStringList"/>
+      <rowHeaders type="QStringList"/>
+      <columnHeaders type="QStringList"/>
+      <cells type="QStringList"/>
+      <roles type="QStringList"/>
       <rowHeadersStr type="QString"></rowHeadersStr>
       <columnHeadersStr type="QString"></columnHeadersStr>
       <cellsStr type="QString"></cellsStr>

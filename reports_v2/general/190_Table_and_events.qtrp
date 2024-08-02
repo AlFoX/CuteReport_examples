@@ -1,19 +1,19 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta4" encoding="utf-8"?>
 <Report>
  <properties>
   <objectName type="QString"></objectName>
-  <id type="QString">{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}</id>
-  <name type="QString">Bus Schedule </name>
+  <id type="QString">{90265f14-9173-4713-b001-fccb834707d1}</id>
+  <name type="QString">Child Custody Calendar</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
-  <description type="QString"></description>
+  <description type="QString">An example of using Calendar dataset, Table item and its delegates along with some scripting to produce a child custody calendar.&lt;newline>Custody days pattern, pattern start date, calendar start and end months are configured via report's variables. Desired colors can be set on the table Legend rectangles. Script events are used for datasets and Table item to adjust current pattern position and Table's delegate background color.</description>
   <version type="int">2</version>
   <script type="QString">const shifts = ${shift_pattern}.split(',')&lt;newline>var shiftIndex = -1;&lt;newline>&lt;newline>months.fromYear = ${yearFrom}&lt;newline>months.fromMonth = ${monthFrom}&lt;newline>months.toYear = ${yearTo}&lt;newline>months.toMonth = ${monthTo}&lt;newline>&lt;newline>var shiftStartDate = new Date(${shiftStartDate})&lt;newline>&lt;newline>function createDateFromMonthAndYear(month, year) {&lt;newline>    // Month in JavaScript Date object is 0-indexed (0 for January, 11 for December)&lt;newline>    // So, we subtract 1 from the provided month&lt;newline>    const date = new Date(year, month - 1, 1);&lt;newline>    return date;&lt;newline>}&lt;newline>&lt;newline>function differenceInDays(date1, date2) {&lt;newline>    // Convert both dates to UTC timestamps&lt;newline>    const utc1 = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());&lt;newline>    const utc2 = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());&lt;newline>&lt;newline>    // Calculate the difference in milliseconds&lt;newline>    const diff = utc2 - utc1;&lt;newline>&lt;newline>    // Convert the difference from milliseconds to days&lt;newline>    const days = Math.floor(diff / (1000 * 60 * 60 * 24));&lt;newline>    &lt;newline>    return days;&lt;newline>}</script>
   <created type="QDateTime"></created>
   <defaultStorage type="QString"></defaultStorage>
   <defaultRenderer type="QString"></defaultRenderer>
   <defaultPrinter type="QString"></defaultPrinter>
-  <picture type="QPixmap">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</picture>
+  <picture type="QPixmap">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H/r4+ISGhsbFxYnFYk9PTzMzMzc3t4yMDD8/P2Tpf05oaKjuz039+/e/f/8+EZWUlBBRenp6TExMfHx8UlKSbgkRlZeXE5FCoVAoFDU1NQ231g2AzUlGvXr1io6OJiIXF5fNmzc7Ojq6ubnt3bt3zJgxKSkpjo6OIpHIwsLi9u3b8fHxSqUyODiYSV0wjtdff/3QoUN+fn5+fn702D5I+/btT58+ffr06SFDhsTExDg7O2s0mqKiIisrq3feecfZ2bmhV994GMTp008/JaKNGzfq7uoP/qxatcrExKRt27YqlcrExGTUqFGmpqZardbwimBkLi4uubm5paWlnTp1okf7IJ9++mmXLl0cHBwkEsmgQYMcHR1TUlJu3LgRFhZmZWWVk5MTERHBcS/XX2LYb63+4I+JiQkRiUQi3Q3d4QeO4162l/jF0KpVK/2hvLr7ICdPnqyoqNC/6SEhIUTk6ekpEolewjcaf3d6uURFRU18wpG9iV9//PfH0e+DKJVK3a9LvZf5r08v3e8PYKLePkhdL22WCPOdXkJRuSf/ZGlrW6OvyAsIO3sAzGBnD4AZxAmAGcQJgBnECYAZg47sPeUqUwAvgGe9WBqO7AEwg509AGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmMLkd4IkwuR2gwWBnD4AZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGUxuB3giTG4HaDDY2QNgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAaT2wGeCJPbARoMdvYAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJjB5HaAJ8LkdoAGg509AGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmECcAZhAnAGYQJwBmMLkd4IkwuR2gwWBnD4AZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZzMYFeCLMxgVoMNjZA2AGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBnECYAZxAmAGcQJgBpPbAZ4Ik9sBGgx29gCYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmEGcAJhBnACYQZwAmPk/WbE+wqtLpHgAAAAASUVORK5CYII=</picture>
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
   <hasPicture type="bool">true</hasPicture>
@@ -38,10 +38,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -56,6 +71,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -65,19 +83,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -98,10 +131,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -110,7 +161,7 @@
         <value type="QString">Integer</value>
        </key>
        <key name="value">
-        <value type="int">7</value>
+        <value type="int">8</value>
        </key>
       </value>
      </key>
@@ -121,10 +172,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -139,6 +205,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -148,19 +217,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -181,10 +265,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -204,10 +306,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -222,6 +339,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -231,19 +351,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -264,10 +399,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -296,7 +449,7 @@
         <value type="QString">String</value>
        </key>
        <key name="value">
-        <value type="QString">Bus</value>
+        <value type="QString">Father</value>
        </key>
       </value>
      </key>
@@ -316,7 +469,7 @@
         <value type="QString">String</value>
        </key>
        <key name="value">
-        <value type="QString">Carpool</value>
+        <value type="QString">Mother</value>
        </key>
       </value>
      </key>
@@ -327,10 +480,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -345,6 +513,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -354,19 +525,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -387,10 +573,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -410,10 +614,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -428,6 +647,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -437,19 +659,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -470,10 +707,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -493,10 +748,25 @@
        </key>
        <key name="references">
         <value type="QVariantHash">
+         <key name="{076820a0-550b-4d66-873c-41e5c0c7bbfc}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{11a7414f-193f-40bf-b05f-a71e5359cb4c}">
+          <value type="int">-1</value>
+         </key>
          <key name="{15cbb0e8-703d-4fce-841f-521160ea3922}">
           <value type="int">-1</value>
          </key>
+         <key name="{1dc19399-5a0b-4078-a132-d175806efaa5}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{1ffd210c-7621-41cf-b226-5aa68d1a2292}">
+          <value type="int">-1</value>
+         </key>
          <key name="{22e9edc6-3513-411f-85a8-78c4492e19b1}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{287fcf99-af49-451b-bb3e-1e753be20b08}">
           <value type="int">-1</value>
          </key>
          <key name="{38673482-61bb-4290-af00-269b4478a936}">
@@ -511,6 +781,9 @@
          <key name="{51703ee4-00a8-405d-a5d8-9b5198b72d72}">
           <value type="int">-1</value>
          </key>
+         <key name="{56b6d1d2-0a74-488e-b420-e0de1f2b03d7}">
+          <value type="int">-1</value>
+         </key>
          <key name="{66d52430-847a-40f6-9db9-3e88d517d258}">
           <value type="int">-1</value>
          </key>
@@ -520,19 +793,34 @@
          <key name="{726a2b65-b6ae-4f40-ba70-088936d2baf0}">
           <value type="int">-1</value>
          </key>
+         <key name="{729be36d-eda5-4ce8-9328-4e8efd79f9e2}">
+          <value type="int">-1</value>
+         </key>
          <key name="{7e75be3a-7395-4a56-8589-aed34af0f15e}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{7ea888dd-0009-4cd6-aba5-1eefdf2060ac}">
           <value type="int">-1</value>
          </key>
          <key name="{82318f39-50f2-470e-ab52-efafc0da4d9f}">
           <value type="int">-1</value>
          </key>
-         <key name="{8a0eb465-4eef-4af4-9765-dfc52983b2ff}">
+         <key name="{83a1acf1-f01f-40a8-abf4-bd78220f8f6b}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{8f83c1e2-a39e-4064-bc47-cd65ca933425}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{90e98331-be60-4b0a-bb6d-66a96bcbb1b0}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{970199d4-3180-4fe1-8f23-c45ddd92b2ed}">
           <value type="int">-1</value>
          </key>
          <key name="{9b52b02b-4b23-4e24-acaf-8201f262a0f2}">
           <value type="int">-1</value>
          </key>
-         <key name="{abe0a9e6-0ce5-4537-8e40-4822a843a4fa}">
+         <key name="{ac778334-79fd-49e0-8299-75c91d51e07f}">
           <value type="int">-1</value>
          </key>
          <key name="{bf93e42f-376e-4e1a-a3fb-0f28138dfbc1}">
@@ -553,10 +841,28 @@
          <key name="{d6abe102-f421-4e71-9ba3-56bf394df6f7}">
           <value type="int">-1</value>
          </key>
+         <key name="{dbc8991e-1bd1-4f77-af08-858334ca8637}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e20b15f2-8992-43b9-84c2-65903e690d6f}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e75579df-69dc-4f0d-ba9f-f47efaeb4127}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
+         <key name="{ed960c80-057d-4207-b925-20197a0efcee}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{f4ebd8dd-1a95-4b02-832c-359a54d447cb}">
+          <value type="int">-1</value>
+         </key>
          <key name="{fcbc4024-114d-4d6e-982c-1e4246eeb584}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{fed2b26d-9885-477a-b086-f0e0f79398e1}">
           <value type="int">-1</value>
          </key>
         </value>
@@ -619,7 +925,6 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
     <columns type="int">1</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
@@ -673,6 +978,14 @@
     <endlessHeight type="bool">false</endlessHeight>
     <outlineText type="QString"></outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
+    <duplex type="CuteReport::DuplexType*">
+     <properties>
+      <objectName type="QString">_property_duplex</objectName>
+      <mode textValue="None" type="enum" typeName="CuteReport::DuplexMode">0</mode>
+      <mirrorMargins type="bool">true</mirrorMargins>
+      <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
+     </properties>
+    </duplex>
     <printIfEmpty type="bool">true</printIfEmpty>
     <grid type="CuteReport::StdPageGrid*">
      <properties>
@@ -1029,13 +1342,13 @@
           </line>
           <cellData type="QVariantList">
            <item type="double">-1</item>
-           <item type="double">13.09688325</item>
-           <item type="double">15.602158265625</item>
-           <item type="double">12.443692734374999</item>
-           <item type="double">15.275563007812499</item>
-           <item type="double">13.237443234374998</item>
-           <item type="double">9.020643703125</item>
-           <item type="double">11.0256905390625</item>
+           <item type="double">15.312770062499999</item>
+           <item type="double">17.0987086875</item>
+           <item type="double">14.010523148437498</item>
+           <item type="double">17.574132164062497</item>
+           <item type="double">15.039918328125</item>
+           <item type="double">10.3890364921875</item>
+           <item type="double">13.378003218749999</item>
            <item type="double">-1</item>
           </cellData>
          </properties>
@@ -1167,7 +1480,7 @@
           <background type="CuteReport::BackgroundType*">
            <properties>
             <objectName type="QString">_property_background</objectName>
-            <type textValue="Gradient" type="enum" typeName="CuteReport::BackgroundType::FillEnum">2</type>
+            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
             <opacity type="double">1</opacity>
             <color type="QColor">38,221,147,255</color>
             <gradient type="CuteReport::GradientType*">
@@ -1178,8 +1491,8 @@
               <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
               <rotation type="double">-90</rotation>
               <stopValues type="QStringList">
+               <string type="QString">0</string>
                <string type="QString">0.4</string>
-               <string type="QString">0.6</string>
               </stopValues>
               <stopColors type="QStringList">
                <string type="QString">blue</string>
@@ -1239,11 +1552,11 @@
           <objectName type="QString">table_event</objectName>
           <id type="QString">{a34b17a8-403c-459a-a500-35f88a863efb}</id>
           <objectFlags type="int">0</objectFlags>
-          <trigger type="int">4</trigger>
+          <trigger type="int">2000</trigger>
           <availableTriggers type="QList&lt;QObject*>"/>
           <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
-          <composedScript type="QString">table.headerDataBefore.connect(table_event_headerDataBefore)&lt;newline>function table_event_headerDataBefore(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.log("------------------------ value:" + data.value())&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>	cell.background.color = "#dfa0a0"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>}&lt;newline></composedScript>
-          <script type="QString">engine.log("------------------------ value:" + data.value())&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>cell.background.color = "#dfa0a0"&lt;newline>cell.textColor = "#8c0000"&lt;newline>}</script>
+          <composedScript type="QString">table.headerCellReady.connect(table_event_headerCellReady)&lt;newline>function table_event_headerCellReady(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.log("header value:" + data.value())&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>		engine.debug("special color needed")&lt;newline>		cell.background.color = "#dfa0a0"&lt;newline>		cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>}&lt;newline></composedScript>
+          <script type="QString">engine.log("header value:" + data.value())&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>if (data.value() == "Sun" || data.value() == "Sat" ) {&lt;newline>	engine.debug("special color needed")&lt;newline>	cell.background.color = "#dfa0a0"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>}</script>
          </properties>
         </Event>
         <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
@@ -1251,11 +1564,11 @@
           <objectName type="QString">table_event_1</objectName>
           <id type="QString">{7bca9760-d45c-403a-bcbd-dd11cabc1493}</id>
           <objectFlags type="int">0</objectFlags>
-          <trigger type="int">6</trigger>
+          <trigger type="int">5000</trigger>
           <availableTriggers type="QList&lt;QObject*>"/>
           <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
-          <composedScript type="QString">table.gridPrintBefore.connect(table_event_1_gridPrintBefore)&lt;newline>function table_event_1_gridPrintBefore(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	console.log("------------------------ grid value:" + data.value())&lt;newline>	&lt;newline>	const dateISO = data.value("dateISO")&lt;newline>	const date = new Date(dateISO)&lt;newline>	&lt;newline>	console.log("------------------------ data before"); &lt;newline>	console.log("------------------------ date: " + date); &lt;newline>	&lt;newline>	var days = differenceInDays(shiftStartDate, date)&lt;newline>	var shiftLength = shifts.length&lt;newline>	var shiftDelta = days % shiftLength&lt;newline>	shiftIndex = shiftDelta -1&lt;newline>	if (shiftIndex &lt; 0)&lt;newline>	   shiftIndex = shiftIndex + shiftLength&lt;newline>	&lt;newline>	console.log("------------------------ days: " + days); &lt;newline>	console.log("------------------------ shiftLength: " + shiftLength); &lt;newline>	console.log("------------------------ shiftDelta: " + shiftDelta); &lt;newline>	&lt;newline>	shiftIndex++&lt;newline>	if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	if ( shifts[shiftIndex] == "F") {&lt;newline>	    cell.background.color = fatherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "M") {&lt;newline>	    cell.background.color = motherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "FM") {&lt;newline>	    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>	} else if ( shifts[shiftIndex] == "MF") {&lt;newline>	    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>	}&lt;newline>	&lt;newline>	if (!data.value("currentMonth"))&lt;newline>	   cell.opacity = 0.3&lt;newline>	&lt;newline>	console.log("------------------------ weekDay: " + data.value("weekDay") ); &lt;newline>	if (data.value("weekDay") == "Sun" || data.value("weekDay") == "Sat" ) {&lt;newline>		cell.background.color = "white"&lt;newline>		cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
-          <script type="QString">console.log("------------------------ grid value:" + data.value())&lt;newline>&lt;newline>const dateISO = data.value("dateISO")&lt;newline>const date = new Date(dateISO)&lt;newline>&lt;newline>console.log("------------------------ data before"); &lt;newline>console.log("------------------------ date: " + date); &lt;newline>&lt;newline>var days = differenceInDays(shiftStartDate, date)&lt;newline>var shiftLength = shifts.length&lt;newline>var shiftDelta = days % shiftLength&lt;newline>shiftIndex = shiftDelta -1&lt;newline>if (shiftIndex &lt; 0)&lt;newline>   shiftIndex = shiftIndex + shiftLength&lt;newline>&lt;newline>console.log("------------------------ days: " + days); &lt;newline>console.log("------------------------ shiftLength: " + shiftLength); &lt;newline>console.log("------------------------ shiftDelta: " + shiftDelta); &lt;newline>&lt;newline>shiftIndex++&lt;newline>if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>if ( shifts[shiftIndex] == "F") {&lt;newline>    cell.background.color = fatherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "M") {&lt;newline>    cell.background.color = motherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "FM") {&lt;newline>    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>} else if ( shifts[shiftIndex] == "MF") {&lt;newline>    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>}&lt;newline>&lt;newline>if (!data.value("currentMonth"))&lt;newline>   cell.opacity = 0.3&lt;newline>&lt;newline>console.log("------------------------ weekDay: " + data.value("weekDay") ); &lt;newline>if (data.value("weekDay") == "Sun" || data.value("weekDay") == "Sat" ) {&lt;newline>	cell.background.color = "white"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>}&lt;newline>&lt;newline></script>
+          <composedScript type="QString">table.gridCellReady.connect(table_event_1_gridCellReady)&lt;newline>function table_event_1_gridCellReady(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.debug("   grid value:" + data.value())&lt;newline>	&lt;newline>	const dateISO = data.value("dateISO")&lt;newline>	const date = new Date(dateISO)&lt;newline>	&lt;newline>	engine.debug("   dateISO: " + dateISO);&lt;newline>	engine.debug("   grid date: " + date); &lt;newline>	&lt;newline>	var days = differenceInDays(shiftStartDate, date)&lt;newline>	var shiftLength = shifts.length&lt;newline>	var shiftDelta = days % shiftLength&lt;newline>	shiftIndex = shiftDelta -1&lt;newline>	if (shiftIndex &lt; 0)&lt;newline>	   shiftIndex = shiftIndex + shiftLength&lt;newline>	&lt;newline>	engine.log("   drid days: " + days); &lt;newline>	engine.log("   shiftLength: " + shiftLength); &lt;newline>	engine.log("   shiftDelta: " + shiftDelta); &lt;newline>	&lt;newline>	shiftIndex++&lt;newline>	if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	&lt;newline>	if ( shifts[shiftIndex] == "F") {&lt;newline>	    cell.background.color = fatherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "M") {&lt;newline>	    cell.background.color = motherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "FM") {&lt;newline>	    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>	} else if ( shifts[shiftIndex] == "MF") {&lt;newline>	    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>	}&lt;newline>	&lt;newline>	if (!data.value("currentMonth"))&lt;newline>	   cell.opacity = 0.3&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+          <script type="QString">engine.debug("   grid value:" + data.value())&lt;newline>&lt;newline>const dateISO = data.value("dateISO")&lt;newline>const date = new Date(dateISO)&lt;newline>&lt;newline>engine.debug("   dateISO: " + dateISO);&lt;newline>engine.debug("   grid date: " + date); &lt;newline>&lt;newline>var days = differenceInDays(shiftStartDate, date)&lt;newline>var shiftLength = shifts.length&lt;newline>var shiftDelta = days % shiftLength&lt;newline>shiftIndex = shiftDelta -1&lt;newline>if (shiftIndex &lt; 0)&lt;newline>   shiftIndex = shiftIndex + shiftLength&lt;newline>&lt;newline>engine.log("   drid days: " + days); &lt;newline>engine.log("   shiftLength: " + shiftLength); &lt;newline>engine.log("   shiftDelta: " + shiftDelta); &lt;newline>&lt;newline>shiftIndex++&lt;newline>if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>&lt;newline>if ( shifts[shiftIndex] == "F") {&lt;newline>    cell.background.color = fatherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "M") {&lt;newline>    cell.background.color = motherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "FM") {&lt;newline>    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>} else if ( shifts[shiftIndex] == "MF") {&lt;newline>    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>}&lt;newline>&lt;newline>if (!data.value("currentMonth"))&lt;newline>   cell.opacity = 0.3&lt;newline>&lt;newline></script>
          </properties>
         </Event>
        </children>
@@ -1720,7 +2033,7 @@
           <objectName type="QString">_property_background</objectName>
           <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
           <opacity type="double">1</opacity>
-          <color type="QColor">237,160,1,255</color>
+          <color type="QColor">165,219,255,255</color>
           <gradient type="CuteReport::GradientType*">
            <properties>
             <objectName type="QString">_property_gradient</objectName>
@@ -1987,7 +2300,7 @@
           <objectName type="QString">_property_background</objectName>
           <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
           <opacity type="double">1</opacity>
-          <color type="QColor">146,204,243,255</color>
+          <color type="QColor">255,178,228,255</color>
           <gradient type="CuteReport::GradientType*">
            <properties>
             <objectName type="QString">_property_gradient</objectName>
@@ -2044,45 +2357,13 @@
     <parentDataset type="QString">months</parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString"></sortFields>
-    <filter type="CuteReport::ModelFilter*">
+    <processorsManager type="CuteReport::DatasetProcessorManager*">
      <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+      <objectName type="QString">processorManager</objectName>
+      <processors type="QList&lt;CuteReport::DatasetProcessor*>"/>
+      <activeProcessorId type="QString"></activeProcessorId>
      </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">true</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString">weekNumber:Week</string>
-       <string type="QString">monthShort:Month</string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString">weekIndex</string>
-       <string type="QString">monthShort:firstValue:rightSide</string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString">weekDayShort</string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString">day:split</string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod: weekDay=weekDayShort</string>
-      </roles>
-      <rowHeadersStr type="QString">weekIndex; monthShort:firstValue:rightSide</rowHeadersStr>
-      <columnHeadersStr type="QString">weekDayShort</columnHeadersStr>
-      <cellsStr type="QString">day:split</cellsStr>
-      <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
-      <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod: weekDay=weekDayShort</rolesStr>
-     </properties>
-    </transform>
+    </processorsManager>
     <from type="QDate">2024-12-01</from>
     <to type="QDate">2024-12-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>
@@ -2107,6 +2388,39 @@
     </fields>
     <fieldsStr type="QString">dateISO, day, weekDay, weekDayShort, weekDayLong, weekNumber, monthNumber, monthShort, monthLong, year, weekIndex, isToday, isSelectedPeriod</fieldsStr>
    </properties>
+   <children>
+    <DatasetProcessor name="Std::Pivot" type="DatasetProcessor" version="1">
+     <properties>
+      <objectName type="QString">dsTr</objectName>
+      <id type="QString">{107463c9-2231-47eb-bce6-f021aef742ce}</id>
+      <objectFlags type="int">0</objectFlags>
+      <enabled type="bool">true</enabled>
+      <headerToRow type="bool">false</headerToRow>
+      <aliases type="QStringList">
+       <string type="QString">weekNumber:Week</string>
+       <string type="QString">monthShort:Month</string>
+      </aliases>
+      <rowHeaders type="QStringList">
+       <string type="QString">weekIndex</string>
+       <string type="QString">monthShort:firstValue:rightSide</string>
+      </rowHeaders>
+      <columnHeaders type="QStringList">
+       <string type="QString">weekDayShort</string>
+      </columnHeaders>
+      <cells type="QStringList">
+       <string type="QString">day:split</string>
+      </cells>
+      <roles type="QStringList">
+       <string type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</string>
+      </roles>
+      <rowHeadersStr type="QString">weekIndex; monthShort:firstValue:rightSide</rowHeadersStr>
+      <columnHeadersStr type="QString">weekDayShort</columnHeadersStr>
+      <cellsStr type="QString">day:split</cellsStr>
+      <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
+      <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</rolesStr>
+     </properties>
+    </DatasetProcessor>
+   </children>
   </Dataset>
   <Dataset name="Std::Calendar" type="Dataset" version="1">
    <properties>
@@ -2116,43 +2430,13 @@
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString"></sortFields>
-    <filter type="CuteReport::ModelFilter*">
+    <processorsManager type="CuteReport::DatasetProcessorManager*">
      <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+      <objectName type="QString">processorManager</objectName>
+      <processors type="QList&lt;CuteReport::DatasetProcessor*>"/>
+      <activeProcessorId type="QString"></activeProcessorId>
      </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">false</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString"></string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString"></string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString"></string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString"></string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString"></string>
-      </roles>
-      <rowHeadersStr type="QString"></rowHeadersStr>
-      <columnHeadersStr type="QString"></columnHeadersStr>
-      <cellsStr type="QString"></cellsStr>
-      <aliasesStr type="QString"></aliasesStr>
-      <rolesStr type="QString"></rolesStr>
-     </properties>
-    </transform>
+    </processorsManager>
     <from type="QDate">2024-05-01</from>
     <to type="QDate">2025-05-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>
@@ -2174,11 +2458,23 @@
       <objectName type="QString">months_event</objectName>
       <id type="QString">{5398fa59-15b6-4c58-a48e-9d64edb46757}</id>
       <objectFlags type="int">0</objectFlags>
-      <trigger type="int">12</trigger>
+      <trigger type="int">4000</trigger>
       <availableTriggers type="QList&lt;QObject*>"/>
       <elementId type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</elementId>
-      <composedScript type="QString">months.afterNext.connect(months_event_afterNext)&lt;newline>function months_event_afterNext()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	&lt;newline>	dataset.fromYear = self.value("year")&lt;newline>	dataset.fromMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	dataset.toYear = self.value("year")&lt;newline>	dataset.toMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+      <composedScript type="QString">months.rowChanged.connect(months_event_rowChanged)&lt;newline>function months_event_rowChanged()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	&lt;newline>	dataset.fromYear = self.value("year")&lt;newline>	dataset.fromMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	dataset.toYear = self.value("year")&lt;newline>	dataset.toMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
       <script type="QString">/*! Insert your script here */&lt;newline>&lt;newline>dataset.fromYear = self.value("year")&lt;newline>dataset.fromMonth = self.value("monthNumber")&lt;newline>&lt;newline>dataset.toYear = self.value("year")&lt;newline>dataset.toMonth = self.value("monthNumber")&lt;newline>&lt;newline></script>
+     </properties>
+    </Event>
+    <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+     <properties>
+      <objectName type="QString">months_event_1</objectName>
+      <id type="QString">{86b95c34-206d-4986-b0bc-9ef4578de034}</id>
+      <objectFlags type="int">0</objectFlags>
+      <trigger type="int">4000</trigger>
+      <availableTriggers type="QList&lt;QObject*>"/>
+      <elementId type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</elementId>
+      <composedScript type="QString">months.rowChanged.connect(months_event_1_rowChanged)&lt;newline>function months_event_1_rowChanged()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	engine.log("Test")&lt;newline>	engine.log("Value:" +  self.row)&lt;newline>	self.setValue("Month", "Test Monht Event")&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+      <script type="QString">/*! Insert your script here */&lt;newline>engine.log("Test")&lt;newline>engine.log("Value:" +  self.row)&lt;newline>self.setValue("Month", "Test Monht Event")&lt;newline></script>
      </properties>
     </Event>
    </children>

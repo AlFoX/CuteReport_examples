@@ -1,9 +1,9 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta4" encoding="utf-8"?>
 <Report>
  <properties>
   <objectName type="QString"></objectName>
-  <id type="QString">{010080cf-50b7-45e9-92e4-3216c640eb19}</id>
+  <id type="QString">{cfef175c-07cb-4cd3-a277-4b735c3546f8}</id>
   <name type="QString">Outline</name>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of automatic building of report outline and Table of Contents.&lt;newline>There is a hidden dataset "toc" with fields: "text", "level", "pageNum"</description>
@@ -17,6 +17,7 @@
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
   <hasPicture type="bool">true</hasPicture>
+  <translations type="QStringList"/>
   <customData type="QVariantHash">
    <key name="translator_map_v1">
     <value type="QVariantHash">
@@ -29,7 +30,6 @@
     </value>
    </key>
   </customData>
-  <translations type="QStringList"/>
   <variables type="CuteReport::ReportVariables*">
    <properties>
     <objectName type="QString">_property_variables</objectName>
@@ -56,33 +56,13 @@
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString">GivenName</sortFields>
-    <filter type="CuteReport::ModelFilter*">
+    <processorsManager type="CuteReport::DatasetProcessorManager*">
      <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+      <objectName type="QString">processorManager</objectName>
+      <processors type="QList&lt;CuteReport::DatasetProcessor*>"/>
+      <activeProcessorId type="QString"></activeProcessorId>
      </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">false</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList"/>
-      <rowHeaders type="QStringList"/>
-      <columnHeaders type="QStringList"/>
-      <cells type="QStringList"/>
-      <roles type="QStringList"/>
-      <rowHeadersStr type="QString"></rowHeadersStr>
-      <columnHeadersStr type="QString"></columnHeadersStr>
-      <cellsStr type="QString"></cellsStr>
-      <aliasesStr type="QString"></aliasesStr>
-      <rolesStr type="QString"></rolesStr>
-     </properties>
-    </transform>
+    </processorsManager>
     <fileUrl type="QString">examples://datasets/customers.csv</fileUrl>
     <separator type="QString">,</separator>
     <firstRowIsHeader type="bool">true</firstRowIsHeader>
@@ -90,6 +70,26 @@
     <fixFileIssues type="bool">false</fixFileIssues>
     <textData type="QString"></textData>
    </properties>
+   <children>
+    <DatasetProcessor name="Std::SortFilter" type="DatasetProcessor" version="1">
+     <properties>
+      <objectName type="QString">dsTr</objectName>
+      <id type="QString">{ad2c2c87-e6f9-48ad-b09c-fb2dcbc5c9d5}</id>
+      <objectFlags type="int">0</objectFlags>
+      <enabled type="bool">true</enabled>
+      <sortFields type="QString">GivenName</sortFields>
+      <filter type="CuteReport::ModelFilter*">
+       <properties>
+        <objectName type="QString">_property_filter</objectName>
+        <fieldName type="QString"></fieldName>
+        <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
+        <string type="QString"></string>
+        <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
+       </properties>
+      </filter>
+     </properties>
+    </DatasetProcessor>
+   </children>
   </Dataset>
   <Page name="Std::Page" type="Page" version="1">
    <properties>
@@ -112,7 +112,6 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
     <columns type="int">1</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
@@ -166,6 +165,14 @@
     <endlessHeight type="bool">false</endlessHeight>
     <outlineText type="QString">Page [$PAGE]</outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
+    <duplex type="CuteReport::DuplexType*">
+     <properties>
+      <objectName type="QString">_property_duplex</objectName>
+      <mode textValue="None" type="enum" typeName="CuteReport::DuplexMode">0</mode>
+      <mirrorMargins type="bool">true</mirrorMargins>
+      <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
+     </properties>
+    </duplex>
     <printIfEmpty type="bool">true</printIfEmpty>
     <grid type="CuteReport::StdPageGrid*">
      <properties>
@@ -1048,7 +1055,6 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
     <columns type="int">1</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
@@ -1102,6 +1108,14 @@
     <endlessHeight type="bool">false</endlessHeight>
     <outlineText type="QString"></outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
+    <duplex type="CuteReport::DuplexType*">
+     <properties>
+      <objectName type="QString">_property_duplex</objectName>
+      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">689</mode>
+      <mirrorMargins type="bool">true</mirrorMargins>
+      <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
+     </properties>
+    </duplex>
     <printIfEmpty type="bool">true</printIfEmpty>
     <grid type="CuteReport::StdPageGrid*">
      <properties>
@@ -1604,10 +1618,10 @@
         <objectName type="QString">detail_1_event</objectName>
         <id type="QString">{a410e64c-bae5-4090-b77a-0be1f82bceb6}</id>
         <objectFlags type="int">0</objectFlags>
-        <trigger type="int">1</trigger>
+        <trigger type="int">200</trigger>
         <availableTriggers type="QList&lt;QObject*>"/>
         <elementId type="QString">{1daafcdb-b509-410c-9626-0f9ea5c20879}</elementId>
-        <composedScript type="QString">detail_1.printDataBefore.connect(detail_1_event_printDataBefore)&lt;newline>function detail_1_event_printDataBefore()&lt;newline>{&lt;newline>	var self = detail_1&lt;newline>	if (toc.value("level") != 2) self.visible = false&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+        <composedScript type="QString">detail_1.printDataReady.connect(detail_1_event_printDataReady)&lt;newline>function detail_1_event_printDataReady()&lt;newline>{&lt;newline>	var self = detail_1&lt;newline>	if (toc.value("level") != 2) self.visible = false&lt;newline>	&lt;newline>}&lt;newline></composedScript>
         <script type="QString">if (toc.value("level") != 2) self.visible = false&lt;newline></script>
        </properties>
       </Event>
