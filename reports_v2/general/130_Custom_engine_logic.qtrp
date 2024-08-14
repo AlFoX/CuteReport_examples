@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{4634717b-870f-4690-b2bd-31e037aa2ee7}</id>
-  <name type="QString">Custom Engine logic</name>
+  <reportName type="QString">Custom Engine logic</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to write custom logic for CuteReport's engine to print only necessary page based on user input. There are 2 template pages in the report:&lt;newline>1 - customer list for entire USA, &lt;newline>2 - customer list for the specified state. &lt;newline>One or another template page will be printed. This is done by overriding standard engine's logic.</description>
   <version type="int">2</version>

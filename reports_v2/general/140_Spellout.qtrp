@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{3092054e-9d78-4e60-8e52-ebed9761f1ac}</id>
-  <name type="QString">Spellout</name>
+  <reportName type="QString">Spellout</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates ability of CuteReport to spellout numbers, currencies, money in most of languages with taking into account plurality and gender</description>
   <version type="int">2</version>

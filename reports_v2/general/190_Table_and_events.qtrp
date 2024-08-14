@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{90265f14-9173-4713-b001-fccb834707d1}</id>
-  <name type="QString">Child Custody Calendar</name>
+  <reportName type="QString">Child Custody Calendar</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of using Calendar dataset, Table item and its delegates along with some scripting to produce a child custody calendar.&lt;newline>Custody days pattern, pattern start date, calendar start and end months are configured via report's variables. Desired colors can be set on the table Legend rectangles. Script events are used for datasets and Table item to adjust current pattern position and Table's delegate background color.</description>
   <version type="int">2</version>
@@ -2357,13 +2357,6 @@
     <parentDataset type="QString">months</parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <processorsManager type="CuteReport::DatasetProcessorManager*">
-     <properties>
-      <objectName type="QString">processorManager</objectName>
-      <processors type="QList&lt;CuteReport::DatasetProcessor*>"/>
-      <activeProcessorId type="QString"></activeProcessorId>
-     </properties>
-    </processorsManager>
     <from type="QDate">2024-12-01</from>
     <to type="QDate">2024-12-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>
@@ -2389,7 +2382,7 @@
     <fieldsStr type="QString">dateISO, day, weekDay, weekDayShort, weekDayLong, weekNumber, monthNumber, monthShort, monthLong, year, weekIndex, isToday, isSelectedPeriod</fieldsStr>
    </properties>
    <children>
-    <DatasetProcessor name="Std::Pivot" type="DatasetProcessor" version="1">
+    <DatasetModifier name="Std::Pivot" type="DatasetModifier" version="1">
      <properties>
       <objectName type="QString">dsTr</objectName>
       <id type="QString">{107463c9-2231-47eb-bce6-f021aef742ce}</id>
@@ -2419,7 +2412,7 @@
       <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
       <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</rolesStr>
      </properties>
-    </DatasetProcessor>
+    </DatasetModifier>
    </children>
   </Dataset>
   <Dataset name="Std::Calendar" type="Dataset" version="1">
@@ -2430,13 +2423,6 @@
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <processorsManager type="CuteReport::DatasetProcessorManager*">
-     <properties>
-      <objectName type="QString">processorManager</objectName>
-      <processors type="QList&lt;CuteReport::DatasetProcessor*>"/>
-      <activeProcessorId type="QString"></activeProcessorId>
-     </properties>
-    </processorsManager>
     <from type="QDate">2024-05-01</from>
     <to type="QDate">2025-05-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>

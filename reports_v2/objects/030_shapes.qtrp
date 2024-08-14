@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">Shapes</name>
+  <reportName type="QString">Shapes</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates ability of CuteReport to print various shapes, theirs borders, fillings and rotation.</description>
   <script type="QString"></script>

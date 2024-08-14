@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{4dc61e82-8005-496b-a706-35973190192f}</id>
-  <name type="QString">Line spacing &amp; text indent</name>
+  <reportName type="QString">Line spacing &amp; text indent</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Report demonstates ability of Memo item to set custom line spacing and paragraph indent</description>
   <version type="int">2</version>

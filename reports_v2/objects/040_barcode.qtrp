@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">Barcodes</name>
+  <reportName type="QString">Barcodes</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Thid example demonstrate ability of CuteReport to generate a lot of types of Barcodes.&lt;newline>Types supported:&lt;newline>- one dimensional or linear (over 80 types)&lt;newline>- two dimensional (over 10 types)&lt;newline>- stacked&lt;newline>- composite</description>
   <script type="QString"></script>

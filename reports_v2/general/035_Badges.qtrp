@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{b4d06cbc-c4f2-4711-9d3f-9c1c9af11213}</id>
-  <name type="QString">Badges</name>
+  <reportName type="QString">Badges</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates how to make badges using a column with a vertical filling type </description>
   <version type="int">2</version>

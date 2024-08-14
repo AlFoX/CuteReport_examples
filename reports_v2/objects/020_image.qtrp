@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">Image</name>
+  <reportName type="QString">Image</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates abitlity of CuteReport to draw Images with different scaly types, rotation and opacity.</description>
   <script type="QString"></script>

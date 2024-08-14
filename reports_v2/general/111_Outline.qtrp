@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{cfef175c-07cb-4cd3-a277-4b735c3546f8}</id>
-  <name type="QString">Outline</name>
+  <reportName type="QString">Outline</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of automatic building of report outline and Table of Contents.&lt;newline>There is a hidden dataset "toc" with fields: "text", "level", "pageNum"</description>
   <version type="int">2</version>
@@ -71,7 +71,7 @@
     <textData type="QString"></textData>
    </properties>
    <children>
-    <DatasetProcessor name="Std::SortFilter" type="DatasetProcessor" version="1">
+    <DatasetModifier name="Std::SortFilter" type="DatasetModifier" version="1">
      <properties>
       <objectName type="QString">dsTr</objectName>
       <id type="QString">{ad2c2c87-e6f9-48ad-b09c-fb2dcbc5c9d5}</id>
@@ -88,7 +88,7 @@
        </properties>
       </filter>
      </properties>
-    </DatasetProcessor>
+    </DatasetModifier>
    </children>
   </Dataset>
   <Page name="Std::Page" type="Page" version="1">

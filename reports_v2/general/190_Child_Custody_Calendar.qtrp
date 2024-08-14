@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{04b68c0e-65f9-4e15-b811-274421bf3367}</id>
-  <name type="QString">Child Custody Calendar</name>
+  <reportName type="QString">Child Custody Calendar</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of using Calendar dataset, Table item and its delegates along with some scripting to produce a child custody calendar.&lt;newline>Custody days pattern, pattern start date, calendar start and end months are configured via report's variables. Desired colors can be set on the table Legend rectangles. Script events are used for datasets and Table item to adjust current pattern position and Table's delegate background color.</description>
   <version type="int">2</version>
@@ -2038,7 +2038,7 @@
     <fieldsStr type="QString">dateISO, day, weekDay, weekDayShort, weekDayLong, weekNumber, monthNumber, monthShort, monthLong, year, weekIndex, isToday, isSelectedPeriod</fieldsStr>
    </properties>
    <children>
-    <DatasetProcessor name="Std::Pivot" type="DatasetProcessor" version="1">
+    <DatasetModifier name="Std::Pivot" type="DatasetModifier" version="1">
      <properties>
       <objectName type="QString">dsMod</objectName>
       <id type="QString">{c3cc2ace-5e70-4e1f-b6f4-167d7e5b4c55}</id>
@@ -2069,7 +2069,7 @@
       <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
       <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod</rolesStr>
      </properties>
-    </DatasetProcessor>
+    </DatasetModifier>
    </children>
   </Dataset>
   <Dataset name="Std::Calendar" type="Dataset" version="1">

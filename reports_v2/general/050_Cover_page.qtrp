@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{1fd9bab5-b796-4f7f-b87d-84da41423185}</id>
-  <name type="QString">Cover page</name>
+  <reportName type="QString">Cover page</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of Cover page.&lt;newline>In this an example of report that has 2 template pages: first one is a static page representing cover page and the second one is dynamic.</description>
   <version type="int">2</version>

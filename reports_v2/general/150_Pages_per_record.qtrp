@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{c6a72065-d3b0-4a42-9bc3-70c08da92785}</id>
-  <name type="QString">Pages per dataset record</name>
+  <reportName type="QString">Pages per dataset record</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to assign page to a dataset to print one page per dataset record. Open Designer and take a look into Page's "dataset" property. Also there is a subquery "dataState" for the main query "dataStates" to repopulate subquery every time main query iterated.</description>
   <version type="int">2</version>

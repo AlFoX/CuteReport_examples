@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{6f2c7d98-0653-416c-8b69-616aa161d53e}</id>
-  <name type="QString">Text flow</name>
+  <reportName type="QString">Text flow</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report shows how to make Educational materials with complex text flowing.&lt;newline></description>
   <version type="int">2</version>

@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">All pages per dataset record</name>
+  <reportName type="QString">All pages per dataset record</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to write custom logic for CuteReport's engine to print the same designed template page some times - once per dataset row. In this particular example one customer list page is printed for every USA state taken from dataset &lt;newline>Take a look into the report's main script.</description>
   <script type="QString">Engine.manualRun();&lt;newline>dataStates.populate();&lt;newline>&lt;newline>&lt;newline>while (dataStates.hasNextRow()) {&lt;newline>	dataStates.setNextRow();&lt;newline>	${state} = dataStates."State";&lt;newline>  dataState.reset();&lt;newline>	Engine.processPage('pageState');&lt;newline>}&lt;newline></script>

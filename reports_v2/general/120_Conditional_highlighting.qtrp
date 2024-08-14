@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{9846f4b0-6b6b-4cfd-8b95-5dbdbc311fd0}</id>
-  <name type="QString">Conditional highlighting</name>
+  <reportName type="QString">Conditional highlighting</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability of the CuteReport engine to highlight values depending of some specified condition:&lt;newline>- Gender color is set by first letter in gender;&lt;newline>- e-mail color is grayed for all non dot com sites;&lt;newline>- company name color is set from database value with corrected opacity&lt;newline></description>
   <version type="int">2</version>

@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">Page from parameter</name>
+  <reportName type="QString">Page from parameter</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to write custom logic for CuteReport's engine to print only necessary page based on user input. There are 2 template pages in the report:&lt;newline>1 - customer list for entire USA, &lt;newline>2 - customer list for the specified state. &lt;newline>One or another template page will be printed. This is done by overriding standard engine's logic.</description>
   <script type="QString">Engine.manualRun();&lt;newline>form.stateSelector.setModel(dataStates.model());&lt;newline>dataStates.populate();&lt;newline>form.stateSelector.setCurrentIndex(0);&lt;newline>&lt;newline>if (form.exec()) {&lt;newline>	if (form.cbState.checked) {&lt;newline>		var selectedState = form.stateSelector.currentText;&lt;newline>		${state} = selectedState;&lt;newline>		print('State selected: ' + selectedState);&lt;newline>		Engine.processPage('pageState');&lt;newline>	} else {&lt;newline>		print('USA selected');&lt;newline>		Engine.processPage('pageUSA');&lt;newline>	}&lt;newline>}</script>

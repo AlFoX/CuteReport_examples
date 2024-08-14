@@ -1,10 +1,10 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta4" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
 <Report>
  <properties>
-  <objectName type="QString"></objectName>
-  <id type="QString">{e94da2c7-2957-45cc-998c-208c893b0965}</id>
-  <name type="QString">Bus Schedule </name>
+  <objectName type="QString">Bus Schedule </objectName>
+  <id type="QString">{a1681e8a-62cc-4a8b-9ebc-011650a81df3}</id>
+  <reportName type="QString">Bus Schedule </reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString"></description>
   <version type="int">2</version>
@@ -101,6 +101,9 @@
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
           <value type="int">-1</value>
          </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
@@ -187,6 +190,9 @@
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
           <value type="int">-1</value>
          </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
@@ -271,6 +277,9 @@
           <value type="int">-1</value>
          </key>
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
           <value type="int">-1</value>
          </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
@@ -399,6 +408,9 @@
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
           <value type="int">-1</value>
          </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
@@ -485,6 +497,9 @@
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
           <value type="int">-1</value>
          </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
+          <value type="int">-1</value>
+         </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
           <value type="int">-1</value>
          </key>
@@ -569,6 +584,9 @@
           <value type="int">-1</value>
          </key>
          <key name="{e5e3e185-ccd9-4618-bc0d-713ec38d54ae}">
+          <value type="int">-1</value>
+         </key>
+         <key name="{e94da2c7-2957-45cc-998c-208c893b0965}">
           <value type="int">-1</value>
          </key>
          <key name="{ed663a38-00c6-4646-b134-e687ccdcdefc}">
@@ -693,7 +711,7 @@
     <duplex type="CuteReport::DuplexType*">
      <properties>
       <objectName type="QString">_property_duplex</objectName>
-      <mode textValue="None" type="enum" typeName="CuteReport::DuplexMode">0</mode>
+      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">-210</mode>
       <mirrorMargins type="bool">true</mirrorMargins>
       <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
      </properties>
@@ -1078,7 +1096,7 @@
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">0,0,26.28,20</geometry>
+          <geometry type="QRectF">72.8,0,36.4,26.2</geometry>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -1173,7 +1191,7 @@
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">0,20,26.28,22.2</geometry>
+          <geometry type="QRectF">72.8,52.4,36.4,26.2</geometry>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -2072,15 +2090,6 @@
     <parentDataset type="QString">months</parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <modifiersManager type="CuteReport::DatasetModifiersManager*">
-     <properties>
-      <objectName type="QString">processorManager</objectName>
-      <elements type="QList&lt;QObject*>"/>
-      <activeElementId type="QString"></activeElementId>
-      <modifiers type="QList&lt;CuteReport::DatasetModifier*>"/>
-      <activeModifierId type="QString"></activeModifierId>
-     </properties>
-    </modifiersManager>
     <from type="QDate">2024-12-01</from>
     <to type="QDate">2024-12-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>
@@ -2106,11 +2115,11 @@
     <fieldsStr type="QString">dateISO, day, weekDay, weekDayShort, weekDayLong, weekNumber, monthNumber, monthShort, monthLong, year, weekIndex, isToday, isSelectedPeriod</fieldsStr>
    </properties>
    <children>
-    <DatasetProcessor name="Std::Pivot" type="DatasetProcessor" version="1">
+    <DatasetModifier name="Std::Pivot" type="DatasetModifier" version="1">
      <properties>
       <objectName type="QString">dsMod</objectName>
       <id type="QString">{0acaf8c6-f656-4cc0-bfad-ca754d8fc79d}</id>
-      <order type="int">-1</order>
+      <order type="int">0</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <headerToRow type="bool">false</headerToRow>
@@ -2131,13 +2140,8 @@
       <roles type="QStringList">
        <string type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod: weekDay=weekDayShort</string>
       </roles>
-      <rowHeadersStr type="QString">weekIndex; monthShort:firstValue:rightSide</rowHeadersStr>
-      <columnHeadersStr type="QString">weekDayShort</columnHeadersStr>
-      <cellsStr type="QString">day:split</cellsStr>
-      <aliasesStr type="QString">weekNumber:Week; monthShort:Month</aliasesStr>
-      <rolesStr type="QString">day: dateISO=dateISO: currentMonth=isSelectedPeriod: weekDay=weekDayShort</rolesStr>
      </properties>
-    </DatasetProcessor>
+    </DatasetModifier>
    </children>
   </Dataset>
   <Dataset name="Std::Calendar" type="Dataset" version="1">
@@ -2149,15 +2153,6 @@
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <modifiersManager type="CuteReport::DatasetModifiersManager*">
-     <properties>
-      <objectName type="QString">processorManager</objectName>
-      <elements type="QList&lt;QObject*>"/>
-      <activeElementId type="QString"></activeElementId>
-      <modifiers type="QList&lt;CuteReport::DatasetModifier*>"/>
-      <activeModifierId type="QString"></activeModifierId>
-     </properties>
-    </modifiersManager>
     <from type="QDate">2024-05-01</from>
     <to type="QDate">2025-05-31</to>
     <fromEntireMonth type="bool">true</fromEntireMonth>

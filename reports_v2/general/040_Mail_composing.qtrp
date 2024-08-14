@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{bb099d4c-c4dc-478a-8d04-e31dfd6be9fa}</id>
-  <name type="QString">Mail composing</name>
+  <reportName type="QString">Mail composing</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">The report demonstrates an ability of CuteReport to compose text combining a template static text with a dynamic text from database.</description>
   <version type="int">2</version>

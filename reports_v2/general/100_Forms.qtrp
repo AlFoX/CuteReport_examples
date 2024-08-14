@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{46cb03a2-2840-408a-af8f-6dd7577f8d02}</id>
-  <name type="QString">Forms</name>
+  <reportName type="QString">Forms</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates functionality of Form module. You can manage form using CuteReport scripting engine.</description>
   <version type="int">2</version>

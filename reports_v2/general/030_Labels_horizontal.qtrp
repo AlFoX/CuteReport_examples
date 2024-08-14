@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{0a05555b-f4de-41ed-9b06-f38101e9f3d6}</id>
-  <name type="QString">Labels (horizontall)</name>
+  <reportName type="QString">Labels (horizontall)</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates ability of CuteReport to process columns.&lt;newline>This specific report demonstrates ability to fill labels horizontally.</description>
   <version type="int">2</version>

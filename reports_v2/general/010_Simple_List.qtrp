@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{e1fa3aab-bd0f-45b3-b7f3-c78f3c4e0ad9}</id>
-  <name type="QString">Simple list</name>
+  <reportName type="QString">Simple list</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of a simple report list</description>
   <version type="int">2</version>

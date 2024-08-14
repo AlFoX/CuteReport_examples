@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{61144595-d31f-4aa4-aaac-e5e667efeccb}</id>
-  <name type="QString">Charts</name>
+  <reportName type="QString">Charts</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This example demonstrates ability of Cutereport to build Chart based on static data or dataset data.&lt;newline>Axes are created automatically and pretty numbers for axis scale assigned.</description>
   <version type="int">2</version>

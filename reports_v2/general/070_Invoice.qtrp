@@ -1,10 +1,10 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
 <Report>
  <properties>
-  <objectName type="QString"></objectName>
-  <id type="QString">{f9626b52-f941-48c8-a549-121dd5efec52}</id>
-  <name type="QString">Invoice</name>
+  <objectName type="QString">Invoice</objectName>
+  <id type="QString">{3e6f9aa2-288b-4a8a-a56b-f001447de206}</id>
+  <reportName type="QString">Invoice</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates the ability of CuteReport to display currencies, spelling out money and numbers in a defined or default locale with taking money gender and plurality into account.&lt;newline>&lt;newline>Currency is taken for current default locale.&lt;newline>Number spelling takes calculated number and converts it to money representaion.</description>
   <version type="int">2</version>
@@ -17,6 +17,7 @@
   <generatePicture type="bool">false</generatePicture>
   <pictureUrl type="QUrl"></pictureUrl>
   <hasPicture type="bool">true</hasPicture>
+  <translations type="QStringList"/>
   <customData type="QVariantHash">
    <key name="translator_map_v1">
     <value type="QVariantHash">
@@ -29,7 +30,6 @@
     </value>
    </key>
   </customData>
-  <translations type="QStringList"/>
   <variables type="CuteReport::ReportVariables*">
    <properties>
     <objectName type="QString">_property_variables</objectName>
@@ -79,6 +79,7 @@
    <properties>
     <objectName type="QString">page</objectName>
     <id type="QString">{bf74f133-2421-4ac2-ad8e-5f42f67697b6}</id>
+    <order type="int">0</order>
     <objectFlags type="int">24592</objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
@@ -96,7 +97,6 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <duplex textValue="Auto" type="enum" typeName="CuteReport::DuplexMode">1</duplex>
     <columns type="int">1</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
@@ -127,7 +127,6 @@
       <autoType type="bool">true</autoType>
      </properties>
     </background>
-    <order type="int">0</order>
     <font type="CuteReport::FontType*">
      <properties>
       <objectName type="QString">_property_font</objectName>
@@ -150,6 +149,14 @@
     <endlessHeight type="bool">false</endlessHeight>
     <outlineText type="QString"></outlineText>
     <resetPageNumber type="bool">false</resetPageNumber>
+    <duplex type="CuteReport::DuplexType*">
+     <properties>
+      <objectName type="QString">_property_duplex</objectName>
+      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">1073741829</mode>
+      <mirrorMargins type="bool">true</mirrorMargins>
+      <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
+     </properties>
+    </duplex>
     <printIfEmpty type="bool">true</printIfEmpty>
     <grid type="CuteReport::StdPageGrid*">
      <properties>
@@ -164,12 +171,12 @@
      <properties>
       <objectName type="QString">title</objectName>
       <id type="QString">{ec54366d-34a9-48e3-8b7e-19c3566716fa}</id>
+      <order type="int">0</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,10,195.9,70.36</geometry>
-      <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -245,12 +252,12 @@
        <properties>
         <objectName type="QString">image</objectName>
         <id type="QString">{d7007559-f244-4b15-8fe4-28440d082048}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0.1,1.19,62,21.41</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -326,12 +333,12 @@
        <properties>
         <objectName type="QString">memo</objectName>
         <id type="QString">{edba51ab-eed0-4337-bdee-aaa80c883cd0}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,0,54,10.5</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -422,12 +429,12 @@
        <properties>
         <objectName type="QString">memo_1</objectName>
         <id type="QString">{fb5f4776-460a-4299-b033-0021bf15e86a}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,26,56.5,5</geometry>
-        <order type="int">2</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -518,12 +525,12 @@
        <properties>
         <objectName type="QString">memo_3</objectName>
         <id type="QString">{9e0ab723-e35a-404c-90a5-c7236438f333}</id>
+        <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,36,56.5,5</geometry>
-        <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -614,12 +621,12 @@
        <properties>
         <objectName type="QString">memo_4</objectName>
         <id type="QString">{8c23eb37-2bd5-44a4-86c2-c0a63ec53679}</id>
+        <order type="int">4</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">62,26,63,5</geometry>
-        <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -710,12 +717,12 @@
        <properties>
         <objectName type="QString">memo_5</objectName>
         <id type="QString">{d15a130d-d663-45f6-8fea-e80af62012f5}</id>
+        <order type="int">5</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">62,31,63,5</geometry>
-        <order type="int">5</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -806,12 +813,12 @@
        <properties>
         <objectName type="QString">memo_6</objectName>
         <id type="QString">{52f3268d-6979-4c21-898e-7b9adb5fe510}</id>
+        <order type="int">6</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">62,36,63,5</geometry>
-        <order type="int">6</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -902,12 +909,12 @@
        <properties>
         <objectName type="QString">memo_7</objectName>
         <id type="QString">{83c733e1-e20b-47e5-b02f-1e01f13185fe}</id>
+        <order type="int">7</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,13,17,4</geometry>
-        <order type="int">7</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -998,12 +1005,12 @@
        <properties>
         <objectName type="QString">memo_8</objectName>
         <id type="QString">{f2f65e64-ac99-43f4-9873-4077c72b8bfa}</id>
+        <order type="int">8</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,17,17,4</geometry>
-        <order type="int">8</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1094,12 +1101,12 @@
        <properties>
         <objectName type="QString">memo_9</objectName>
         <id type="QString">{ecd16238-7fe7-4898-bd93-126ae52014f1}</id>
+        <order type="int">9</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,21,17,4</geometry>
-        <order type="int">9</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1190,12 +1197,12 @@
        <properties>
         <objectName type="QString">memo_10</objectName>
         <id type="QString">{97193787-4e5f-4412-8fb4-aa53a713b866}</id>
+        <order type="int">10</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,25,17,4</geometry>
-        <order type="int">10</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1286,12 +1293,12 @@
        <properties>
         <objectName type="QString">memo_11</objectName>
         <id type="QString">{35e508a2-f4db-4ca5-a7f1-fd0d91ef207c}</id>
+        <order type="int">11</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,29,17,4</geometry>
-        <order type="int">11</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1382,12 +1389,12 @@
        <properties>
         <objectName type="QString">memo_12</objectName>
         <id type="QString">{74a88c01-99ca-46e2-824f-6f7a1c175790}</id>
+        <order type="int">12</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,33,17,4</geometry>
-        <order type="int">12</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1478,12 +1485,12 @@
        <properties>
         <objectName type="QString">memo_13</objectName>
         <id type="QString">{2ea02334-93ee-43e8-8c20-6f1f57adcadc}</id>
+        <order type="int">13</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">136,37,17,4</geometry>
-        <order type="int">13</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1574,12 +1581,12 @@
        <properties>
         <objectName type="QString">memo_2</objectName>
         <id type="QString">{bd5aff4e-d9f3-476a-9d5b-3f0c34a1377b}</id>
+        <order type="int">14</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,31,56.5,5</geometry>
-        <order type="int">14</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1670,12 +1677,12 @@
        <properties>
         <objectName type="QString">memo_14</objectName>
         <id type="QString">{28e97028-7a12-4af6-be3f-2590cc91f36b}</id>
+        <order type="int">15</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,13,32.5,4</geometry>
-        <order type="int">15</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1766,12 +1773,12 @@
        <properties>
         <objectName type="QString">memo_15</objectName>
         <id type="QString">{62f5f935-37a7-421f-9963-9f88a1380902}</id>
+        <order type="int">16</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,17,32.5,4</geometry>
-        <order type="int">16</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1862,12 +1869,12 @@
        <properties>
         <objectName type="QString">memo_16</objectName>
         <id type="QString">{1744ab2e-a457-4084-958d-a5a2a80050f9}</id>
+        <order type="int">17</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,21,32.5,4</geometry>
-        <order type="int">17</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1958,12 +1965,12 @@
        <properties>
         <objectName type="QString">memo_17</objectName>
         <id type="QString">{06028bac-668d-495a-862e-7eac8f4ff72e}</id>
+        <order type="int">18</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,25,32.5,4</geometry>
-        <order type="int">18</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2054,12 +2061,12 @@
        <properties>
         <objectName type="QString">memo_18</objectName>
         <id type="QString">{781796e3-9e1b-444a-b1e6-2952690d6041}</id>
+        <order type="int">19</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,29,32.5,4</geometry>
-        <order type="int">19</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2150,12 +2157,12 @@
        <properties>
         <objectName type="QString">memo_19</objectName>
         <id type="QString">{038fac87-c1bf-4f3f-8b40-c62f6be84ac3}</id>
+        <order type="int">20</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,33,32.5,4</geometry>
-        <order type="int">20</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2246,12 +2253,12 @@
        <properties>
         <objectName type="QString">memo_20</objectName>
         <id type="QString">{3d6460ab-45ad-47af-a710-a051441f3df6}</id>
+        <order type="int">21</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">153,37,32.5,4</geometry>
-        <order type="int">21</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2342,12 +2349,12 @@
        <properties>
         <objectName type="QString">memo_21</objectName>
         <id type="QString">{288a3d3a-d11a-421a-b5cb-9a6057cfcfa2}</id>
+        <order type="int">22</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,44.5,73.5,4.84</geometry>
-        <order type="int">22</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2438,12 +2445,12 @@
        <properties>
         <objectName type="QString">memo_22</objectName>
         <id type="QString">{4fe7f624-aa98-4aba-9cbf-eb22fa43d609}</id>
+        <order type="int">23</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">79.5,44.5,73.5,4.84</geometry>
-        <order type="int">23</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2534,12 +2541,12 @@
        <properties>
         <objectName type="QString">memo_23</objectName>
         <id type="QString">{94dcb120-bc77-4bf4-b4a3-e070f1e02c7f}</id>
+        <order type="int">24</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,49.34,73.5,5</geometry>
-        <order type="int">24</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2630,12 +2637,12 @@
        <properties>
         <objectName type="QString">memo_24</objectName>
         <id type="QString">{ca64395f-ca7f-4e65-8773-a0f9937a3dd8}</id>
+        <order type="int">25</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,54,73.5,5</geometry>
-        <order type="int">25</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2726,12 +2733,12 @@
        <properties>
         <objectName type="QString">memo_25</objectName>
         <id type="QString">{bf7345f4-3a69-4048-bb3a-d5e4452bfbdb}</id>
+        <order type="int">26</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,59,73.5,5</geometry>
-        <order type="int">26</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2822,12 +2829,12 @@
        <properties>
         <objectName type="QString">memo_26</objectName>
         <id type="QString">{63bea89f-b42a-4a29-a8ff-eb7e13a31bb5}</id>
+        <order type="int">27</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">79.5,49.34,73.5,5</geometry>
-        <order type="int">27</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2918,12 +2925,12 @@
        <properties>
         <objectName type="QString">memo_27</objectName>
         <id type="QString">{11c9b67b-a922-44eb-beb0-a06e48061dd1}</id>
+        <order type="int">28</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">79.5,54.34,73.5,4.66</geometry>
-        <order type="int">28</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3014,12 +3021,12 @@
        <properties>
         <objectName type="QString">memo_28</objectName>
         <id type="QString">{6dbcdf89-34a6-42d3-b08c-ed3a60bebaba}</id>
+        <order type="int">29</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">79.5,59,73.5,5</geometry>
-        <order type="int">29</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3112,12 +3119,12 @@
      <properties>
       <objectName type="QString">detail</objectName>
       <id type="QString">{02cb8c33-3a1a-4601-a5d7-cb8ba0d32c07}</id>
+      <order type="int">2</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,87.36,195.9,8.03</geometry>
-      <order type="int">2</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -3225,12 +3232,12 @@
        <properties>
         <objectName type="QString">memo_34</objectName>
         <id type="QString">{7e4eb260-e5e5-4e99-9ca5-eeef4d4265f1}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0.1,0,29.9,8</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3321,12 +3328,12 @@
        <properties>
         <objectName type="QString">memo_35</objectName>
         <id type="QString">{74f76b86-52b9-4109-b15e-9e6279e37cbd}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">30,0,104.27,8</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3417,12 +3424,12 @@
        <properties>
         <objectName type="QString">memo_36</objectName>
         <id type="QString">{016ea6b2-0836-4ffa-a2df-4a5fbd5f6304}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,0,13.54,8</geometry>
-        <order type="int">2</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3513,12 +3520,12 @@
        <properties>
         <objectName type="QString">memo_37</objectName>
         <id type="QString">{f1f3bffa-31b9-4f81-8170-2f52dfed28ea}</id>
+        <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">147.81,0,23.65,8</geometry>
-        <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3609,12 +3616,12 @@
        <properties>
         <objectName type="QString">memo_38</objectName>
         <id type="QString">{ef59d581-2d36-4ab5-9007-a8a46c2329e8}</id>
+        <order type="int">4</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">171.46,0,23.54,8</geometry>
-        <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3707,12 +3714,12 @@
      <properties>
       <objectName type="QString">title_1</objectName>
       <id type="QString">{cc7a3806-e0c4-4a66-b1ff-72540e961dbd}</id>
+      <order type="int">1</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,80.36,195.9,7</geometry>
-      <order type="int">1</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -3788,12 +3795,12 @@
        <properties>
         <objectName type="QString">memo_30</objectName>
         <id type="QString">{dc745119-a8f2-4506-9496-1b9e7cf39c9b}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">30,0,104.27,6.64</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3884,12 +3891,12 @@
        <properties>
         <objectName type="QString">memo_29</objectName>
         <id type="QString">{abde379c-0c89-45cf-a564-3ab3391b8ad1}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,0,30,6.64</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -3980,12 +3987,12 @@
        <properties>
         <objectName type="QString">memo_31</objectName>
         <id type="QString">{fd333f07-8642-4236-bbbe-e468aefaf6cf}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,0,13.54,6.64</geometry>
-        <order type="int">2</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4076,12 +4083,12 @@
        <properties>
         <objectName type="QString">memo_32</objectName>
         <id type="QString">{bd7e73e0-12d4-4cc1-b84a-175b80ecdaf3}</id>
+        <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">147.81,0,23.65,6.64</geometry>
-        <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4172,12 +4179,12 @@
        <properties>
         <objectName type="QString">memo_33</objectName>
         <id type="QString">{1f47a604-5a6d-428b-8d5c-6664ff330361}</id>
+        <order type="int">4</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">171.46,0,23.54,6.64</geometry>
-        <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4270,12 +4277,12 @@
      <properties>
       <objectName type="QString">summary</objectName>
       <id type="QString">{3e4cec42-9923-473a-83d8-0e7058537118}</id>
+      <order type="int">3</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,95.39,195.9,68.17</geometry>
-      <order type="int">3</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -4351,12 +4358,12 @@
        <properties>
         <objectName type="QString">memo_39</objectName>
         <id type="QString">{49944e3b-1900-4c3f-b3bd-2fa625e14f85}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,11.82,134.27,7</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4447,12 +4454,12 @@
        <properties>
         <objectName type="QString">memo_40</objectName>
         <id type="QString">{eac51ec5-3f6c-4133-9874-15b1baa5b3c1}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,18.82,134.27,22.45</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4523,7 +4530,7 @@
          <properties>
           <objectName type="QString">_property_textMargins</objectName>
           <left type="double">1</left>
-          <top type="double">0</top>
+          <top type="double">1</top>
           <right type="double">1</right>
           <bottom type="double">0</bottom>
          </properties>
@@ -4543,12 +4550,12 @@
        <properties>
         <objectName type="QString">rectangle</objectName>
         <id type="QString">{dacd6adc-2c8d-44b5-afa9-b32f3c837206}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,0,13.54,68.17</geometry>
-        <order type="int">2</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4618,12 +4625,12 @@
        <properties>
         <objectName type="QString">rectangle_1</objectName>
         <id type="QString">{c9179262-0708-492f-b9e4-535574564d08}</id>
+        <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">147.81,0,23.65,68.17</geometry>
-        <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4693,12 +4700,12 @@
        <properties>
         <objectName type="QString">memo_41</objectName>
         <id type="QString">{990a0918-b6fe-4b91-bcf8-9afd676c6570}</id>
+        <order type="int">4</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,41.28,134.27,7</geometry>
-        <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4789,12 +4796,12 @@
        <properties>
         <objectName type="QString">memo_42</objectName>
         <id type="QString">{60e68001-f6bf-42bb-aadd-c070c899d7b3}</id>
+        <order type="int">5</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,48.28,134.27,19.9</geometry>
-        <order type="int">5</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4865,7 +4872,7 @@
          <properties>
           <objectName type="QString">_property_textMargins</objectName>
           <left type="double">1</left>
-          <top type="double">0</top>
+          <top type="double">1</top>
           <right type="double">1</right>
           <bottom type="double">0</bottom>
          </properties>
@@ -4885,12 +4892,12 @@
        <properties>
         <objectName type="QString">rectangle_2</objectName>
         <id type="QString">{507f156f-6548-4315-bb58-f67e550692e5}</id>
+        <order type="int">6</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">30,0,104.27,11.82</geometry>
-        <order type="int">6</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -4960,12 +4967,12 @@
        <properties>
         <objectName type="QString">rectangle_3</objectName>
         <id type="QString">{a3d555ee-4993-4998-acfb-675251a1803a}</id>
+        <order type="int">7</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,0,30,11.82</geometry>
-        <order type="int">7</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5037,12 +5044,12 @@
      <properties>
       <objectName type="QString">summary_1</objectName>
       <id type="QString">{2a58be28-5aee-4082-a8aa-0472be4f6978}</id>
+      <order type="int">4</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,163.56,195.9,61.17</geometry>
-      <order type="int">4</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -5118,12 +5125,12 @@
        <properties>
         <objectName type="QString">memo_43</objectName>
         <id type="QString">{650f8660-035c-4752-9573-fbd8cf13e47c}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">43.5,3.51,18.5,7</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5214,12 +5221,12 @@
        <properties>
         <objectName type="QString">memo_44</objectName>
         <id type="QString">{92e19177-8508-4c98-b2fc-c6f5126ae037}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">62,3.51,30,7</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5310,12 +5317,12 @@
          <properties>
           <objectName type="QString">memo_45</objectName>
           <id type="QString">{0cbbbabb-2597-4903-b655-3090a89650a4}</id>
+          <order type="int">0</order>
           <objectFlags type="int">0</objectFlags>
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
           <geometry type="QRectF">0,7,30,7</geometry>
-          <order type="int">0</order>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -5408,12 +5415,12 @@
        <properties>
         <objectName type="QString">memo_46</objectName>
         <id type="QString">{b6e1c5c6-dd2b-4d5a-af2f-29b615371d08}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">97.05,3.51,11.61,7</geometry>
-        <order type="int">2</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5504,12 +5511,12 @@
        <properties>
         <objectName type="QString">memo_47</objectName>
         <id type="QString">{656ae2b0-080e-4ca0-9e13-8d23b9f20e49}</id>
+        <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">108.65,3.51,25.62,7</geometry>
-        <order type="int">3</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5600,12 +5607,12 @@
        <properties>
         <objectName type="QString">memo_48</objectName>
         <id type="QString">{595b4b27-8569-4541-8fae-4efaea50c2e9}</id>
+        <order type="int">4</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,3.51,30,7</geometry>
-        <order type="int">4</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5696,12 +5703,12 @@
        <properties>
         <objectName type="QString">memo_49</objectName>
         <id type="QString">{14505fdc-c671-4954-8d07-a7e5dcf208d5}</id>
+        <order type="int">5</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,10.51,30,7</geometry>
-        <order type="int">5</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5792,12 +5799,12 @@
        <properties>
         <objectName type="QString">memo_50</objectName>
         <id type="QString">{ad5adc9b-d72c-4695-bab5-212cba324b54}</id>
+        <order type="int">6</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">134.27,17.51,30,7</geometry>
-        <order type="int">6</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5888,12 +5895,12 @@
        <properties>
         <objectName type="QString">memo_51</objectName>
         <id type="QString">{5eca939c-0abb-4def-925c-74fa4b1d2a03}</id>
+        <order type="int">7</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">168.28,3.51,21.72,7</geometry>
-        <order type="int">7</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -5984,12 +5991,12 @@
        <properties>
         <objectName type="QString">memo_52</objectName>
         <id type="QString">{b162255c-6626-40ea-81d3-139cf8e7aaeb}</id>
+        <order type="int">8</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">168.28,10.51,21.72,7</geometry>
-        <order type="int">8</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -6080,12 +6087,12 @@
        <properties>
         <objectName type="QString">memo_53</objectName>
         <id type="QString">{cb87e59a-9075-48d0-a87b-29f3ff26360e}</id>
+        <order type="int">9</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">168.29,17.51,21.72,7</geometry>
-        <order type="int">9</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -6176,12 +6183,12 @@
        <properties>
         <objectName type="QString">memo_54</objectName>
         <id type="QString">{c4fcb633-102e-414c-874a-8b26ac080126}</id>
+        <order type="int">10</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">79.78,24.51,110.22,7.56</geometry>
-        <order type="int">10</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -6274,12 +6281,12 @@
      <properties>
       <objectName type="QString">page footer</objectName>
       <id type="QString">{5798f563-50c7-488f-8e52-a635fda9d26d}</id>
+      <order type="int">0</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
       <geometry type="QRectF">10,259.91,195.9,9.49</geometry>
-      <order type="int">0</order>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -6358,12 +6365,12 @@
        <properties>
         <objectName type="QString">barcode</objectName>
         <id type="QString">{538bc5bd-cced-4afd-81e2-f92c90c6c0ac}</id>
+        <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">0,0,60.73,9.49</geometry>
-        <order type="int">0</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -6447,12 +6454,12 @@
        <properties>
         <objectName type="QString">memo_55</objectName>
         <id type="QString">{edeea72f-304f-4b72-a401-6b6f55a9d49e}</id>
+        <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
         <geometry type="QRectF">164.27,1.49,30.73,8</geometry>
-        <order type="int">1</order>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -6547,6 +6554,7 @@
    <properties>
     <objectName type="QString">res</objectName>
     <id type="QString">{1fab265a-a459-4394-a019-13e71dbf961f}</id>
+    <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
     <syncFlags textValue="528" type="enum" typeName="QFlags&lt;CuteReport::StorageInterface::SyncFlag>">528</syncFlags>
     <isCacheInited type="bool">true</isCacheInited>
@@ -6565,47 +6573,11 @@
    <properties>
     <objectName type="QString">order</objectName>
     <id type="QString">{a803a037-1ecc-4b4b-87be-ac0a6ad566ae}</id>
+    <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString"></sortFields>
-    <filter type="CuteReport::ModelFilter*">
-     <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
-     </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">false</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString"></string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString"></string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString"></string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString"></string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString"></string>
-      </roles>
-      <rowHeadersStr type="QString"></rowHeadersStr>
-      <columnHeadersStr type="QString"></columnHeadersStr>
-      <cellsStr type="QString"></cellsStr>
-      <aliasesStr type="QString"></aliasesStr>
-      <rolesStr type="QString"></rolesStr>
-     </properties>
-    </transform>
     <sourceType textValue="File" type="enum" typeName="CuteReport::SqlDataset::SourceType">0</sourceType>
     <connectionName type="QString"></connectionName>
     <connectionOptions type="QString"></connectionOptions>
@@ -6623,47 +6595,11 @@
    <properties>
     <objectName type="QString">customer</objectName>
     <id type="QString">{1c28bcc9-2740-4061-9d9c-701e1e3cb227}</id>
+    <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString"></sortFields>
-    <filter type="CuteReport::ModelFilter*">
-     <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
-     </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">false</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString"></string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString"></string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString"></string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString"></string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString"></string>
-      </roles>
-      <rowHeadersStr type="QString"></rowHeadersStr>
-      <columnHeadersStr type="QString"></columnHeadersStr>
-      <cellsStr type="QString"></cellsStr>
-      <aliasesStr type="QString"></aliasesStr>
-      <rolesStr type="QString"></rolesStr>
-     </properties>
-    </transform>
     <sourceType textValue="File" type="enum" typeName="CuteReport::SqlDataset::SourceType">0</sourceType>
     <connectionName type="QString"></connectionName>
     <connectionOptions type="QString"></connectionOptions>
@@ -6681,47 +6617,11 @@
    <properties>
     <objectName type="QString">item</objectName>
     <id type="QString">{8669a1b1-99fe-43ae-81e4-6cba25cf000b}</id>
+    <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
     <parentDataset type="QString"></parentDataset>
     <description type="QString"></description>
     <isGlobal type="bool">false</isGlobal>
-    <sortFields type="QString"></sortFields>
-    <filter type="CuteReport::ModelFilter*">
-     <properties>
-      <objectName type="QString">_property_filter</objectName>
-      <column type="int">-1</column>
-      <type textValue="FilterString" type="enum" typeName="CuteReport::ModelFilter::FilterType">0</type>
-      <string type="QString"></string>
-      <caseSensitivity textValue="CaseSensitive" type="enum" typeName="Qt::CaseSensitivity">1</caseSensitivity>
-     </properties>
-    </filter>
-    <transform type="CuteReport::DatasetTransform*">
-     <properties>
-      <objectName type="QString">_property_transform</objectName>
-      <enabled type="bool">false</enabled>
-      <headerToRow type="bool">false</headerToRow>
-      <aliases type="QStringList">
-       <string type="QString"></string>
-      </aliases>
-      <rowHeaders type="QStringList">
-       <string type="QString"></string>
-      </rowHeaders>
-      <columnHeaders type="QStringList">
-       <string type="QString"></string>
-      </columnHeaders>
-      <cells type="QStringList">
-       <string type="QString"></string>
-      </cells>
-      <roles type="QStringList">
-       <string type="QString"></string>
-      </roles>
-      <rowHeadersStr type="QString"></rowHeadersStr>
-      <columnHeadersStr type="QString"></columnHeadersStr>
-      <cellsStr type="QString"></cellsStr>
-      <aliasesStr type="QString"></aliasesStr>
-      <rolesStr type="QString"></rolesStr>
-     </properties>
-    </transform>
     <sourceType textValue="File" type="enum" typeName="CuteReport::SqlDataset::SourceType">0</sourceType>
     <connectionName type="QString"></connectionName>
     <connectionOptions type="QString"></connectionOptions>

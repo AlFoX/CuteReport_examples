@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{571df3d1-0575-4a56-8c12-cdc08cb12cee}</id>
-  <name type="QString">Table of Contents 1</name>
+  <reportName type="QString">Table of Contents 1</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to generate a table of contents based on functionality of the "toc" hidden dataset.&lt;newline>First page "Index of Contents" is automatically generated.</description>
   <version type="int">2</version>

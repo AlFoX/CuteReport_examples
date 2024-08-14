@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{5f6dec6a-2ad1-4c00-9f0d-53dcd050e986}</id>
-  <name type="QString">Plural spell</name>
+  <reportName type="QString">Plural spell</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates functionality of the Spellout module to spell a word depending of its plurality.</description>
   <version type="int">2</version>

@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{ec67bc6d-bce9-427d-a607-3547bc9a7cf0}</id>
-  <name type="QString">Translation</name>
+  <reportName type="QString">Translation</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">Demonstrates functionality of Translator module. &lt;newline>You can translate report to any number of languages and choose translation in runtime by setting report variable "tr" to the required language code.&lt;newline>In this example "en" is used by default with alternative values "uk" and "ru".</description>
   <version type="int">2</version>

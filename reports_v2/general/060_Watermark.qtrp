@@ -4,7 +4,7 @@
  <properties>
   <objectName type="QString"></objectName>
   <id type="QString">{8272274a-37bf-46b7-938b-586b69b5384d}</id>
-  <name type="QString">Watermark</name>
+  <reportName type="QString">Watermark</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">An example of watermark </description>
   <version type="int">2</version>

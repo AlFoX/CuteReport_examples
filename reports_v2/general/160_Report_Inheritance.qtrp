@@ -1,7 +1,7 @@
 <!DOCTYPE CuteReport>
 <Report>
  <properties>
-  <name type="QString">Report inheritance</name>
+  <reportName type="QString">Report inheritance</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">The report is demonstrating ability of one report to inherit another one. Here is the "Text flow" report from the"general" category is inherited and new "Table of Contents" page is added then. If you change base report, the current one will be changed automatically.</description>
   <script type="QString"></script>
