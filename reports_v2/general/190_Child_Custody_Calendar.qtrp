@@ -567,7 +567,7 @@
     <objectName type="QString">page</objectName>
     <id type="QString">{4cd0fe17-5a77-4e88-a139-fc656df8923a}</id>
     <order type="int">0</order>
-    <objectFlags type="int">25344</objectFlags>
+    <objectFlags type="int"></objectFlags>
     <enabled type="bool">true</enabled>
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
@@ -659,7 +659,7 @@
       <objectName type="QString">detail</objectName>
       <id type="QString">{5d37cae6-d64d-43f7-8661-dffde2556a29}</id>
       <order type="int">0</order>
-      <objectFlags type="int">654276863</objectFlags>
+      <objectFlags type="int"></objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>

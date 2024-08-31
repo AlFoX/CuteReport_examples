@@ -1,9 +1,9 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta5" encoding="utf-8"?>
 <Report>
  <properties>
-  <objectName type="QString">Multiplication</objectName>
-  <id type="QString">{31f524b7-9ff4-4ad6-a2fc-236337326ce8}</id>
+  <objectName type="QString"></objectName>
+  <id type="QString">{24e09b48-cfe5-4306-9373-666586ba831e}</id>
   <reportName type="QString">Multiplication</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString"></description>
@@ -214,7 +214,7 @@
   </Dataset>
   <Page name="Std::Page" type="Page" version="1">
    <properties>
-    <objectName type="QString">pageTest&lt;newline></objectName>
+    <objectName type="QString">pageTest</objectName>
     <id type="QString">{449e42b5-7f28-4e48-9ca9-c09541c0bc20}</id>
     <order type="int">0</order>
     <objectFlags type="int">24576</objectFlags>
@@ -289,7 +289,7 @@
     <duplex type="CuteReport::DuplexType*">
      <properties>
       <objectName type="QString">_property_duplex</objectName>
-      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">25594</mode>
+      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">25657</mode>
       <mirrorMargins type="bool">true</mirrorMargins>
       <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
      </properties>
@@ -881,7 +881,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1,1,18,20</geometry>
+        <geometry type="QRectF">1,1,18,18</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1678,7 +1678,7 @@
     <duplex type="CuteReport::DuplexType*">
      <properties>
       <objectName type="QString">_property_duplex</objectName>
-      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">30911</mode>
+      <mode textValue="" type="enum" typeName="CuteReport::DuplexMode">25657</mode>
       <mirrorMargins type="bool">true</mirrorMargins>
       <startPage textValue="OddPage" type="enum" typeName="CuteReport::DuplexType::StartPage">1</startPage>
      </properties>
@@ -1695,7 +1695,7 @@
    <children>
     <Band layoutPriority="75" layoutType="1" name="Std::Title" type="Band" version="1">
      <properties>
-      <objectName type="QString">title</objectName>
+      <objectName type="QString">title_1</objectName>
       <id type="QString">{7432a8d6-6822-492c-be39-815f3825a981}</id>
       <order type="int">0</order>
       <objectFlags type="int">0</objectFlags>
@@ -1776,7 +1776,7 @@
      <children>
       <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">text</objectName>
+        <objectName type="QString">text_16</objectName>
         <id type="QString">{cca2b002-6937-46d1-8a91-48ebacf08b17}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
@@ -1871,7 +1871,7 @@
       </Item>
       <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">text_1</objectName>
+        <objectName type="QString">text_15</objectName>
         <id type="QString">{8f1552e8-80d8-4bc3-ba87-2b09e9c0f3be}</id>
         <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
@@ -1966,7 +1966,7 @@
       </Item>
       <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">text_2</objectName>
+        <objectName type="QString">text_14</objectName>
         <id type="QString">{4dfa1d1e-76e1-4636-803b-587669091210}</id>
         <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
@@ -2061,7 +2061,7 @@
       </Item>
       <Item name="Std::Line" type="Item" version="1">
        <properties>
-        <objectName type="QString">line</objectName>
+        <objectName type="QString">line_3</objectName>
         <id type="QString">{20e4f56b-4a42-4511-b036-bf474247ece9}</id>
         <order type="int">3</order>
         <objectFlags type="int">0</objectFlags>
@@ -2150,7 +2150,7 @@
     </Band>
     <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
      <properties>
-      <objectName type="QString">detail_1</objectName>
+      <objectName type="QString">detail_2</objectName>
       <id type="QString">{62cfa0dd-b002-41f5-8c79-5639d244fe16}</id>
       <order type="int">1</order>
       <objectFlags type="int">0</objectFlags>
@@ -2263,14 +2263,14 @@
      <children>
       <Item name="Std::Rectangle" type="Item" version="1">
        <properties>
-        <objectName type="QString">rectangle_1</objectName>
+        <objectName type="QString">rectangle_2</objectName>
         <id type="QString">{1996b0e0-7426-419e-b2c9-98c2ee6469a4}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1,1,18,20</geometry>
+        <geometry type="QRectF">1,1,18,19</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2338,7 +2338,7 @@
        <children>
         <Item name="Std::Memo" type="Item" version="1">
          <properties>
-          <objectName type="QString">text_6</objectName>
+          <objectName type="QString">text_13</objectName>
           <id type="QString">{eb8bb7e1-4fae-4fec-babe-828e5d7bee72}</id>
           <order type="int">0</order>
           <objectFlags type="int">0</objectFlags>
@@ -2433,7 +2433,7 @@
         </Item>
         <Item name="Std::Memo" type="Item" version="1">
          <properties>
-          <objectName type="QString">text_7</objectName>
+          <objectName type="QString">text_12</objectName>
           <id type="QString">{833f1129-63ee-47cd-99e2-501e7c6695e0}</id>
           <order type="int">1</order>
           <objectFlags type="int">0</objectFlags>
@@ -2528,7 +2528,7 @@
         </Item>
         <Item name="Std::Memo" type="Item" version="1">
          <properties>
-          <objectName type="QString">text_8</objectName>
+          <objectName type="QString">text_11</objectName>
           <id type="QString">{68cd2182-a7a9-48a3-8277-b14f3edf3805}</id>
           <order type="int">2</order>
           <objectFlags type="int">0</objectFlags>
@@ -2721,7 +2721,7 @@
         </Item>
         <Item name="Std::Line" type="Item" version="1">
          <properties>
-          <objectName type="QString">line_1</objectName>
+          <objectName type="QString">line_2</objectName>
           <id type="QString">{a772ab4d-295d-4a28-ab07-c0e1a01c21d5}</id>
           <order type="int">4</order>
           <objectFlags type="int">0</objectFlags>
@@ -2812,7 +2812,7 @@
     </Band>
     <Band layoutPriority="100" layoutType="2" name="Std::PageFooter" type="Band" version="1">
      <properties>
-      <objectName type="QString">pageFooter</objectName>
+      <objectName type="QString">pageFooter_1</objectName>
       <id type="QString">{59c6a030-44ea-4b06-a753-f3e496d92432}</id>
       <order type="int">0</order>
       <objectFlags type="int">0</objectFlags>
@@ -2896,7 +2896,7 @@
      <children>
       <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">text_3</objectName>
+        <objectName type="QString">text_10</objectName>
         <id type="QString">{76189ccf-2328-4da5-bb58-c28658b965bc}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
@@ -2991,7 +2991,7 @@
       </Item>
       <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">text_4</objectName>
+        <objectName type="QString">text_5</objectName>
         <id type="QString">{33ed6533-9959-4946-b23d-b94f1505ebe2}</id>
         <order type="int">1</order>
         <objectFlags type="int">0</objectFlags>
