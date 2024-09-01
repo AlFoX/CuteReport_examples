@@ -3,8 +3,9 @@
 <Report>
  <properties>
   <id type="QString">{24e09b48-cfe5-4306-9373-666586ba831e}</id>
-  <reportName type="QString">Multiplication</reportName>
+  <reportName type="QString">Build a 3-digit number from the parts</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
+  <description type="QString">Grade 2 place value worksheets on building 3-digit numbers by adding multiples of ones, ten and one hundred. </description>
   <version type="int">0</version>
   <created type="QDateTime">2024-08-10T20:40:39.132</created>
   <picture type="QPixmap">iVBORw0KGgoAAAANSUhEUgAAARoAAAGQCAIAAAD++jhTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAOiklEQVR4nO3de3SU5YHH8d/MJBNyIUCQW0GKgnJz5VKrlSMWFdill13UKu5WCrtdOV17dldpu+tfnl3Paa1H1ksrrSK4eqBWPbiiPS241gtSuYhLQRQEwh0D5AK5TuaSmXf/SCSZEEKAH3DQ7+evzJvnfZ53hvPNvDPMm4SCIBAAh/D5PgDg84OcABtyAmzICbAhJ8CGnAAbcgJsyAmwISfAhpwAG3ICbMgJsMnp4riZM2ee1eO4IEycOPF8HwLOmzlz5px0TFdzkrR48eIzOJgL3oIFC7rygOJzacGCBV0ZxskeYENOgA05ATan8Nqpc0E6ma4qVU40p2TYKe2XaagIUrFwQZ9QtNB1MMB54Xl2Sux6s+KXoyufnlD566vq332w3XfjW1+peuaGjnfc8Xr5Y5dXzB97eN7gmt/9k4L0aR9DJ6sA54bh2SlINtQsuytv6OTiaY8GyXoFQXLvqsTON7vf+B8Na38RKR6UiVU2VW2v+f0/dxt5c3TwhIbVjzWVb867bFr+mDubZ+h7z/ZU2YajL92RP3ZWpOeXG1Y9lIlXF1z9g+igr8W3vBz/5HdSkDd0SvP4xg+fT2z/Q6RkWNF1P1YQ1K96KF29O+eikeGivsdWybv0xjO/X8CpMjw7pco3ZxqPFF57TyhaGC7qF+7ev6lia3zLy5ISO15Pfvq+pFA4J6fXpeFuPepX/iz+ybLokEm1K36c3L+meYbErrcSu9+RQuFuPauXfjfTWBXpOaT6xRlBsj6x4/X0kZ25/cfULp8b3/JyYseKmt//S+6Xxid2LK99/SeZWEXDuidyLhqZ03dU21XO/E4Bp8Hx2imQpCDrPC3Ubkgor7hwwr2SapffG8RrGj96UaFQquz/ml9oNax+rKnyk+IpP48UD0yVbQiSDemaA5l4TVNVqaRIr0sKJ8xN7lud2L0yHC3M7Tu6cMJchcKxDxboup9I6jb61pw+I2MfLDi2CnBeGHLK7XdFOL9X/cqfdr/pAUkKMqFuPTKxqkysUkFGUii3INN4JEjWKxQJF/QJRYu6T/6ZMqlI78tS+9dKKpm1onrpzNjGZwvGzwrlFkSHXF8w/vtBsrb5OSdINWYaj6ar9+b0HxPOL0nX7Ms0VKQOfRjuPqjtYbRdJZSbf+b3CzhVhpO9ULSox/RFTYc3Vz55deWTVzduXJI3bGqkx+DyR4cl968JR4ujl94Uzis+/PCg+lU/L7rh/nTN/qpnJlU995dBvObYHMV/9XBTVWls4+LiaY80bvpN5YKvVS+7KxSJSkrsfrv8kUsUBAXjv18wbnZO7+Hlj12W3PNuS72fabvKmd8p4HQEXXPnnXeedEy6oTKTjLXejFW1uZlJN1QEmXTLt+oOZRL1J5wo09RUWxakk0EQVC+76+jSmZl4TdZCsapjU7Xbs+0qXk899dTZmBYXhC7+69v+30lSuKB31s38kja3QuGCi1q/VdSvs4lCkUj3Ac1f5g6eoHQqlFd84pmz9my7CnCOOXM6GwrGzT7fhwB0FR8yAmzICbA5hZO9Ll7yAXxhdTWniRMncvEc0Lmu5rRq1aqzehw4q/hReG6cwske/yQXKM7SzxneigBsyAmwOUc5ZQIdqG6/MZbsYGRVQwfbOxx5vGRah2pPMiaW1K7K1pt7jqi8vkuTn8ZCWw6JPzz8heLJ6dl1WrO75euX/qxVO9sPKK3Q9KclaeMBbSuXpC2HNPkJJY+7+vbWRdp6OGvLiUYeb+lG3f+Hk4xZsVVzX9GGA5K0fIv+fol2V55kl9NbqC6h+17Tw2+e8uS4cHlyWrhGD76hdEb7jmrem/rjNkn66KBiSR2u0/6jrSMXrNayD/XJYQ0p0X1TFI2ovF7r9mjTp8q0+Um+rVzVjZK05ZD6FLaM3HNEq3e31CipMaX1+7Rhv+oTrTvGU1q7R0calExrc5lSaTWm9NHBlmeJVzfriXc1/mIt2yRJ28s1daSuGZI1cyypjw9K0q5KHYmpIakNB/T+XtUltH6fPq1uv1CzXZVav0/pjCSV12ntHtXGNWeCtpcLXxyGz+zFkoqnlM7o7R36YJ/6dldVgyT9w2+06O/0TqkO1mj2Na3j3y1VWY1+OFEPrNBf/4UeekM7KxUKqX93/WpGy5hFazSwh2aM1+wlmn97y8jZSzS4l/Yf1Q+v19QR+u5zGtRTpZX63tWa+dWWHXdXaeEalVZoyff0o1d0/zTVNGrxer0wW5JqGlWUp5su17WXSFJtXN27ScqaedhFuvslrZ6rB1bo21cokdbC1eqZrwPVGtFPpRV6fnbWQs/P0prdWrRGJYUaUKyHp2vGf2tgT101WFcMUF38zB9gXDAMz061cUmafY2eXac3tumO8Toa62z8beP0+K1ZW74xSk/dofX7tKeqZcuUEXprh/60S1cNVo9urSP/dZJuGav392rtHiWa9KsZuiTrU+wa2V8L/1YX99R7u3Tj5Xpru97bpSnDW757x1c0/Ur99H/1gxf18UG9ulnXD20/8/GG9dEjtygT6NczNKhXy3PXsYVW7dTSjRraR6P6a2WpUmkF0r036J5J+upgldXohQ1dexxx4TPkVJdQOKS/uVLldfr6MA3sqZq4JBVEW07YJIVCkpRoUm5EtfH2L9DTQctpUk5Y4ZASTfr6UDWm9MxafWNU++XyIko2qXehYimt2tlBuskmHa5TYVQ3j9Hb2/XeLk37bJKyGk0doXnTtWG/CqOaOFRr97SfuSCqVFoN2W9+RCOSlEorL6JUuv1COWEVRjXpMs2brnCb6/o3lalXgaaN7OIDiQueIaf6hHIiikb0i+/o7onKz215I+72cfq3V/XbD5Sfq0E9NaREj6/U1BFasl5T52e9UnpunW5ZqG+O1sW9dN2levwdRXN021jFU5o6ouNFv3Kx5kzQa5tV06jcSMvGbjna9Kkmz9eQEk0ZoeF9NbyfxgzUlz77XSxr92jOC/rH5/WdsRrSW18uyXrd1WxYH40bpKnztfWwuuV2vHq7he6eqPf36r7X9NKfFWnziNYn1KdIPbjQ/ouji1cjduVq3OM1JoOGROvNZFMQBEEiFcRTrRvn/k/w5J+ytiSbgmfXBrctChat6Wzm/1wePPp2cO1/BR+VdbBiLBk89Mfgxl8GG/Zn7fjxweBHr7R8vWR9MP3pYNvhDuaviweJVAfbT3TXMkFQ1RCkM61bjsaCOb8N/v3VziY5N7iO+Mydh6txj9fup3vz00g0e81po1RSqLycrGHF+Zp1TetJ2vEygYb3VUNS82/X6AEdrJjOaECxHvy2xmX9ghaN6q9501u+vm1c1guztoryTnyvshdqFpJKCrK2BIFuulxTOdP7Ijn/V+NOHt7BxpuvPMleBVHNGN/ZgKK81rf7TiQa0beuOMmY09arQLd3eoT4/OFDRoANOQE2p3Cyx9/zBDoXCgI+pQl4cLIH2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYENOgA05ATbkBNiQE2BDToANOQE25ATYkBNgQ06ADTkBNuQE2JATYPP/UinWg8EMvlgAAAAASUVORK5CYII=</picture>
@@ -14,58 +15,34 @@
    <properties>
     <objectName type="QString">_property_variables</objectName>
     <variables type="QVariantHash">
-     <key name="max_value">
+     <key name="probability">
       <value type="QVariantHash">
        <key name="explicit">
         <value type="bool">false</value>
        </key>
        <key name="references">
         <value type="QVariantHash">
-         <key name="{1fa2b6ae-5953-4b2a-8ddd-b4afae53fdee}">
-          <value type="int">1</value>
-         </key>
-         <key name="{2e27c513-a5b6-4370-81f9-508dc21bab88}">
-          <value type="int">0</value>
-         </key>
-         <key name="{8f1552e8-80d8-4bc3-ba87-2b09e9c0f3be}">
-          <value type="int">0</value>
-         </key>
-         <key name="{a3d05507-6c91-40f2-b149-3f09d3df9996}">
-          <value type="int">0</value>
-         </key>
-         <key name="{aaa6a485-469c-44c5-b679-11053184c91b}">
-          <value type="int">1</value>
-         </key>
-         <key name="{b2cd5c10-41fb-4420-8c04-2d488a0c4ec8}">
-          <value type="int">1</value>
-         </key>
-         <key name="{ce32a0f0-92de-4075-ab2e-e4d60d4623c3}">
-          <value type="int">0</value>
+         <key name="{93ee034e-6db9-41f6-a46f-b139b2b2ad46}">
+          <value type="int">2</value>
          </key>
         </value>
        </key>
        <key name="type">
-        <value type="QString">Integer</value>
+        <value type="QString">Real</value>
        </key>
        <key name="value">
-        <value type="QString">12</value>
+        <value type="QString">0.2</value>
        </key>
       </value>
      </key>
-     <key name="multiplier1">
+     <key name="start_value">
       <value type="QVariantHash">
        <key name="explicit">
         <value type="bool">false</value>
        </key>
        <key name="references">
         <value type="QVariantHash">
-         <key name="{4dc238b2-d9d1-49f1-b0ef-2a41de578b3d}">
-          <value type="int">0</value>
-         </key>
-         <key name="{62882ea4-4c93-41e3-8677-d5d2c1d03786}">
-          <value type="int">0</value>
-         </key>
-         <key name="{d4ca186c-f573-4fbc-bc71-2b3dcd13b964}">
+         <key name="{fc2b1853-cf05-47ad-bc65-c542c29c4ce7}">
           <value type="int">0</value>
          </key>
         </value>
@@ -74,7 +51,27 @@
         <value type="QString">Integer</value>
        </key>
        <key name="value">
-        <value type="QString">6</value>
+        <value type="int">10</value>
+       </key>
+      </value>
+     </key>
+     <key name="step">
+      <value type="QVariantHash">
+       <key name="explicit">
+        <value type="bool">false</value>
+       </key>
+       <key name="references">
+        <value type="QVariantHash">
+         <key name="{fc2b1853-cf05-47ad-bc65-c542c29c4ce7}">
+          <value type="int">2</value>
+         </key>
+        </value>
+       </key>
+       <key name="type">
+        <value type="QString">Integer</value>
+       </key>
+       <key name="value">
+        <value type="int">10</value>
        </key>
       </value>
      </key>
@@ -108,7 +105,7 @@
        <key name="columns">
         <value type="QVariantHash">
          <key name="NewValue">
-          <value type="int">10</value>
+          <value type="int">2</value>
          </key>
          <key name="OrigValue">
           <value type="int">1</value>
@@ -134,7 +131,7 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <columns type="int">10</columns>
+    <columns type="int">2</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
      <properties>
@@ -400,7 +397,7 @@
            <key name="text">
             <value type="QVariantHash">
              <key name="NewValue">
-              <value type="QString">Multiplying by maxumum: [${max_value}]</value>
+              <value type="QString">Build a 3-digit number from the parts</value>
              </key>
              <key name="OrigValue">
               <value type="QString">Title Here</value>
@@ -477,7 +474,7 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-        <text type="QString">Multiplying by maxumum: [${max_value}]</text>
+        <text type="QString">Build a 3-digit number from the parts</text>
         <textColor type="QColor">51,138,255,255</textColor>
         <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
         <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
@@ -514,7 +511,7 @@
            <key name="text">
             <value type="QVariantHash">
              <key name="NewValue">
-              <value type="QString">Math Drills Worksheet</value>
+              <value type="QString">Grade 2 Place Value Worksheet</value>
              </key>
              <key name="OrigValue">
               <value type="QString">Categoty Here</value>
@@ -591,7 +588,7 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-        <text type="QString">Math Drills Worksheet</text>
+        <text type="QString">Grade 2 Place Value Worksheet</text>
         <textColor type="QColor">100,136,239,255</textColor>
         <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
         <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
@@ -1082,16 +1079,403 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
+    <Band layoutPriority="75" layoutType="1" name="Std::Title" type="Band" version="1">
      <properties>
-      <objectName type="QString">detail_3</objectName>
-      <id type="QString">{c9192d19-f1ee-4ff8-a1a1-774e5839bd08}</id>
+      <objectName type="QString">title</objectName>
+      <id type="QString">{de94016c-73ec-403a-b189-67a6ee3ffddc}</id>
       <order type="int">1</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,45,19.59,20</geometry>
+      <geometry type="QRectF">10,45,195.9,27</geometry>
+      <opacity type="double">1</opacity>
+      <font type="CuteReport::FontType*">
+       <properties>
+        <objectName type="QString">_property_font</objectName>
+        <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+        <family type="QString">Noto Sans</family>
+        <size type="double">11</size>
+        <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+        <italic type="bool">false</italic>
+        <underline type="bool">false</underline>
+        <overline type="bool">false</overline>
+        <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
+       </properties>
+      </font>
+      <background type="CuteReport::BackgroundType*">
+       <properties>
+        <objectName type="QString">_property_background</objectName>
+        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <opacity type="double">1</opacity>
+        <color type="QColor">0,0,0,255</color>
+        <gradient type="CuteReport::GradientType*">
+         <properties>
+          <objectName type="QString">_property_gradient</objectName>
+          <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+          <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+          <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
+          <stopValues type="QStringList">
+           <string type="QString">0</string>
+           <string type="QString">1</string>
+          </stopValues>
+          <stopColors type="QStringList">
+           <string type="QString">blue</string>
+           <string type="QString">yellow</string>
+          </stopColors>
+          <startPoint type="QPointF">0,0</startPoint>
+          <stopPoint type="QPointF">0,1</stopPoint>
+         </properties>
+        </gradient>
+        <autoType type="bool">true</autoType>
+       </properties>
+      </background>
+      <frame type="CuteReport::FrameType*">
+       <properties>
+        <objectName type="QString">_property_frame</objectName>
+        <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+        <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+       </properties>
+      </frame>
+      <stretching textValue="" type="enum" typeName="QFlags&lt;CuteReport::Band::StretchingType>">0</stretching>
+      <outline type="CuteReport::OutlineType*">
+       <properties>
+        <objectName type="QString">_property_outline</objectName>
+       </properties>
+      </outline>
+     </properties>
+     <children>
+      <Item name="Std::Rectangle" type="Item" version="1">
+       <properties>
+        <objectName type="QString">rectangle</objectName>
+        <id type="QString">{3fa17456-380f-4268-8034-20f739c741fb}</id>
+        <order type="int">0</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">4,2,188,11</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">145,145,145,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+        <fill type="CuteReport::FillType*">
+         <properties>
+          <objectName type="QString">_property_fill</objectName>
+          <style textValue="Color" type="enum" typeName="CuteReport::FillType::FillEnum">1</style>
+          <color type="QColor">214,214,214,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoStyle type="bool">true</autoStyle>
+         </properties>
+        </fill>
+        <radius type="double">2</radius>
+       </properties>
+       <children>
+        <Item name="Std::Memo" type="Item" version="1">
+         <properties>
+          <objectName type="QString">memo_2</objectName>
+          <id type="QString">{adc51550-541f-4710-a769-72e0bd692c60}</id>
+          <order type="int">0</order>
+          <objectFlags type="int">0</objectFlags>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+          <geometry type="QRectF">4,1,181,9</geometry>
+          <opacity type="double">1</opacity>
+          <font type="CuteReport::FontType*">
+           <properties>
+            <objectName type="QString">_property_font</objectName>
+            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+            <family type="QString">Noto Sans</family>
+            <size type="double">14</size>
+            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+            <italic type="bool">false</italic>
+            <underline type="bool">false</underline>
+            <overline type="bool">false</overline>
+            <strikeout type="bool">false</strikeout>
+            <outline type="bool">false</outline>
+           </properties>
+          </font>
+          <background type="CuteReport::BackgroundType*">
+           <properties>
+            <objectName type="QString">_property_background</objectName>
+            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+            <opacity type="double">1</opacity>
+            <color type="QColor">0,0,0,255</color>
+            <gradient type="CuteReport::GradientType*">
+             <properties>
+              <objectName type="QString">_property_gradient</objectName>
+              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">0</rotation>
+              <stopValues type="QStringList">
+               <string type="QString">0</string>
+               <string type="QString">1</string>
+              </stopValues>
+              <stopColors type="QStringList">
+               <string type="QString">blue</string>
+               <string type="QString">yellow</string>
+              </stopColors>
+              <startPoint type="QPointF">0,0</startPoint>
+              <stopPoint type="QPointF">0,1</stopPoint>
+             </properties>
+            </gradient>
+            <autoType type="bool">true</autoType>
+           </properties>
+          </background>
+          <frame type="CuteReport::FrameType*">
+           <properties>
+            <objectName type="QString">_property_frame</objectName>
+            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+            <line type="CuteReport::LineType*">
+             <properties>
+              <objectName type="QString">_property_line</objectName>
+              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+              <color type="QColor">0,0,0,255</color>
+              <width type="double">0.3</width>
+              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+              <opacity type="double">1</opacity>
+             </properties>
+            </line>
+           </properties>
+          </frame>
+          <rotation type="double">0</rotation>
+          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+          <text type="QString">Example: 963 = 900 + 60 + 3</text>
+          <textColor type="QColor">73,121,141,255</textColor>
+          <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+          <showStretchability type="bool">true</showStretchability>
+          <delimiters type="QString">[ , ]</delimiters>
+          <stretchFont type="bool">false</stretchFont>
+          <allowHtml type="bool">false</allowHtml>
+          <allowExpressions type="bool">true</allowExpressions>
+          <textMargins type="CuteReport::MarginsType*">
+           <properties>
+            <objectName type="QString">_property_textMargins</objectName>
+            <left type="double">5</left>
+            <top type="double">0</top>
+            <right type="double">0</right>
+            <bottom type="double">0</bottom>
+           </properties>
+          </textMargins>
+          <lineSpacing type="double">100</lineSpacing>
+          <textIndent type="double">0</textIndent>
+         </properties>
+        </Item>
+       </children>
+      </Item>
+      <Item name="Std::Memo" type="Item" version="1">
+       <properties>
+        <objectName type="QString">memo_3</objectName>
+        <id type="QString">{26d98921-f9b4-4da9-ae80-eeb5d426ff50}</id>
+        <order type="int">1</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">4,16,86,8</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">Write the 3-digit numbers</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
+     <properties>
+      <objectName type="QString">detail_3</objectName>
+      <id type="QString">{c9192d19-f1ee-4ff8-a1a1-774e5839bd08}</id>
+      <order type="int">2</order>
+      <objectFlags type="int">0</objectFlags>
+      <enabled type="bool">true</enabled>
+      <visible type="bool">true</visible>
+      <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+      <geometry type="QRectF">10,72,97.95,18</geometry>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -1194,16 +1578,206 @@
       <allowSplit type="bool">false</allowSplit>
      </properties>
      <children>
-      <Item name="Std::Rectangle" type="Item" version="1">
+      <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">rectangle_3</objectName>
-        <id type="QString">{06185841-6637-4c69-8032-2d417c443a57}</id>
+        <objectName type="QString">memo</objectName>
+        <id type="QString">{0a63e8ea-711d-4305-971f-988f373b6c5a}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1,1,18,19</geometry>
+        <geometry type="QRectF">1,1,11,13</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">14</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[$LINE].</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+      <Item name="Std::Memo" type="Item" version="1">
+       <properties>
+        <objectName type="QString">memo_6</objectName>
+        <id type="QString">{e3ced96b-20d8-4d3a-a16a-46ecd716cf68}</id>
+        <order type="int">1</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">33,1,64,13</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">14</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[dataset."value1" * 100][dataset."value2" * 10 #s%h:0:: + ] + [dataset."value3"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">3</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+      <Item name="Std::Line" type="Item" version="1">
+       <properties>
+        <objectName type="QString">line</objectName>
+        <id type="QString">{dcfb3f3d-cb81-4144-b93f-875189d64d27}</id>
+        <order type="int">2</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">12,11,21,2</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1267,10 +1841,11 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <direction textValue="Horizontal" type="enum" typeName="CuteReport::Line::LineDirection">1</direction>
         <line type="CuteReport::LineType*">
          <properties>
           <objectName type="QString">_property_line</objectName>
-          <style textValue="NoLine" type="enum" typeName="CuteReport::LineType::LineStyle">0</style>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
           <color type="QColor">0,0,0,255</color>
           <width type="double">0.3</width>
           <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
@@ -1278,409 +1853,7 @@
           <opacity type="double">1</opacity>
          </properties>
         </line>
-        <fill type="CuteReport::FillType*">
-         <properties>
-          <objectName type="QString">_property_fill</objectName>
-          <style textValue="NoFill" type="enum" typeName="CuteReport::FillType::FillEnum">0</style>
-          <color type="QColor">0,0,0,255</color>
-          <gradient type="CuteReport::GradientType*">
-           <properties>
-            <objectName type="QString">_property_gradient</objectName>
-            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-            <rotation type="double">0</rotation>
-            <stopValues type="QStringList">
-             <string type="QString">0</string>
-             <string type="QString">1</string>
-            </stopValues>
-            <stopColors type="QStringList">
-             <string type="QString">blue</string>
-             <string type="QString">yellow</string>
-            </stopColors>
-            <startPoint type="QPointF">0,0</startPoint>
-            <stopPoint type="QPointF">0,1</stopPoint>
-           </properties>
-          </gradient>
-          <autoStyle type="bool">true</autoStyle>
-         </properties>
-        </fill>
-        <radius type="double">0</radius>
        </properties>
-       <children>
-        <Item name="Std::Memo" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_17</objectName>
-          <id type="QString">{2bea24f3-b234-474c-b3f8-9942ea9f6404}</id>
-          <order type="int">0</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">8,1,6,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">[dataset."multiplier1"]</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Memo" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_18</objectName>
-          <id type="QString">{078daf38-37af-447c-9493-d29e0c6be735}</id>
-          <order type="int">1</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">8,7,6,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">[dataset."multiplier2"]</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Memo" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_19</objectName>
-          <id type="QString">{29213f35-0255-42d0-b19a-213fe2c42064}</id>
-          <order type="int">2</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">3,7,5,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">X</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">132</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Line" type="Item" version="1">
-         <properties>
-          <objectName type="QString">line_4</objectName>
-          <id type="QString">{4997142d-72d2-43fb-9f7a-6d8e8025e28b}</id>
-          <order type="int">3</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">3,12,13,1</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">11</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <direction textValue="Horizontal" type="enum" typeName="CuteReport::Line::LineDirection">1</direction>
-          <line type="CuteReport::LineType*">
-           <properties>
-            <objectName type="QString">_property_line</objectName>
-            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-            <color type="QColor">0,0,0,255</color>
-            <width type="double">0.3</width>
-            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-            <opacity type="double">1</opacity>
-           </properties>
-          </line>
-         </properties>
-        </Item>
-       </children>
       </Item>
      </children>
     </Band>
@@ -1701,7 +1874,7 @@
        <key name="columns">
         <value type="QVariantHash">
          <key name="NewValue">
-          <value type="int">10</value>
+          <value type="int">2</value>
          </key>
          <key name="OrigValue">
           <value type="int">1</value>
@@ -1727,7 +1900,7 @@
       <allowMirror type="bool">true</allowMirror>
      </properties>
     </margins>
-    <columns type="int">10</columns>
+    <columns type="int">2</columns>
     <columnFillDirection textValue="FillHorizontal" type="enum" typeName="CuteReport::FillDirection">1</columnFillDirection>
     <background type="CuteReport::BackgroundType*">
      <properties>
@@ -1993,7 +2166,7 @@
            <key name="text">
             <value type="QVariantHash">
              <key name="NewValue">
-              <value type="QString">Multiplying by maxumum: [${max_value}]</value>
+              <value type="QString">Build a 3-digit number from the parts</value>
              </key>
              <key name="OrigValue">
               <value type="QString">Title Here</value>
@@ -2070,7 +2243,7 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-        <text type="QString">Multiplying by maxumum: [${max_value}]</text>
+        <text type="QString">Build a 3-digit number from the parts</text>
         <textColor type="QColor">51,138,255,255</textColor>
         <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
         <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
@@ -2107,7 +2280,7 @@
            <key name="text">
             <value type="QVariantHash">
              <key name="NewValue">
-              <value type="QString">Math Drills Worksheet</value>
+              <value type="QString">Grade 2 Place Value Worksheet</value>
              </key>
              <key name="OrigValue">
               <value type="QString">Categoty Here</value>
@@ -2184,7 +2357,7 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-        <text type="QString">Math Drills Worksheet</text>
+        <text type="QString">Grade 2 Place Value Worksheet</text>
         <textColor type="QColor">100,136,239,255</textColor>
         <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
         <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
@@ -2675,16 +2848,403 @@
       </Item>
      </children>
     </Band>
-    <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
+    <Band layoutPriority="75" layoutType="1" name="Std::Title" type="Band" version="1">
      <properties>
-      <objectName type="QString">detail_4</objectName>
-      <id type="QString">{a3424149-423f-420e-ac4a-dab3ccb100f7}</id>
+      <objectName type="QString">title_1</objectName>
+      <id type="QString">{9b9561a8-8e95-452c-90a2-63271fa5f27f}</id>
       <order type="int">1</order>
       <objectFlags type="int">0</objectFlags>
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,45,19.59,20</geometry>
+      <geometry type="QRectF">10,45,195.9,27</geometry>
+      <opacity type="double">1</opacity>
+      <font type="CuteReport::FontType*">
+       <properties>
+        <objectName type="QString">_property_font</objectName>
+        <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+        <family type="QString">Noto Sans</family>
+        <size type="double">11</size>
+        <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+        <italic type="bool">false</italic>
+        <underline type="bool">false</underline>
+        <overline type="bool">false</overline>
+        <strikeout type="bool">false</strikeout>
+        <outline type="bool">false</outline>
+       </properties>
+      </font>
+      <background type="CuteReport::BackgroundType*">
+       <properties>
+        <objectName type="QString">_property_background</objectName>
+        <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+        <opacity type="double">1</opacity>
+        <color type="QColor">0,0,0,255</color>
+        <gradient type="CuteReport::GradientType*">
+         <properties>
+          <objectName type="QString">_property_gradient</objectName>
+          <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+          <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+          <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+          <rotation type="double">0</rotation>
+          <stopValues type="QStringList">
+           <string type="QString">0</string>
+           <string type="QString">1</string>
+          </stopValues>
+          <stopColors type="QStringList">
+           <string type="QString">blue</string>
+           <string type="QString">yellow</string>
+          </stopColors>
+          <startPoint type="QPointF">0,0</startPoint>
+          <stopPoint type="QPointF">0,1</stopPoint>
+         </properties>
+        </gradient>
+        <autoType type="bool">true</autoType>
+       </properties>
+      </background>
+      <frame type="CuteReport::FrameType*">
+       <properties>
+        <objectName type="QString">_property_frame</objectName>
+        <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+        <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+       </properties>
+      </frame>
+      <stretching textValue="" type="enum" typeName="QFlags&lt;CuteReport::Band::StretchingType>">0</stretching>
+      <outline type="CuteReport::OutlineType*">
+       <properties>
+        <objectName type="QString">_property_outline</objectName>
+       </properties>
+      </outline>
+     </properties>
+     <children>
+      <Item name="Std::Rectangle" type="Item" version="1">
+       <properties>
+        <objectName type="QString">rectangle_1</objectName>
+        <id type="QString">{28339b69-9cf1-4972-b97c-402717b57f75}</id>
+        <order type="int">0</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">4,2,188,11</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+          <color type="QColor">145,145,145,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+        <fill type="CuteReport::FillType*">
+         <properties>
+          <objectName type="QString">_property_fill</objectName>
+          <style textValue="Color" type="enum" typeName="CuteReport::FillType::FillEnum">1</style>
+          <color type="QColor">214,214,214,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoStyle type="bool">true</autoStyle>
+         </properties>
+        </fill>
+        <radius type="double">2</radius>
+       </properties>
+       <children>
+        <Item name="Std::Memo" type="Item" version="1">
+         <properties>
+          <objectName type="QString">memo_4</objectName>
+          <id type="QString">{07aa4b55-c0b7-4bd4-9d41-30da9469c055}</id>
+          <order type="int">0</order>
+          <objectFlags type="int">0</objectFlags>
+          <enabled type="bool">true</enabled>
+          <visible type="bool">true</visible>
+          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+          <geometry type="QRectF">4,1,181,9</geometry>
+          <opacity type="double">1</opacity>
+          <font type="CuteReport::FontType*">
+           <properties>
+            <objectName type="QString">_property_font</objectName>
+            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+            <family type="QString">Noto Sans</family>
+            <size type="double">14</size>
+            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+            <italic type="bool">false</italic>
+            <underline type="bool">false</underline>
+            <overline type="bool">false</overline>
+            <strikeout type="bool">false</strikeout>
+            <outline type="bool">false</outline>
+           </properties>
+          </font>
+          <background type="CuteReport::BackgroundType*">
+           <properties>
+            <objectName type="QString">_property_background</objectName>
+            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+            <opacity type="double">1</opacity>
+            <color type="QColor">0,0,0,255</color>
+            <gradient type="CuteReport::GradientType*">
+             <properties>
+              <objectName type="QString">_property_gradient</objectName>
+              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+              <rotation type="double">0</rotation>
+              <stopValues type="QStringList">
+               <string type="QString">0</string>
+               <string type="QString">1</string>
+              </stopValues>
+              <stopColors type="QStringList">
+               <string type="QString">blue</string>
+               <string type="QString">yellow</string>
+              </stopColors>
+              <startPoint type="QPointF">0,0</startPoint>
+              <stopPoint type="QPointF">0,1</stopPoint>
+             </properties>
+            </gradient>
+            <autoType type="bool">true</autoType>
+           </properties>
+          </background>
+          <frame type="CuteReport::FrameType*">
+           <properties>
+            <objectName type="QString">_property_frame</objectName>
+            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+            <line type="CuteReport::LineType*">
+             <properties>
+              <objectName type="QString">_property_line</objectName>
+              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+              <color type="QColor">0,0,0,255</color>
+              <width type="double">0.3</width>
+              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+              <opacity type="double">1</opacity>
+             </properties>
+            </line>
+           </properties>
+          </frame>
+          <rotation type="double">0</rotation>
+          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+          <text type="QString">Example: 963 = 900 + 60 + 3</text>
+          <textColor type="QColor">73,121,141,255</textColor>
+          <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+          <showStretchability type="bool">true</showStretchability>
+          <delimiters type="QString">[ , ]</delimiters>
+          <stretchFont type="bool">false</stretchFont>
+          <allowHtml type="bool">false</allowHtml>
+          <allowExpressions type="bool">true</allowExpressions>
+          <textMargins type="CuteReport::MarginsType*">
+           <properties>
+            <objectName type="QString">_property_textMargins</objectName>
+            <left type="double">5</left>
+            <top type="double">0</top>
+            <right type="double">0</right>
+            <bottom type="double">0</bottom>
+           </properties>
+          </textMargins>
+          <lineSpacing type="double">100</lineSpacing>
+          <textIndent type="double">0</textIndent>
+         </properties>
+        </Item>
+       </children>
+      </Item>
+      <Item name="Std::Memo" type="Item" version="1">
+       <properties>
+        <objectName type="QString">memo_5</objectName>
+        <id type="QString">{bd3c2087-29ce-40ad-aa4a-13d30d6362d6}</id>
+        <order type="int">1</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">4,16,86,8</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">11</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">Write the 3-digit numbers</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+     </children>
+    </Band>
+    <Band layoutPriority="50" layoutType="1" name="Std::Detail" type="Band" version="1">
+     <properties>
+      <objectName type="QString">detail_5</objectName>
+      <id type="QString">{e208c8aa-c0d7-4d1d-b874-a948aa93a1b0}</id>
+      <order type="int">2</order>
+      <objectFlags type="int">0</objectFlags>
+      <enabled type="bool">true</enabled>
+      <visible type="bool">true</visible>
+      <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+      <geometry type="QRectF">10,72,97.95,18</geometry>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -2787,16 +3347,206 @@
       <allowSplit type="bool">false</allowSplit>
      </properties>
      <children>
-      <Item name="Std::Rectangle" type="Item" version="1">
+      <Item name="Std::Memo" type="Item" version="1">
        <properties>
-        <objectName type="QString">rectangle_4</objectName>
-        <id type="QString">{9e938195-e15b-4e91-8a9b-ce7dfebda4f5}</id>
+        <objectName type="QString">memo_7</objectName>
+        <id type="QString">{18705ff2-fc74-41b1-b357-b465935bac18}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">1,1,18,19</geometry>
+        <geometry type="QRectF">1,1,11,13</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">14</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[$LINE].</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+      <Item name="Std::Memo" type="Item" version="1">
+       <properties>
+        <objectName type="QString">memo_8</objectName>
+        <id type="QString">{0459efb6-153c-4a2d-8259-b1b361b0b8c1}</id>
+        <order type="int">1</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">33,1,64,13</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
+         <properties>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">14</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoType type="bool">true</autoType>
+         </properties>
+        </background>
+        <frame type="CuteReport::FrameType*">
+         <properties>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
+          <line type="CuteReport::LineType*">
+           <properties>
+            <objectName type="QString">_property_line</objectName>
+            <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
+            <color type="QColor">0,0,0,255</color>
+            <width type="double">0.3</width>
+            <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+            <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+            <opacity type="double">1</opacity>
+           </properties>
+          </line>
+         </properties>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[dataset."value1" * 100][dataset."value2" * 10 #s%h:0:: + ] + [dataset."value3"]</text>
+        <textColor type="QColor">0,0,0,255</textColor>
+        <textFlags textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">129</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">3</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
+      </Item>
+      <Item name="Std::Line" type="Item" version="1">
+       <properties>
+        <objectName type="QString">line_1</objectName>
+        <id type="QString">{7dc29ae9-868e-4e78-ac76-fad12b4e469b}</id>
+        <order type="int">2</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">12,11,21,2</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2860,10 +3610,11 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <direction textValue="Horizontal" type="enum" typeName="CuteReport::Line::LineDirection">1</direction>
         <line type="CuteReport::LineType*">
          <properties>
           <objectName type="QString">_property_line</objectName>
-          <style textValue="NoLine" type="enum" typeName="CuteReport::LineType::LineStyle">0</style>
+          <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
           <color type="QColor">0,0,0,255</color>
           <width type="double">0.3</width>
           <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
@@ -2871,10 +3622,38 @@
           <opacity type="double">1</opacity>
          </properties>
         </line>
-        <fill type="CuteReport::FillType*">
+       </properties>
+      </Item>
+      <Item name="Std::Memo" type="Item" version="1">
+       <properties>
+        <objectName type="QString">memo_9</objectName>
+        <id type="QString">{f02161da-8d26-48bd-8b06-c9fae856fa99}</id>
+        <order type="int">3</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <visible type="bool">true</visible>
+        <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
+        <geometry type="QRectF">12,1,21,13</geometry>
+        <opacity type="double">1</opacity>
+        <font type="CuteReport::FontType*">
          <properties>
-          <objectName type="QString">_property_fill</objectName>
-          <style textValue="NoFill" type="enum" typeName="CuteReport::FillType::FillEnum">0</style>
+          <objectName type="QString">_property_font</objectName>
+          <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
+          <family type="QString">Noto Sans</family>
+          <size type="double">14</size>
+          <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
+          <italic type="bool">false</italic>
+          <underline type="bool">false</underline>
+          <overline type="bool">false</overline>
+          <strikeout type="bool">false</strikeout>
+          <outline type="bool">false</outline>
+         </properties>
+        </font>
+        <background type="CuteReport::BackgroundType*">
+         <properties>
+          <objectName type="QString">_property_background</objectName>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
+          <opacity type="double">1</opacity>
           <color type="QColor">0,0,0,255</color>
           <gradient type="CuteReport::GradientType*">
            <properties>
@@ -2895,466 +3674,14 @@
             <stopPoint type="QPointF">0,1</stopPoint>
            </properties>
           </gradient>
-          <autoStyle type="bool">true</autoStyle>
+          <autoType type="bool">true</autoType>
          </properties>
-        </fill>
-        <radius type="double">0</radius>
-       </properties>
-       <children>
-        <Item name="Std::Memo" type="Item" version="1">
+        </background>
+        <frame type="CuteReport::FrameType*">
          <properties>
-          <objectName type="QString">text_110</objectName>
-          <id type="QString">{a3adc7c6-38a9-462f-92d9-c2c29fc7437f}</id>
-          <order type="int">0</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">8,1,6,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">[dataset."multiplier1"]</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Memo" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_111</objectName>
-          <id type="QString">{15cbfdb6-7939-4fce-affa-162f1dd13ada}</id>
-          <order type="int">1</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">8,7,6,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">[dataset."multiplier2"]</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">130</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Memo" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_112</objectName>
-          <id type="QString">{32373f0a-6e6f-44f9-8788-4ace7a696e3b}</id>
-          <order type="int">2</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">3,7,5,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">X</text>
-          <textColor type="QColor">0,0,0,255</textColor>
-          <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">132</textFlags>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Ext::Text" type="Item" version="1">
-         <properties>
-          <objectName type="QString">text_21</objectName>
-          <id type="QString">{6ed748aa-d0cf-47bd-9c8a-9455d7e8acdc}</id>
-          <order type="int">3</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">5,13,9,6</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">12</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <text type="QString">[dataset."multiplier1" * dataset."multiplier2"]</text>
-          <textColor type="QColor">235,19,75,255</textColor>
-          <textFlags textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">130</textFlags>
-          <textMargins type="CuteReport::MarginsType*">
-           <properties>
-            <objectName type="QString">_property_textMargins</objectName>
-            <left type="double">0</left>
-            <top type="double">0</top>
-            <right type="double">0</right>
-            <bottom type="double">0</bottom>
-           </properties>
-          </textMargins>
-          <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::TextItem::StretchMode">0</stretchMode>
-          <showStretchability type="bool">true</showStretchability>
-          <delimiters type="QString">[ , ]</delimiters>
-          <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
-          <allowExpressions type="bool">true</allowExpressions>
-          <lineSpacing type="double">100</lineSpacing>
-          <textIndent type="double">0</textIndent>
-         </properties>
-        </Item>
-        <Item name="Std::Line" type="Item" version="1">
-         <properties>
-          <objectName type="QString">line_5</objectName>
-          <id type="QString">{c3126f24-39fa-4bf5-87e1-7125672f113a}</id>
-          <order type="int">4</order>
-          <objectFlags type="int">0</objectFlags>
-          <enabled type="bool">true</enabled>
-          <visible type="bool">true</visible>
-          <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">3,12,13,1</geometry>
-          <opacity type="double">1</opacity>
-          <font type="CuteReport::FontType*">
-           <properties>
-            <objectName type="QString">_property_font</objectName>
-            <inherit textValue="" type="enum" typeName="QFlags&lt;CuteReport::FontType::InheritanceFlag>">0</inherit>
-            <family type="QString">Noto Sans</family>
-            <size type="double">11</size>
-            <weight textValue="Normal" type="enum" typeName="QFont::Weight">400</weight>
-            <italic type="bool">false</italic>
-            <underline type="bool">false</underline>
-            <overline type="bool">false</overline>
-            <strikeout type="bool">false</strikeout>
-            <outline type="bool">false</outline>
-           </properties>
-          </font>
-          <background type="CuteReport::BackgroundType*">
-           <properties>
-            <objectName type="QString">_property_background</objectName>
-            <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
-            <opacity type="double">1</opacity>
-            <color type="QColor">0,0,0,255</color>
-            <gradient type="CuteReport::GradientType*">
-             <properties>
-              <objectName type="QString">_property_gradient</objectName>
-              <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
-              <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
-              <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
-              <rotation type="double">0</rotation>
-              <stopValues type="QStringList">
-               <string type="QString">0</string>
-               <string type="QString">1</string>
-              </stopValues>
-              <stopColors type="QStringList">
-               <string type="QString">blue</string>
-               <string type="QString">yellow</string>
-              </stopColors>
-              <startPoint type="QPointF">0,0</startPoint>
-              <stopPoint type="QPointF">0,1</stopPoint>
-             </properties>
-            </gradient>
-            <autoType type="bool">true</autoType>
-           </properties>
-          </background>
-          <frame type="CuteReport::FrameType*">
-           <properties>
-            <objectName type="QString">_property_frame</objectName>
-            <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
-            <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
-            <line type="CuteReport::LineType*">
-             <properties>
-              <objectName type="QString">_property_line</objectName>
-              <style textValue="SolidLine" type="enum" typeName="CuteReport::LineType::LineStyle">1</style>
-              <color type="QColor">0,0,0,255</color>
-              <width type="double">0.3</width>
-              <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
-              <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
-              <opacity type="double">1</opacity>
-             </properties>
-            </line>
-           </properties>
-          </frame>
-          <rotation type="double">0</rotation>
-          <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-          <direction textValue="Horizontal" type="enum" typeName="CuteReport::Line::LineDirection">1</direction>
+          <objectName type="QString">_property_frame</objectName>
+          <frames textValue="" type="enum" typeName="QFlags&lt;CuteReport::FrameType::Frame>">0</frames>
+          <layout textValue="Middle" type="enum" typeName="CuteReport::FrameType::Layout">1</layout>
           <line type="CuteReport::LineType*">
            <properties>
             <objectName type="QString">_property_line</objectName>
@@ -3367,22 +3694,35 @@
            </properties>
           </line>
          </properties>
-        </Item>
-       </children>
+        </frame>
+        <rotation type="double">0</rotation>
+        <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <text type="QString">[dataset."value1" * 100 + dataset."value2" * 10 + dataset."value3"]</text>
+        <textColor type="QColor">81,144,193,255</textColor>
+        <textFlags textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::Memo::TextFlag>">132</textFlags>
+        <stretchMode textValue="DontStretch" type="enum" typeName="CuteReport::Memo::StretchMode">0</stretchMode>
+        <showStretchability type="bool">true</showStretchability>
+        <delimiters type="QString">[ , ]</delimiters>
+        <stretchFont type="bool">false</stretchFont>
+        <allowHtml type="bool">false</allowHtml>
+        <allowExpressions type="bool">true</allowExpressions>
+        <textMargins type="CuteReport::MarginsType*">
+         <properties>
+          <objectName type="QString">_property_textMargins</objectName>
+          <left type="double">1</left>
+          <top type="double">0</top>
+          <right type="double">0</right>
+          <bottom type="double">0</bottom>
+         </properties>
+        </textMargins>
+        <lineSpacing type="double">100</lineSpacing>
+        <textIndent type="double">0</textIndent>
+       </properties>
       </Item>
      </children>
     </Band>
    </children>
   </Page>
-  <Form name="Std::QmlForm" type="Form" version="1">
-   <properties>
-    <objectName type="QString">form</objectName>
-    <id type="QString">{ea60c06e-0ba6-4d47-a8e2-d01bb2c3eddb}</id>
-    <order type="int">-1</order>
-    <objectFlags type="int">0</objectFlags>
-    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 150&lt;newline>    width: 400&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>&lt;newline>            CRLayoutLabel { text: "Maximum random multiplier:" }&lt;newline>            CRLayoutTextField { varName: "max_value"}&lt;newline>&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        Item {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>        }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
-   </properties>
-  </Form>
   <Dataset name="Std::Model" type="Dataset" version="1">
    <properties>
     <objectName type="QString">dataset</objectName>
@@ -3390,7 +3730,7 @@
     <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
     <isGlobal type="bool">false</isGlobal>
-    <internalModelData type="QByteArray">UEQ5NGJXd2dkbVZ5YzJsdmJqMGlNUzR3SWlCbGJtTnZaR2x1WnowaWRYUm1PQ0kvUGdvOGJXOWtaV3crQ2lBOFkyVnNiSE1nWTI5c2N6MGlNQ0lnY205M2N6MGlNVEF3SWk4K0NpQThkR2wwYkdWekx6NEtQQzl0YjJSbGJENEs=</internalModelData>
+    <internalModelData type="QByteArray">UEQ5NGJXd2dkbVZ5YzJsdmJqMGlNUzR3SWlCbGJtTnZaR2x1WnowaWRYUm1PQ0kvUGdvOGJXOWtaV3crQ2lBOFkyVnNiSE1nWTI5c2N6MGlNQ0lnY205M2N6MGlNakFpTHo0S0lEeDBhWFJzWlhNdlBnbzhMMjF2WkdWc1Bnbz0=</internalModelData>
    </properties>
    <children>
     <DatasetModifier name="Std::Custom Fields" type="DatasetModifier" version="1">
@@ -3405,14 +3745,63 @@
       <Internal name="Std::CustomFieldsRandom" type="Internal" version="1">
        <properties>
         <objectName type="QString">customField</objectName>
-        <id type="QString">{1fa2b6ae-5953-4b2a-8ddd-b4afae53fdee}</id>
+        <id type="QString">{a235a819-1906-4057-ad94-5031f2ca89bc}</id>
         <order type="int">0</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
-        <fieldName type="QString">multiplier1</fieldName>
+        <fieldName type="QString">value1</fieldName>
+        <valueType textValue="Integer" type="enum" typeName="CuteReport::CustomFieldDataRandom::ValueType">1</valueType>
+        <fromValue type="QString">1</fromValue>
+        <toValue type="QString">9</toValue>
+        <preventRepeats type="bool">true</preventRepeats>
+        <probability type="QString">0.5</probability>
+        <valueTypeVariants type="QVariantList">
+         <item type="QVariantMap">
+          <key name="id">
+           <value type="int">0</value>
+          </key>
+          <key name="name">
+           <value type="QString">Boolean</value>
+          </key>
+         </item>
+         <item type="QVariantMap">
+          <key name="id">
+           <value type="int">1</value>
+          </key>
+          <key name="name">
+           <value type="QString">Integer</value>
+          </key>
+         </item>
+         <item type="QVariantMap">
+          <key name="id">
+           <value type="int">2</value>
+          </key>
+          <key name="name">
+           <value type="QString">Real</value>
+          </key>
+         </item>
+         <item type="QVariantMap">
+          <key name="id">
+           <value type="int">3</value>
+          </key>
+          <key name="name">
+           <value type="QString">List</value>
+          </key>
+         </item>
+        </valueTypeVariants>
+       </properties>
+      </Internal>
+      <Internal name="Std::CustomFieldsRandom" type="Internal" version="1">
+       <properties>
+        <objectName type="QString">customField_1</objectName>
+        <id type="QString">{b0cbaaa9-f9a5-4e26-b592-1ed58f5aac39}</id>
+        <order type="int">1</order>
+        <objectFlags type="int">0</objectFlags>
+        <enabled type="bool">true</enabled>
+        <fieldName type="QString">value2</fieldName>
         <valueType textValue="Integer" type="enum" typeName="CuteReport::CustomFieldDataRandom::ValueType">1</valueType>
         <fromValue type="QString">0</fromValue>
-        <toValue type="QString">[${max_value}]</toValue>
+        <toValue type="QString">9</toValue>
         <preventRepeats type="bool">true</preventRepeats>
         <probability type="QString">0.5</probability>
         <valueTypeVariants type="QVariantList">
@@ -3454,14 +3843,14 @@
       <Internal name="Std::CustomFieldsRandom" type="Internal" version="1">
        <properties>
         <objectName type="QString">customField_2</objectName>
-        <id type="QString">{aaa6a485-469c-44c5-b679-11053184c91b}</id>
-        <order type="int">1</order>
+        <id type="QString">{00726796-c438-427b-8f9a-fb8f82207528}</id>
+        <order type="int">2</order>
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
-        <fieldName type="QString">multiplier2</fieldName>
+        <fieldName type="QString">value3</fieldName>
         <valueType textValue="Integer" type="enum" typeName="CuteReport::CustomFieldDataRandom::ValueType">1</valueType>
-        <fromValue type="QString">0</fromValue>
-        <toValue type="QString">[${max_value}]</toValue>
+        <fromValue type="QString">1</fromValue>
+        <toValue type="QString">9</toValue>
         <preventRepeats type="bool">true</preventRepeats>
         <probability type="QString">0.5</probability>
         <valueTypeVariants type="QVariantList">

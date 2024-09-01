@@ -354,7 +354,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">39,13,110,12</geometry>
+        <geometry type="QRectF">39,13,154,12</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -981,6 +981,15 @@
     </Band>
    </children>
   </Page>
+  <Form name="Std::QmlForm" type="Form" version="1">
+   <properties>
+    <objectName type="QString">form</objectName>
+    <id type="QString">{75b439a0-c638-452b-9b73-afc0ef4a5c0a}</id>
+    <order type="int">-1</order>
+    <objectFlags type="int">0</objectFlags>
+    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 250&lt;newline>    width: 400&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>&lt;newline>            CRLayoutLabel { text: "Multiplier 1:" }&lt;newline>            CRLayoutTextField { varName: "multiplier1"}&lt;newline>&lt;newline>            CRLayoutLabel { text: "Maximum  multiplier 2:" }&lt;newline>            CRLayoutTextField { varName: "max_value"}&lt;newline>&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        Item {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>        }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
+   </properties>
+  </Form>
   <Storage name="Std::Resource" type="Storage" version="1">
    <properties>
     <objectName type="QString">templateResources</objectName>
@@ -997,14 +1006,5 @@
     </objects>
    </properties>
   </Storage>
-  <Form name="Std::QmlForm" type="Form" version="1">
-   <properties>
-    <objectName type="QString">form</objectName>
-    <id type="QString">{75b439a0-c638-452b-9b73-afc0ef4a5c0a}</id>
-    <order type="int">-1</order>
-    <objectFlags type="int">0</objectFlags>
-    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 250&lt;newline>    width: 400&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>&lt;newline>            CRLayoutLabel { text: "Multiplier 1:" }&lt;newline>            CRLayoutTextField { varName: "multiplier1"}&lt;newline>&lt;newline>            CRLayoutLabel { text: "Maximum  multiplier 2:" }&lt;newline>            CRLayoutTextField { varName: "max_value"}&lt;newline>&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        Item {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>        }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
-   </properties>
-  </Form>
  </children>
 </Report>

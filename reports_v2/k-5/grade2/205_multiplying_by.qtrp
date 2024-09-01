@@ -3,7 +3,7 @@
 <Report>
  <properties>
   <id type="QString">{dd203fde-cd06-49b8-9629-c85d1dd44fe5}</id>
-  <reportName type="QString">Multiplication</reportName>
+  <reportName type="QString">Multiplication By</reportName>
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <version type="int">0</version>
   <created type="QDateTime">2024-08-10T20:40:39.132</created>
@@ -413,7 +413,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">39,13,110,12</geometry>
+        <geometry type="QRectF">39,13,154,12</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1267,6 +1267,45 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="NoLine" type="enum" typeName="CuteReport::LineType::LineStyle">0</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+        <fill type="CuteReport::FillType*">
+         <properties>
+          <objectName type="QString">_property_fill</objectName>
+          <style textValue="NoFill" type="enum" typeName="CuteReport::FillType::FillEnum">0</style>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoStyle type="bool">true</autoStyle>
+         </properties>
+        </fill>
+        <radius type="double">0</radius>
        </properties>
        <children>
         <Item name="Std::Memo" type="Item" version="1">
@@ -1967,7 +2006,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">39,13,110,12</geometry>
+        <geometry type="QRectF">39,13,154,12</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -2821,6 +2860,45 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
+        <line type="CuteReport::LineType*">
+         <properties>
+          <objectName type="QString">_property_line</objectName>
+          <style textValue="NoLine" type="enum" typeName="CuteReport::LineType::LineStyle">0</style>
+          <color type="QColor">0,0,0,255</color>
+          <width type="double">0.3</width>
+          <joinStyle textValue="RoundJoin" type="enum" typeName="CuteReport::LineType::JoinStyle">128</joinStyle>
+          <capStyle textValue="SquareCap" type="enum" typeName="CuteReport::LineType::CapStyle">16</capStyle>
+          <opacity type="double">1</opacity>
+         </properties>
+        </line>
+        <fill type="CuteReport::FillType*">
+         <properties>
+          <objectName type="QString">_property_fill</objectName>
+          <style textValue="NoFill" type="enum" typeName="CuteReport::FillType::FillEnum">0</style>
+          <color type="QColor">0,0,0,255</color>
+          <gradient type="CuteReport::GradientType*">
+           <properties>
+            <objectName type="QString">_property_gradient</objectName>
+            <preset textValue="NoPreset" type="enum" typeName="CuteReport::GradientType::Preset">0</preset>
+            <spread textValue="PadSpread" type="enum" typeName="CuteReport::GradientType::SpreadType">0</spread>
+            <type textValue="LinearGradient" type="enum" typeName="CuteReport::GradientType::Type">0</type>
+            <rotation type="double">0</rotation>
+            <stopValues type="QStringList">
+             <string type="QString">0</string>
+             <string type="QString">1</string>
+            </stopValues>
+            <stopColors type="QStringList">
+             <string type="QString">blue</string>
+             <string type="QString">yellow</string>
+            </stopColors>
+            <startPoint type="QPointF">0,0</startPoint>
+            <stopPoint type="QPointF">0,1</stopPoint>
+           </properties>
+          </gradient>
+          <autoStyle type="bool">true</autoStyle>
+         </properties>
+        </fill>
+        <radius type="double">0</radius>
        </properties>
        <children>
         <Item name="Std::Memo" type="Item" version="1">
@@ -3334,16 +3412,18 @@
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <fieldName type="QString">multiplier2</fieldName>
-        <valueType textValue="Integer" type="enum" typeName="CuteReport::CustomFieldDataRandom::ValueType">0</valueType>
+        <valueType textValue="Integer" type="enum" typeName="CuteReport::CustomFieldDataRandom::ValueType">1</valueType>
         <fromValue type="QString">0</fromValue>
         <toValue type="QString">[${max_value}]</toValue>
+        <preventRepeats type="bool">true</preventRepeats>
+        <probability type="QString">0.5</probability>
         <valueTypeVariants type="QVariantList">
          <item type="QVariantMap">
           <key name="id">
            <value type="int">0</value>
           </key>
           <key name="name">
-           <value type="QString">Integer</value>
+           <value type="QString">Boolean</value>
           </key>
          </item>
          <item type="QVariantMap">
@@ -3351,12 +3431,20 @@
            <value type="int">1</value>
           </key>
           <key name="name">
-           <value type="QString">Real</value>
+           <value type="QString">Integer</value>
           </key>
          </item>
          <item type="QVariantMap">
           <key name="id">
            <value type="int">2</value>
+          </key>
+          <key name="name">
+           <value type="QString">Real</value>
+          </key>
+         </item>
+         <item type="QVariantMap">
+          <key name="id">
+           <value type="int">3</value>
           </key>
           <key name="name">
            <value type="QString">List</value>
