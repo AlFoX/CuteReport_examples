@@ -1,5 +1,5 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta5" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
 <Report>
  <properties>
   <id type="QString">{24e09b48-cfe5-4306-9373-666586ba831e}</id>
@@ -347,7 +347,7 @@
         <objectName type="QString">TitleTextSecondary_2</objectName>
         <id type="QString">{ce32a0f0-92de-4075-ab2e-e4d60d4623c3}</id>
         <order type="int">1</order>
-        <objectFlags type="int">261</objectFlags>
+        <objectFlags type="int">257</objectFlags>
         <inheritanceData type="QVariantHash">
          <key name="baseId">
           <value type="QString">{d33a5f40-571b-423a-9218-9f16e65d224c}</value>
@@ -461,7 +461,7 @@
         <objectName type="QString">categoryText_2</objectName>
         <id type="QString">{dc2dc73b-4e76-4f40-956a-1f8d826e07b3}</id>
         <order type="int">2</order>
-        <objectFlags type="int">261</objectFlags>
+        <objectFlags type="int">257</objectFlags>
         <inheritanceData type="QVariantHash">
          <key name="baseId">
           <value type="QString">{64cfad3e-f2ec-4d73-bfab-87f140d659cb}</value>
@@ -1795,8 +1795,9 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[dataset."value_str"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">130</alignment>
-        <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
+        <wrapMode textValue="NoWrap" type="enum" typeName="CuteReport::TextItem::WrapMode">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
          <properties>
           <objectName type="QString">_property_textMargins</objectName>
@@ -1810,11 +1811,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">true</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>
@@ -3566,8 +3567,9 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[dataset."value_str"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">130</alignment>
-        <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
+        <wrapMode textValue="NoWrap" type="enum" typeName="CuteReport::TextItem::WrapMode">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
          <properties>
           <objectName type="QString">_property_textMargins</objectName>
@@ -3581,11 +3583,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">true</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -3663,8 +3665,9 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[dataset."rounded_value"]</text>
         <textColor type="QColor">254,25,25,255</textColor>
+        <textFormat textValue="PlainText" type="enum" typeName="CuteReport::TextItem::TextFormat">0</textFormat>
         <alignment textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">129</alignment>
-        <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
+        <wrapMode textValue="NoWrap" type="enum" typeName="CuteReport::TextItem::WrapMode">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
          <properties>
           <objectName type="QString">_property_textMargins</objectName>
@@ -3678,11 +3681,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>
@@ -3776,7 +3779,7 @@
         <objectFlags type="int">0</objectFlags>
         <enabled type="bool">true</enabled>
         <fieldName type="QString">rounded_value</fieldName>
-        <script type="QString">const row = dataset.dataRow();&lt;newline>const column = dataset.dataColumn();&lt;newline>const value = String(dataset.value(row, "value"));&lt;newline>Math.ceil(value / 10) * 10;</script>
+        <script type="QString">const row = dataset.dataRow();&lt;newline>const column = dataset.dataColumn();&lt;newline>const value = String(dataset.value(row, "value"));&lt;newline>Math.round(value / 10) * 10;</script>
        </properties>
       </Internal>
      </children>

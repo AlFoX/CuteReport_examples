@@ -1,5 +1,5 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta5" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
 <Report>
  <properties>
   <id type="QString">{571df3d1-0575-4a56-8c12-cdc08cb12cee}</id>
@@ -7,6 +7,7 @@
   <author type="QString">Alexander Mikhalov &lt;alexander.mikhalov@gmail.com></author>
   <description type="QString">This report demonstrates ability to generate a table of contents based on functionality of the "toc" hidden dataset.&lt;newline>First page "Index of Contents" is automatically generated.</description>
   <version type="int">2</version>
+  <created type="QDateTime">2024-10-01T19:59:19.631</created>
   <picture type="QPixmap">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RERERERERERERERERERERERERERERERERERERERK4P8BfXueY5KbZNIAAAAASUVORK5CYII=</picture>
   <generatePicture type="bool">false</generatePicture>
   <hasPicture type="bool">true</hasPicture>
@@ -44,7 +45,7 @@
     <visible type="bool">true</visible>
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
     <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
-    <paperSize type="QSizeF">215.9,279.4</paperSize>
+    <paperSize type="QSizeF">210,297</paperSize>
     <format type="QString">A4</format>
     <margins type="CuteReport::MirrorMarginsType*">
      <properties>
@@ -280,6 +281,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">page [$PAGE] of [$PAGES]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">4226</alignment>
         <wrapMode textValue="WordWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">1</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -295,11 +297,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>
@@ -313,7 +315,7 @@
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,10,195.9,26</geometry>
+      <geometry type="QRectF">10,10,190,26</geometry>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -461,6 +463,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">Table of Contents</text>
         <textColor type="QColor">255,255,255,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">132</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -476,11 +479,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">20</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>
@@ -494,7 +497,7 @@
       <enabled type="bool">true</enabled>
       <visible type="bool">true</visible>
       <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-      <geometry type="QRectF">10,36,195.9,15</geometry>
+      <geometry type="QRectF">10,36,190,15</geometry>
       <opacity type="double">1</opacity>
       <font type="CuteReport::FontType*">
        <properties>
@@ -672,6 +675,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[toc."text"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">129</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -687,11 +691,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">20</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -769,6 +773,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[toc."pageNum"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">132</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -784,11 +789,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">20</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>
@@ -806,7 +811,7 @@
     <unit textValue="Millimeter" type="enum" typeName="CuteReport::Unit">0</unit>
     <orientation textValue="Portrait" type="enum" typeName="CuteReport::Orientation">0</orientation>
     <paperSize type="QSizeF">215.9,279.4</paperSize>
-    <format type="QString">A4</format>
+    <format type="QString">Letter</format>
     <margins type="CuteReport::MirrorMarginsType*">
      <properties>
       <objectName type="QString">_property_margins</objectName>
@@ -1302,6 +1307,7 @@
             <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
             <text type="QString">[data."name"]</text>
             <textColor type="QColor">0,0,0,255</textColor>
+            <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
             <alignment textValue="AlignCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">132</alignment>
             <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
             <textMargins type="CuteReport::MarginsType*">
@@ -1317,11 +1323,11 @@
             <showStretchability type="bool">true</showStretchability>
             <delimiters type="QString">[ , ]</delimiters>
             <stretchFont type="bool">false</stretchFont>
-            <allowHtml type="bool">true</allowHtml>
             <allowExpressions type="bool">true</allowExpressions>
             <lineSpacing type="double">100</lineSpacing>
             <textIndent type="double">0</textIndent>
             <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+            <allowHtml type="bool">false</allowHtml>
            </properties>
           </Item>
          </children>
@@ -1337,7 +1343,7 @@
         <enabled type="bool">true</enabled>
         <visible type="bool">true</visible>
         <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-        <geometry type="QRectF">154,5,38,48</geometry>
+        <geometry type="QRectF">154,5,40,48</geometry>
         <opacity type="double">1</opacity>
         <font type="CuteReport::FontType*">
          <properties>
@@ -1401,11 +1407,11 @@
         </frame>
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
-        <source type="QString">data."image"</source>
+        <source type="QString">[data."image"]</source>
         <keepAspectRatio type="bool">true</keepAspectRatio>
         <center type="bool">true</center>
         <scaleType textValue="NoScale" type="enum" typeName="CuteReport::ImageItem::ScaleType">0</scaleType>
-        <preview type="bool">false</preview>
+        <preview type="bool">true</preview>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -1483,6 +1489,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">[data."description"]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignJustify|AlignTop" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">4136</alignment>
         <wrapMode textValue="WordWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">1</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -1498,11 +1505,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">true</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -1579,6 +1586,7 @@
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignJustify|AlignTop" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">40</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -1594,12 +1602,12 @@
         <showStretchability type="bool">false</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">true</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <flowTo type="QString">memo_1</flowTo>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -1676,6 +1684,7 @@
         <rotation type="double">0</rotation>
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignLeft|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">129</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -1691,12 +1700,12 @@
         <showStretchability type="bool">false</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">true</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <flowTo type="QString">memo_2</flowTo>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Std::Rectangle" type="Item" version="1">
@@ -1972,6 +1981,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">page [$PAGE] of [$PAGES]</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">4226</alignment>
         <wrapMode textValue="WordWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">1</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -1987,11 +1997,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">0</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
       <Item name="Ext::Text" type="Item" version="1">
@@ -2069,6 +2079,7 @@
         <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
         <text type="QString">Source: Wikipedia</text>
         <textColor type="QColor">0,0,0,255</textColor>
+        <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
         <alignment textValue="AlignLeft" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">1</alignment>
         <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
         <textMargins type="CuteReport::MarginsType*">
@@ -2084,11 +2095,11 @@
         <showStretchability type="bool">true</showStretchability>
         <delimiters type="QString">[ , ]</delimiters>
         <stretchFont type="bool">false</stretchFont>
-        <allowHtml type="bool">false</allowHtml>
         <allowExpressions type="bool">true</allowExpressions>
         <lineSpacing type="double">100</lineSpacing>
         <textIndent type="double">20</textIndent>
         <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+        <allowHtml type="bool">false</allowHtml>
        </properties>
       </Item>
      </children>

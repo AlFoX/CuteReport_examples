@@ -1,5 +1,5 @@
 <!DOCTYPE CuteReport>
-<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.beta5" encoding="utf-8"?>
+<?exarologic-application progid="CuteReport.Document" doctype="CuteReport.Report" version="2.0.rc1" encoding="utf-8"?>
 <Report>
  <properties>
   <id type="QString">{24e09b48-cfe5-4306-9373-666586ba831e}</id>
@@ -310,7 +310,7 @@
            <key name="background.type">
             <value type="QVariantHash">
              <key name="NewValue">
-              <value textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</value>
+              <value textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</value>
              </key>
              <key name="OrigValue">
               <value type=""></value>
@@ -342,7 +342,7 @@
         <background type="CuteReport::BackgroundType*">
          <properties>
           <objectName type="QString">_property_background</objectName>
-          <type textValue="Color" type="enum" typeName="CuteReport::BackgroundType::FillEnum">1</type>
+          <type textValue="NoFill" type="enum" typeName="CuteReport::BackgroundType::FillEnum">0</type>
           <opacity type="double">1</opacity>
           <color type="QColor">226,115,115,255</color>
           <gradient type="CuteReport::GradientType*">
@@ -1355,7 +1355,7 @@
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">8,0.07,7,6</geometry>
+          <geometry type="QRectF">8,1,7,6</geometry>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -3299,6 +3299,7 @@
           <shiftMode textValue="AlwaysShift" type="enum" typeName="CuteReport::Item::ShiftMode">0</shiftMode>
           <text type="QString">[dataset."multiplier1" * dataset."multiplier2"]</text>
           <textColor type="QColor">235,19,75,255</textColor>
+          <textFormat textValue="RichText" type="enum" typeName="CuteReport::TextItem::TextFormat">1</textFormat>
           <alignment textValue="AlignRight|AlignVCenter" type="enum" typeName="QFlags&lt;CuteReport::TextItem::AlignmentFlag>">130</alignment>
           <wrapMode textValue="NoWrap" type="enum" typeName="QFlags&lt;CuteReport::TextItem::WrapModeFlag>">0</wrapMode>
           <textMargins type="CuteReport::MarginsType*">
@@ -3314,11 +3315,11 @@
           <showStretchability type="bool">true</showStretchability>
           <delimiters type="QString">[ , ]</delimiters>
           <stretchFont type="bool">false</stretchFont>
-          <allowHtml type="bool">false</allowHtml>
           <allowExpressions type="bool">true</allowExpressions>
           <lineSpacing type="double">100</lineSpacing>
           <textIndent type="double">0</textIndent>
           <textFlags textValue="" type="enum" typeName="QFlags&lt;CuteReport::TextItem::TextFlag>">0</textFlags>
+          <allowHtml type="bool">false</allowHtml>
          </properties>
         </Item>
         <Item name="Std::Line" type="Item" version="1">
@@ -3414,15 +3415,6 @@
     </Band>
    </children>
   </Page>
-  <Form name="Std::QmlForm" type="Form" version="1">
-   <properties>
-    <objectName type="QString">form</objectName>
-    <id type="QString">{ea60c06e-0ba6-4d47-a8e2-d01bb2c3eddb}</id>
-    <order type="int">-1</order>
-    <objectFlags type="int">0</objectFlags>
-    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 150&lt;newline>    width: 400&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>&lt;newline>            CRLayoutLabel { text: "Maximum random multiplier:" }&lt;newline>            CRLayoutTextField { varName: "max_value"}&lt;newline>&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        Item {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>        }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
-   </properties>
-  </Form>
   <Dataset name="Std::Model" type="Dataset" version="1">
    <properties>
     <objectName type="QString">dataset</objectName>
@@ -3544,5 +3536,14 @@
     </DatasetModifier>
    </children>
   </Dataset>
+  <Form name="Std::QmlForm" type="Form" version="1">
+   <properties>
+    <objectName type="QString">form</objectName>
+    <id type="QString">{ea60c06e-0ba6-4d47-a8e2-d01bb2c3eddb}</id>
+    <order type="int">-1</order>
+    <objectFlags type="int">0</objectFlags>
+    <data type="QString">import QtQuick&lt;newline>import QtQuick.Controls&lt;newline>import QtQuick.Layouts&lt;newline>import ExaroLogic.CuteReport.Report&lt;newline>import ExaroLogic.CuteReport.ReportVariables&lt;newline>import CuteReportBase&lt;newline>import CuteReport&lt;newline>&lt;newline>QmlFormContainer {&lt;newline>    id: control&lt;newline>    height: 150&lt;newline>    width: 400&lt;newline>&lt;newline>    ColumnLayout {&lt;newline>        id: mainLayout&lt;newline>        anchors.fill: parent&lt;newline>        anchors.margins: 10&lt;newline>&lt;newline>        GridLayout {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>            columns: 2&lt;newline>            columnSpacing: 20&lt;newline>&lt;newline>&lt;newline>            CRLayoutLabel { text: "Maximum random multiplier:" }&lt;newline>            CRLayoutTextField { varName: "max_value"}&lt;newline>&lt;newline>&lt;newline>        }&lt;newline>&lt;newline>        Item {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.fillHeight: true&lt;newline>        }&lt;newline>&lt;newline>        CRSimpleButtonBar {&lt;newline>            Layout.fillWidth: true&lt;newline>            Layout.preferredHeight:50&lt;newline>        } //&lt;newline>&lt;newline>    }&lt;newline>}&lt;newline></data>
+   </properties>
+  </Form>
  </children>
 </Report>
