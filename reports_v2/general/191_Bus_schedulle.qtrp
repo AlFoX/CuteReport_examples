@@ -626,7 +626,7 @@
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">0,0,0,0</geometry>
+          <geometry type="QRectF">0,0,5,3</geometry>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -720,7 +720,7 @@
           <enabled type="bool">true</enabled>
           <visible type="bool">true</visible>
           <unit textValue="UnitNotDefined" type="enum" typeName="CuteReport::Unit">7</unit>
-          <geometry type="QRectF">0,0,0,0</geometry>
+          <geometry type="QRectF">0,0,5,3</geometry>
           <opacity type="double">1</opacity>
           <font type="CuteReport::FontType*">
            <properties>
@@ -808,18 +808,6 @@
         </Item>
         <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
          <properties>
-          <objectName type="QString">table_event</objectName>
-          <id type="QString">{a34b17a8-403c-459a-a500-35f88a863efb}</id>
-          <order type="int">-1</order>
-          <objectFlags type="int">0</objectFlags>
-          <trigger type="int">2000</trigger>
-          <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
-          <composedScript type="QString">table.headerCellReady.connect(table_event_headerCellReady)&lt;newline>function table_event_headerCellReady(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.log("header value:" + data.value())&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	&lt;newline>	if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>		engine.debug("special color needed")&lt;newline>		cell.background.color = "#dfa0a0"&lt;newline>		cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>}&lt;newline></composedScript>
-          <script type="QString">engine.log("header value:" + data.value())&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>&lt;newline>if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>	engine.debug("special color needed")&lt;newline>	cell.background.color = "#dfa0a0"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>}</script>
-         </properties>
-        </Event>
-        <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
-         <properties>
           <objectName type="QString">table_event_1</objectName>
           <id type="QString">{7bca9760-d45c-403a-bcbd-dd11cabc1493}</id>
           <order type="int">-1</order>
@@ -828,6 +816,18 @@
           <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
           <composedScript type="QString">table.gridCellReady.connect(table_event_1_gridCellReady)&lt;newline>function table_event_1_gridCellReady(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.debug("   grid value:" + data.value())&lt;newline>	&lt;newline>	const dateISO = data.value("dateISO")&lt;newline>	const date = new Date(dateISO)&lt;newline>	&lt;newline>	engine.debug("   dateISO: " + dateISO);&lt;newline>	engine.debug("   grid date: " + date); &lt;newline>	&lt;newline>	var days = differenceInDays(shiftStartDate, date)&lt;newline>	var shiftLength = shifts.length&lt;newline>	var shiftDelta = days % shiftLength&lt;newline>	shiftIndex = shiftDelta -1&lt;newline>	if (shiftIndex &lt; 0)&lt;newline>	   shiftIndex = shiftIndex + shiftLength&lt;newline>	&lt;newline>	engine.log("   drid days: " + days); &lt;newline>	engine.log("   shiftLength: " + shiftLength); &lt;newline>	engine.log("   shiftDelta: " + shiftDelta); &lt;newline>	&lt;newline>	shiftIndex++&lt;newline>	if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	&lt;newline>	if ( shifts[shiftIndex] == "F") {&lt;newline>	    cell.background.color = fatherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "M") {&lt;newline>	    cell.background.color = motherRect.background.color&lt;newline>	} else if ( shifts[shiftIndex] == "FM") {&lt;newline>	    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>	} else if ( shifts[shiftIndex] == "MF") {&lt;newline>	    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>	}&lt;newline>	&lt;newline>	if (!data.value("currentMonth"))&lt;newline>	   cell.opacity = 0.3&lt;newline>	&lt;newline>	engine.log("weekDay: " + data.value("weekDay") ); &lt;newline>	&lt;newline>	if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>		cell.background.color = "white"&lt;newline>		cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
           <script type="QString">engine.debug("   grid value:" + data.value())&lt;newline>&lt;newline>const dateISO = data.value("dateISO")&lt;newline>const date = new Date(dateISO)&lt;newline>&lt;newline>engine.debug("   dateISO: " + dateISO);&lt;newline>engine.debug("   grid date: " + date); &lt;newline>&lt;newline>var days = differenceInDays(shiftStartDate, date)&lt;newline>var shiftLength = shifts.length&lt;newline>var shiftDelta = days % shiftLength&lt;newline>shiftIndex = shiftDelta -1&lt;newline>if (shiftIndex &lt; 0)&lt;newline>   shiftIndex = shiftIndex + shiftLength&lt;newline>&lt;newline>engine.log("   drid days: " + days); &lt;newline>engine.log("   shiftLength: " + shiftLength); &lt;newline>engine.log("   shiftDelta: " + shiftDelta); &lt;newline>&lt;newline>shiftIndex++&lt;newline>if (shiftIndex >= shifts.length)  { shiftIndex = 0 }&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>&lt;newline>if ( shifts[shiftIndex] == "F") {&lt;newline>    cell.background.color = fatherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "M") {&lt;newline>    cell.background.color = motherRect.background.color&lt;newline>} else if ( shifts[shiftIndex] == "FM") {&lt;newline>    cell.background.gradient.stopColors = [ fatherRect.background.color, motherRect.background.color]&lt;newline>} else if ( shifts[shiftIndex] == "MF") {&lt;newline>    cell.background.gradient.stopColors = [motherRect.background.color,  fatherRect.background.color]&lt;newline>}&lt;newline>&lt;newline>if (!data.value("currentMonth"))&lt;newline>   cell.opacity = 0.3&lt;newline>&lt;newline>engine.log("weekDay: " + data.value("weekDay") ); &lt;newline>&lt;newline>if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>	cell.background.color = "white"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>}&lt;newline>&lt;newline></script>
+         </properties>
+        </Event>
+        <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+         <properties>
+          <objectName type="QString">table_event</objectName>
+          <id type="QString">{a34b17a8-403c-459a-a500-35f88a863efb}</id>
+          <order type="int">-1</order>
+          <objectFlags type="int">0</objectFlags>
+          <trigger type="int">2000</trigger>
+          <elementId type="QString">{abda8327-49fb-4120-9688-de0423a6ecd9}</elementId>
+          <composedScript type="QString">table.headerCellReady.connect(table_event_headerCellReady)&lt;newline>function table_event_headerCellReady(cell,data)&lt;newline>{&lt;newline>	var self = table&lt;newline>	engine.log("header value:" + data.value())&lt;newline>	&lt;newline>	cell.text = data.value()&lt;newline>	&lt;newline>	if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>		engine.debug("special color needed")&lt;newline>		cell.background.color = "#dfa0a0"&lt;newline>		cell.textColor = "#8c0000"&lt;newline>	}&lt;newline>}&lt;newline></composedScript>
+          <script type="QString">engine.log("header value:" + data.value())&lt;newline>&lt;newline>cell.text = data.value()&lt;newline>&lt;newline>if (data.value("weekDay") == 6 || data.value("weekDay") == 7 ) {&lt;newline>	engine.debug("special color needed")&lt;newline>	cell.background.color = "#dfa0a0"&lt;newline>	cell.textColor = "#8c0000"&lt;newline>}</script>
          </properties>
         </Event>
        </children>
@@ -1689,15 +1689,43 @@
     </Band>
    </children>
   </Page>
-  <Form name="Std::QmlForm" type="Form" version="1">
+  <Dataset name="Std::Calendar" type="Dataset" version="1">
    <properties>
-    <objectName type="QString">form</objectName>
-    <id type="QString">{1f2dbfcc-fa5f-4f3f-8706-dea1a85d1286}</id>
+    <objectName type="QString">months</objectName>
+    <id type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</id>
     <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
-    <data type="QString">import QtQuick&lt;newline>import CuteReport&lt;newline>&lt;newline>CRPeriodSelectForm {&lt;newline>    id: control&lt;newline>&lt;newline>    // change below properties accordingly&lt;newline>    //&lt;newline>    //varYearFrom: "yearFrom"&lt;newline>    //varMonthFrom: "monthFrom"&lt;newline>    //varYearTo: "yearTo"&lt;newline>    //varMonthTo: "monthTo"&lt;newline>}&lt;newline></data>
+    <isGlobal type="bool">false</isGlobal>
+    <from type="QDate">2024-05-01</from>
+    <to type="QDate">2025-05-31</to>
+    <fromEntireMonth type="bool">true</fromEntireMonth>
+    <toEntireMonth type="bool">true</toEntireMonth>
+    <fillEmptyWeekdaysBefore type="bool">false</fillEmptyWeekdaysBefore>
+    <fillEmptyWeekdaysAfter type="bool">false</fillEmptyWeekdaysAfter>
+    <firstDayOfWeek textValue="FromLocale" type="enum" typeName="CuteReport::CalendarDataset::DayOfWeek">0</firstDayOfWeek>
+    <fields type="QStringList">
+     <string type="QString">monthNumber</string>
+     <string type="QString">monthShort</string>
+     <string type="QString">monthLong</string>
+     <string type="QString">year</string>
+    </fields>
+    <fieldsStr type="QString">monthNumber, monthShort, monthLong, year</fieldsStr>
    </properties>
-  </Form>
+   <children>
+    <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
+     <properties>
+      <objectName type="QString">months_event</objectName>
+      <id type="QString">{5398fa59-15b6-4c58-a48e-9d64edb46757}</id>
+      <order type="int">-1</order>
+      <objectFlags type="int">0</objectFlags>
+      <trigger type="int">4000</trigger>
+      <elementId type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</elementId>
+      <composedScript type="QString">months.rowChanged.connect(months_event_rowChanged)&lt;newline>function months_event_rowChanged()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	&lt;newline>	dataset.fromYear = self.value("year")&lt;newline>	dataset.fromMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	dataset.toYear = self.value("year")&lt;newline>	dataset.toMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
+      <script type="QString">/*! Insert your script here */&lt;newline>&lt;newline>dataset.fromYear = self.value("year")&lt;newline>dataset.fromMonth = self.value("monthNumber")&lt;newline>&lt;newline>dataset.toYear = self.value("year")&lt;newline>dataset.toMonth = self.value("monthNumber")&lt;newline>&lt;newline></script>
+     </properties>
+    </Event>
+   </children>
+  </Dataset>
   <Dataset name="Std::Calendar" type="Dataset" version="1">
    <properties>
     <objectName type="QString">dataset</objectName>
@@ -1760,42 +1788,14 @@
     </DatasetModifier>
    </children>
   </Dataset>
-  <Dataset name="Std::Calendar" type="Dataset" version="1">
+  <Form name="Std::QmlForm" type="Form" version="1">
    <properties>
-    <objectName type="QString">months</objectName>
-    <id type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</id>
+    <objectName type="QString">form</objectName>
+    <id type="QString">{1f2dbfcc-fa5f-4f3f-8706-dea1a85d1286}</id>
     <order type="int">-1</order>
     <objectFlags type="int">0</objectFlags>
-    <isGlobal type="bool">false</isGlobal>
-    <from type="QDate">2024-05-01</from>
-    <to type="QDate">2025-05-31</to>
-    <fromEntireMonth type="bool">true</fromEntireMonth>
-    <toEntireMonth type="bool">true</toEntireMonth>
-    <fillEmptyWeekdaysBefore type="bool">false</fillEmptyWeekdaysBefore>
-    <fillEmptyWeekdaysAfter type="bool">false</fillEmptyWeekdaysAfter>
-    <firstDayOfWeek textValue="FromLocale" type="enum" typeName="CuteReport::CalendarDataset::DayOfWeek">0</firstDayOfWeek>
-    <fields type="QStringList">
-     <string type="QString">monthNumber</string>
-     <string type="QString">monthShort</string>
-     <string type="QString">monthLong</string>
-     <string type="QString">year</string>
-    </fields>
-    <fieldsStr type="QString">monthNumber, monthShort, monthLong, year</fieldsStr>
+    <data type="QString">import QtQuick&lt;newline>import CuteReport&lt;newline>&lt;newline>CRPeriodSelectForm {&lt;newline>    id: control&lt;newline>&lt;newline>    // change below properties accordingly&lt;newline>    //&lt;newline>    //varYearFrom: "yearFrom"&lt;newline>    //varMonthFrom: "monthFrom"&lt;newline>    //varYearTo: "yearTo"&lt;newline>    //varMonthTo: "monthTo"&lt;newline>}&lt;newline></data>
    </properties>
-   <children>
-    <Event name="Ext::ReportElementScriptEvent" type="Event" version="1">
-     <properties>
-      <objectName type="QString">months_event</objectName>
-      <id type="QString">{5398fa59-15b6-4c58-a48e-9d64edb46757}</id>
-      <order type="int">-1</order>
-      <objectFlags type="int">0</objectFlags>
-      <trigger type="int">4000</trigger>
-      <elementId type="QString">{5e16ea07-ecb4-402e-aa95-f7d211264d8a}</elementId>
-      <composedScript type="QString">months.rowChanged.connect(months_event_rowChanged)&lt;newline>function months_event_rowChanged()&lt;newline>{&lt;newline>	var self = months&lt;newline>	/*! Insert your script here */&lt;newline>	&lt;newline>	dataset.fromYear = self.value("year")&lt;newline>	dataset.fromMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	dataset.toYear = self.value("year")&lt;newline>	dataset.toMonth = self.value("monthNumber")&lt;newline>	&lt;newline>	&lt;newline>}&lt;newline></composedScript>
-      <script type="QString">/*! Insert your script here */&lt;newline>&lt;newline>dataset.fromYear = self.value("year")&lt;newline>dataset.fromMonth = self.value("monthNumber")&lt;newline>&lt;newline>dataset.toYear = self.value("year")&lt;newline>dataset.toMonth = self.value("monthNumber")&lt;newline>&lt;newline></script>
-     </properties>
-    </Event>
-   </children>
-  </Dataset>
+  </Form>
  </children>
 </Report>
